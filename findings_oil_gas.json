@@ -1,0 +1,232 @@
+{
+  "category": "oil_gas",
+  "rules": [
+    {
+      "name": "fec_committee_name_match",
+      "description": "Donors who gave to any FEC committee whose name matches a curated list of oil & gas industry patterns (Exxon, Chevron, Halliburton, Valero, API PAC, TXOGA, etc)."
+    },
+    {
+      "name": "employer_match",
+      "description": "Substring match on contributor_employer (TEC) or fec_employer (FEC) against high-confidence company names (exxon, chevron, halliburton, ...) or medium-confidence generic keywords (petroleum, drilling, oilfield, refining, ...). Generic 'energy' alone is excluded."
+    },
+    {
+      "name": "occupation_match",
+      "description": "Substring match on contributor_occupation (TEC) or fec_occupation (FEC) against oil & gas roles (petroleum engineer, geologist, landman, oilfield)."
+    }
+  ],
+  "findings": [
+    {
+      "donor_id": "95a856746b8bd251",
+      "label": "employer: petroleum",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": "1998-06-01",
+      "last_seen": "1998-06-01",
+      "notes": "Donor's employer 'PETROLEUM DISTRIBUTOR' matches keyword 'petroleum'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'PETROLEUM DISTRIBUTOR' matches oil & gas keyword 'petroleum' ($1000.00 on 1998-06-01)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=3061920110006359014",
+          "committee_id": "C00310896",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "1998-06-01",
+          "rule": "employer_match: petroleum"
+        }
+      ]
+    },
+    {
+      "donor_id": "0f897e319478b665",
+      "label": "occupation: oil & gas",
+      "total_amount": 5000.0,
+      "confidence": "medium",
+      "first_seen": "2012-06-25",
+      "last_seen": "2012-06-25",
+      "notes": "Donor's occupation 'OIL & GAS' matches keyword 'oil & gas'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'OIL & GAS' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4102820131198078424",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2012-06-25",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'OIL & GAS' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4080620141220475072",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2012-06-25",
+          "rule": "occupation_match: oil & gas"
+        }
+      ]
+    },
+    {
+      "donor_id": "6bfdfaed01256fc0",
+      "label": "occupation: petroleum engineer",
+      "total_amount": 149.0,
+      "confidence": "medium",
+      "first_seen": "2024-02-01",
+      "last_seen": "2024-10-25",
+      "notes": "Donor's occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'.",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4121720241081828119",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2024-10-25",
+          "rule": "occupation_match: petroleum engineer"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4121720241081828118",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2024-10-25",
+          "rule": "occupation_match: petroleum engineer"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4103120241019886305",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2024-09-19",
+          "rule": "occupation_match: petroleum engineer"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4103120241019886304",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2024-09-19",
+          "rule": "occupation_match: petroleum engineer"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4041120241889698877",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 4.0,
+          "date": "2024-02-01",
+          "rule": "occupation_match: petroleum engineer"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum engineer'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4041120241889698876",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 35.0,
+          "date": "2024-02-01",
+          "rule": "occupation_match: petroleum engineer"
+        }
+      ]
+    },
+    {
+      "donor_id": "6bfdfaed01256fc0",
+      "label": "occupation: petroleum",
+      "total_amount": 149.0,
+      "confidence": "medium",
+      "first_seen": "2024-02-01",
+      "last_seen": "2024-10-25",
+      "notes": "Donor's occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'.",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4121720241081828119",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2024-10-25",
+          "rule": "occupation_match: petroleum"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4121720241081828118",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2024-10-25",
+          "rule": "occupation_match: petroleum"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4103120241019886305",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2024-09-19",
+          "rule": "occupation_match: petroleum"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4103120241019886304",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2024-09-19",
+          "rule": "occupation_match: petroleum"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4041120241889698877",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 4.0,
+          "date": "2024-02-01",
+          "rule": "occupation_match: petroleum"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'PETROLEUM ENGINEER' matches keyword 'petroleum'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4041120241889698876",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 35.0,
+          "date": "2024-02-01",
+          "rule": "occupation_match: petroleum"
+        }
+      ]
+    }
+  ]
+}

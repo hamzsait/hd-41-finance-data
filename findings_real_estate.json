@@ -1,0 +1,2723 @@
+{
+  "category": "real_estate",
+  "rules": [
+    {
+      "name": "fec_committee_name_match",
+      "description": "Donor gave to a FEC committee whose name matches real-estate-industry patterns (NAR, MORPAC, NMHC, NAHB, TREPAC, Texas REALTORS, Texas Apartment Assn, CREFC, Real Estate Roundtable, or generic real-estate/realty/apartment/homebuilder + PAC/Action Fund)."
+    },
+    {
+      "name": "employer_match",
+      "description": "contributor_employer / fec_employer contains a real-estate keyword. High confidence: realtor, realty, real estate, properties, property management, brokerage, apartment, multifamily, land development, homebuilder, title company, title insurance, mortgage, appraisal, subdivision, named builders (Lennar, KB Home, D.R. Horton, Pulte, Toll Brothers, Weston, McAnally), or '<X> Homes' company names. Medium confidence: 2+ generic tokens (development/construction/builder/investments/holdings) together."
+    },
+    {
+      "name": "occupation_match",
+      "description": "contributor_occupation / fec_occupation contains a real-estate keyword. High: realtor, real estate (broker/agent/developer), property manager/management, mortgage broker, appraiser, title agent, homebuilder. Medium: developer, general contractor, broker (STOCKBROKER and software/web/app developer excluded)."
+    }
+  ],
+  "findings": [
+    {
+      "donor_id": "684af1ca070b23c8",
+      "label": "Employer: appraisal",
+      "total_amount": 100.0,
+      "confidence": "high",
+      "first_seen": "20251024",
+      "last_seen": "20251024",
+      "notes": "1 evidence row for label 'Employer: appraisal'; donor Longoria, Daniel; HD-41 backing: Haddad ($100.00); donor's combined real-estate-tagged $ = $200.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $100.00 to haddad on 20251024; employer='Hidalgo County Appraisal District'; matched keyword='appraisal'",
+          "contribution_id": "contributions.contribution_info_id=148142027",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "20251024",
+          "rule": "employer_match: appraisal"
+        }
+      ]
+    },
+    {
+      "donor_id": "1e0ec00cd6f2e553",
+      "label": "Employer: development + construction",
+      "total_amount": 1500.0,
+      "confidence": "medium",
+      "first_seen": "2024-03-05",
+      "last_seen": "2024-03-05",
+      "notes": "1 evidence row for label 'Employer: development + construction'; donor Reyna, Dominic; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $1,500.00 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00797217",
+          "evidence_text": "FEC contribution: $1,500.00 on 2024-03-05; employer='REYNA DEVELOPMENT AND CONSTRUCTION'; matched keyword='development + construction'",
+          "contribution_id": "fec_contributions_raw.id=2835",
+          "committee_id": "C00797217",
+          "committee_name": null,
+          "amount": 1500.0,
+          "date": "2024-03-05",
+          "rule": "employer_match: development + construction"
+        }
+      ]
+    },
+    {
+      "donor_id": "a7ea3a41e2ab720c",
+      "label": "Employer: properties",
+      "total_amount": 305900.0,
+      "confidence": "high",
+      "first_seen": "2008-04-21",
+      "last_seen": "2026-01-06",
+      "notes": "106 evidence rows for label 'Employer: properties'; donor Collins, James; HD-41 backing: Groves ($1,919.70); donor's combined real-estate-tagged $ = $332,000.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $25,000.00 on 2026-01-06; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2864",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 25000.0,
+          "date": "2026-01-06",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $2,000.00 on 2025-12-19; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2865",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 2000.0,
+          "date": "2025-12-19",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $3,500.00 on 2025-07-25; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2869",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 3500.0,
+          "date": "2025-07-25",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $1,500.00 on 2025-07-25; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2870",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 1500.0,
+          "date": "2025-07-25",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00542217",
+          "evidence_text": "FEC contribution: $4,600.00 on 2025-03-27; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2871",
+          "committee_id": "C00542217",
+          "committee_name": null,
+          "amount": 4600.0,
+          "date": "2025-03-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00387464",
+          "evidence_text": "FEC contribution: $5,000.00 on 2025-03-27; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2872",
+          "committee_id": "C00387464",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2025-03-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $200.00 on 2025-03-27; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2873",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 200.0,
+          "date": "2025-03-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $200.00 on 2025-03-27; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2874",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 200.0,
+          "date": "2025-03-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00770180",
+          "evidence_text": "FEC contribution: $10,000.00 on 2025-03-27; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2875",
+          "committee_id": "C00770180",
+          "committee_name": null,
+          "amount": 10000.0,
+          "date": "2025-03-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $3,300.00 on 2024-04-09; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2876",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 3300.0,
+          "date": "2024-04-09",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $400.00 on 2024-04-09; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2877",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 400.0,
+          "date": "2024-04-09",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00387464",
+          "evidence_text": "FEC contribution: $4,850.00 on 2024-04-09; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2878",
+          "committee_id": "C00387464",
+          "committee_name": null,
+          "amount": 4850.0,
+          "date": "2024-04-09",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00770180",
+          "evidence_text": "FEC contribution: $8,550.00 on 2024-04-09; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2879",
+          "committee_id": "C00770180",
+          "committee_name": null,
+          "amount": 8550.0,
+          "date": "2024-04-09",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00492785",
+          "evidence_text": "FEC contribution: $3,300.00 on 2024-03-28; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2880",
+          "committee_id": "C00492785",
+          "committee_name": null,
+          "amount": 3300.0,
+          "date": "2024-03-28",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00536540",
+          "evidence_text": "FEC contribution: $1,700.00 on 2024-03-28; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2881",
+          "committee_id": "C00536540",
+          "committee_name": null,
+          "amount": 1700.0,
+          "date": "2024-03-28",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00849778",
+          "evidence_text": "FEC contribution: $5,000.00 on 2024-03-28; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2882",
+          "committee_id": "C00849778",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2024-03-28",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $1,000.00 on 2023-11-13; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2883",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2023-11-13",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $1,000.00 on 2023-05-15; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2884",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2023-05-15",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00075820",
+          "evidence_text": "FEC contribution: $7,100.00 on 2022-10-27; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2885",
+          "committee_id": "C00075820",
+          "committee_name": null,
+          "amount": 7100.0,
+          "date": "2022-10-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00686816",
+          "evidence_text": "FEC contribution: $5,000.00 on 2022-10-27; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2886",
+          "committee_id": "C00686816",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2022-10-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00660795",
+          "evidence_text": "FEC contribution: $2,900.00 on 2022-10-27; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2887",
+          "committee_id": "C00660795",
+          "committee_name": null,
+          "amount": 2900.0,
+          "date": "2022-10-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694810",
+          "evidence_text": "FEC contribution: $15,000.00 on 2022-10-27; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2888",
+          "committee_id": "C00694810",
+          "committee_name": null,
+          "amount": 15000.0,
+          "date": "2022-10-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00498345",
+          "evidence_text": "FEC contribution: $738.45 on 2022-09-26; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2889",
+          "committee_id": "C00498345",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-09-26",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00781443",
+          "evidence_text": "FEC contribution: $738.45 on 2022-09-26; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2890",
+          "committee_id": "C00781443",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-09-26",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00787135",
+          "evidence_text": "FEC contribution: $738.45 on 2022-09-26; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2891",
+          "committee_id": "C00787135",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-09-26",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $2,500.00 on 2022-09-15; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2892",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2022-09-15",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $1,000.00 on 2022-09-09; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2893",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2022-09-09",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00476317",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2894",
+          "committee_id": "C00476317",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00775015",
+          "evidence_text": "FEC contribution: $738.75 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2895",
+          "committee_id": "C00775015",
+          "committee_name": null,
+          "amount": 738.75,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00482984",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2896",
+          "committee_id": "C00482984",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00473827",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2897",
+          "committee_id": "C00473827",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00466482",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2898",
+          "committee_id": "C00466482",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00711010",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2899",
+          "committee_id": "C00711010",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00614776",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2900",
+          "committee_id": "C00614776",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00409581",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2901",
+          "committee_id": "C00409581",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00791186",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2902",
+          "committee_id": "C00791186",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00458315",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2903",
+          "committee_id": "C00458315",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00608398",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2904",
+          "committee_id": "C00608398",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00620518",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2905",
+          "committee_id": "C00620518",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00620518",
+          "evidence_text": "FEC contribution: $2,900.00 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2906",
+          "committee_id": "C00620518",
+          "committee_name": null,
+          "amount": 2900.0,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00473371",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2907",
+          "committee_id": "C00473371",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00230482",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2908",
+          "committee_id": "C00230482",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00770180",
+          "evidence_text": "FEC contribution: $25,000.00 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2909",
+          "committee_id": "C00770180",
+          "committee_name": null,
+          "amount": 25000.0,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00384529",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2910",
+          "committee_id": "C00384529",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00787853",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2911",
+          "committee_id": "C00787853",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00795930",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2912",
+          "committee_id": "C00795930",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $2,900.00 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2913",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 2900.0,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00540302",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2914",
+          "committee_id": "C00540302",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00459255",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2915",
+          "committee_id": "C00459255",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00784165",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2916",
+          "committee_id": "C00784165",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00330886",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2917",
+          "committee_id": "C00330886",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00496075",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2918",
+          "committee_id": "C00496075",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00783142",
+          "evidence_text": "FEC contribution: $738.45 on 2022-08-23; employer='MAYFAIR PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2919",
+          "committee_id": "C00783142",
+          "committee_name": null,
+          "amount": 738.45,
+          "date": "2022-08-23",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $500.00 on 2021-09-02; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2920",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2021-09-02",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $500.00 on 2021-09-02; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2921",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2021-09-02",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $1,000.00 on 2021-07-01; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2923",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2021-07-01",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $1,000.00 on 2021-07-01; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2924",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2021-07-01",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $1,000.00 on 2021-06-30; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2925",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2021-06-30",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-29; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2926",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-29",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-22; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2928",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-22",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-15; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2930",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-15",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-08; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2932",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-08",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-01; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2934",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-01",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-24; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2936",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-24",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-17; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2938",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-17",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-10; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2940",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-10",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-03; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2942",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-10-27; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2944",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-10-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-10-22; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2946",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-10-22",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-10-20; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2948",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-10-20",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $500.00 on 2020-10-20; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2949",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2020-10-20",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00003418",
+          "evidence_text": "FEC contribution: $12,500.00 on 2020-09-08; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2956",
+          "committee_id": "C00003418",
+          "committee_name": null,
+          "amount": 12500.0,
+          "date": "2020-09-08",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00618389",
+          "evidence_text": "FEC contribution: $12,500.00 on 2020-09-08; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2957",
+          "committee_id": "C00618389",
+          "committee_name": null,
+          "amount": 12500.0,
+          "date": "2020-09-08",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $12,500.00 on 2020-09-08; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2958",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 12500.0,
+          "date": "2020-09-08",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00003418",
+          "evidence_text": "FEC contribution: $4,400.00 on 2020-07-14; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2959",
+          "committee_id": "C00003418",
+          "committee_name": null,
+          "amount": 4400.0,
+          "date": "2020-07-14",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00618389",
+          "evidence_text": "FEC contribution: $10,000.00 on 2020-07-14; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2960",
+          "committee_id": "C00618389",
+          "committee_name": null,
+          "amount": 10000.0,
+          "date": "2020-07-14",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $10,000.00 on 2020-07-14; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2961",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 10000.0,
+          "date": "2020-07-14",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2019-03-31; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2963",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2019-03-31",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2019-03-31; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2964",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2019-03-31",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00460378",
+          "evidence_text": "FEC contribution: $400.00 on 2019-03-22; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2965",
+          "committee_id": "C00460378",
+          "committee_name": null,
+          "amount": 400.0,
+          "date": "2019-03-22",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00492785",
+          "evidence_text": "FEC contribution: $1,000.00 on 2018-09-27; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2966",
+          "committee_id": "C00492785",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2018-09-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $2,700.00 on 2017-06-08; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2968",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 2700.0,
+          "date": "2017-06-08",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $2,500.00 on 2017-05-30; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2969",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2017-05-30",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $2,700.00 on 2016-11-03; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2972",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 2700.0,
+          "date": "2016-11-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $2,700.00 on 2016-11-03; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2973",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 2700.0,
+          "date": "2016-11-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00580100",
+          "evidence_text": "FEC contribution: $2,700.00 on 2016-08-02; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2974",
+          "committee_id": "C00580100",
+          "committee_name": null,
+          "amount": 2700.0,
+          "date": "2016-08-02",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00003418",
+          "evidence_text": "FEC contribution: $7,300.00 on 2016-08-02; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2975",
+          "committee_id": "C00003418",
+          "committee_name": null,
+          "amount": 7300.0,
+          "date": "2016-08-02",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00618389",
+          "evidence_text": "FEC contribution: $10,000.00 on 2016-08-02; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2976",
+          "committee_id": "C00618389",
+          "committee_name": null,
+          "amount": 10000.0,
+          "date": "2016-08-02",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $1,000.00 on 2016-02-16; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2977",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2016-02-16",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $5,000.00 on 2013-12-30; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2978",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2013-12-30",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00532465",
+          "evidence_text": "FEC contribution: $500.00 on 2013-11-25; employer='MAYFAIR PROPERTIES, LLC.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2979",
+          "committee_id": "C00532465",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2013-11-25",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2013-02-11; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2980",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2013-02-11",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2013-02-11; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2981",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2013-02-11",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00518282",
+          "evidence_text": "FEC contribution: $5,000.00 on 2012-10-03; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2982",
+          "committee_id": "C00518282",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2012-10-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00431171",
+          "evidence_text": "FEC contribution: $2,500.00 on 2012-10-03; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2983",
+          "committee_id": "C00431171",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2012-10-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00431171",
+          "evidence_text": "FEC contribution: $1,500.00 on 2012-10-03; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2984",
+          "committee_id": "C00431171",
+          "committee_name": null,
+          "amount": 1500.0,
+          "date": "2012-10-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00003418",
+          "evidence_text": "FEC contribution: $1,000.00 on 2012-10-03; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2985",
+          "committee_id": "C00003418",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2012-10-03",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00371302",
+          "evidence_text": "FEC contribution: $300.00 on 2012-09-27; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2986",
+          "committee_id": "C00371302",
+          "committee_name": null,
+          "amount": 300.0,
+          "date": "2012-09-27",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00027466",
+          "evidence_text": "FEC contribution: $2,000.00 on 2012-06-28; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2987",
+          "committee_id": "C00027466",
+          "committee_name": null,
+          "amount": 2000.0,
+          "date": "2012-06-28",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2012-05-07; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2988",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2012-05-07",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2012-05-07; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2989",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2012-05-07",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00431171",
+          "evidence_text": "FEC contribution: $1,000.00 on 2012-03-14; employer='MAYFAIR PROPERTIES L.L.C.'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2990",
+          "committee_id": "C00431171",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2012-03-14",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00457945",
+          "evidence_text": "FEC contribution: $1,000.00 on 2009-08-06; employer='MAYFAIR PROPERTIES, LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2992",
+          "committee_id": "C00457945",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2009-08-06",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $2,400.00 on 2009-04-07; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2994",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 2400.0,
+          "date": "2009-04-07",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $4,800.00 on 2009-04-07; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2995",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 4800.0,
+          "date": "2009-04-07",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00430470",
+          "evidence_text": "FEC contribution: $2,300.00 on 2008-04-21; employer='MAYFAIR PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2996",
+          "committee_id": "C00430470",
+          "committee_name": null,
+          "amount": 2300.0,
+          "date": "2008-04-21",
+          "rule": "employer_match: properties"
+        }
+      ]
+    },
+    {
+      "donor_id": "dbbc58922e941b61",
+      "label": "Employer: properties",
+      "total_amount": 23350.0,
+      "confidence": "high",
+      "first_seen": "2021-10-19",
+      "last_seen": "2026-03-13",
+      "notes": "8 evidence rows for label 'Employer: properties'; donor Ruppert, Kyle; HD-41 backing: Haddad ($1,000.00); donor's combined real-estate-tagged $ = $50,900.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2026-03-13; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4135",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2026-03-13",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00901918",
+          "evidence_text": "FEC contribution: $1,500.00 on 2025-09-30; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4136",
+          "committee_id": "C00901918",
+          "committee_name": null,
+          "amount": 1500.0,
+          "date": "2025-09-30",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00901918",
+          "evidence_text": "FEC contribution: $5,000.00 on 2025-09-30; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4137",
+          "committee_id": "C00901918",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2025-09-30",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $2,000.00 on 2024-09-16; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4138",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 2000.0,
+          "date": "2024-09-16",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00765719",
+          "evidence_text": "FEC contribution: $2,500.00 on 2024-03-05; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4139",
+          "committee_id": "C00765719",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2024-03-05",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00787853",
+          "evidence_text": "FEC contribution: $2,100.00 on 2021-10-19; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4143",
+          "committee_id": "C00787853",
+          "committee_name": null,
+          "amount": 2100.0,
+          "date": "2021-10-19",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00787853",
+          "evidence_text": "FEC contribution: $5,000.00 on 2021-10-19; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4144",
+          "committee_id": "C00787853",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2021-10-19",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $5,000.00 on 2021-10-19; employer='SANTA CRUZ PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=4145",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2021-10-19",
+          "rule": "employer_match: properties"
+        }
+      ]
+    },
+    {
+      "donor_id": "95a856746b8bd251",
+      "label": "Employer: properties",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": "1999-11-15",
+      "last_seen": "1999-11-15",
+      "notes": "1 evidence row for label 'Employer: properties'; donor Phillips, Joseph; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $25,800.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00310896",
+          "evidence_text": "FEC contribution: $1,000.00 on 1999-11-15; employer='PHILLIPS PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2385",
+          "committee_id": "C00310896",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "1999-11-15",
+          "rule": "employer_match: properties"
+        }
+      ]
+    },
+    {
+      "donor_id": "9b9068cd6360b0a5",
+      "label": "Employer: properties",
+      "total_amount": 555.0,
+      "confidence": "high",
+      "first_seen": "2017-04-10",
+      "last_seen": "2024-07-22",
+      "notes": "4 evidence rows for label 'Employer: properties'; donor Rogers, Victoria; HD-41 backing: Holguin ($517.75); donor's combined real-estate-tagged $ = $4,053.75 across 3 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2024-07-22; employer='COASTLINE PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=5570",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2024-07-22",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00099267",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; employer='COASTLINE PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=5572",
+          "committee_id": "C00099267",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; employer='COASTLINE PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=5573",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "employer_match: properties"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $5.00 on 2017-04-10; employer='COASTLINE PROPERTIES'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=5588",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2017-04-10",
+          "rule": "employer_match: properties"
+        }
+      ]
+    },
+    {
+      "donor_id": "974134f177bcfceb",
+      "label": "Employer: properties",
+      "total_amount": 25.0,
+      "confidence": "high",
+      "first_seen": "2026-03-04",
+      "last_seen": "2026-03-04",
+      "notes": "1 evidence row for label 'Employer: properties'; donor Spamer, Joaquin M.; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $25.00 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $25.00 on 2026-03-04; employer='JAGUARUNDI PROPERTIES LLC'; matched keyword='properties'",
+          "contribution_id": "fec_contributions_raw.id=2440",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2026-03-04",
+          "rule": "employer_match: properties"
+        }
+      ]
+    },
+    {
+      "donor_id": "a7ea3a41e2ab720c",
+      "label": "Employer: real estate",
+      "total_amount": 5400.0,
+      "confidence": "high",
+      "first_seen": "2017-05-04",
+      "last_seen": "2017-05-04",
+      "notes": "2 evidence rows for label 'Employer: real estate'; donor Collins, James; HD-41 backing: Groves ($1,919.70); donor's combined real-estate-tagged $ = $332,000.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $2,700.00 on 2017-05-04; employer='TERRACOR REAL ESTATE SERVICES'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2970",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 2700.0,
+          "date": "2017-05-04",
+          "rule": "employer_match: real estate"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $2,700.00 on 2017-05-04; employer='TERRACOR REAL ESTATE SERVICES'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2971",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 2700.0,
+          "date": "2017-05-04",
+          "rule": "employer_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "067f3d96911a59d2",
+      "label": "Employer: real estate",
+      "total_amount": 50.0,
+      "confidence": "high",
+      "first_seen": "20251205",
+      "last_seen": "20251205",
+      "notes": "1 evidence row for label 'Employer: real estate'; donor Goodwin, Vikki; HD-41 backing: Salinas ($50.00); donor's combined real-estate-tagged $ = $100.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $50.00 to salinas on 20251205; employer='Real Estate'; matched keyword='real estate'",
+          "contribution_id": "contributions.contribution_info_id=148317421",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "20251205",
+          "rule": "employer_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "9b9068cd6360b0a5",
+      "label": "Employer: realtor",
+      "total_amount": 250.0,
+      "confidence": "high",
+      "first_seen": "2024-07-22",
+      "last_seen": "2024-07-22",
+      "notes": "1 evidence row for label 'Employer: realtor'; donor Rogers, Victoria; HD-41 backing: Holguin ($517.75); donor's combined real-estate-tagged $ = $4,053.75 across 3 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00859603",
+          "evidence_text": "FEC contribution: $250.00 on 2024-07-22; employer='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5569",
+          "committee_id": "C00859603",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2024-07-22",
+          "rule": "employer_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "050871382c52641b",
+      "label": "Employer: realtor",
+      "total_amount": 100.0,
+      "confidence": "high",
+      "first_seen": "20251201",
+      "last_seen": "20251201",
+      "notes": "1 evidence row for label 'Employer: realtor'; donor Clark, Cari; HD-41 backing: Salinas ($100.00); donor's combined real-estate-tagged $ = $100.00 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $100.00 to salinas on 20251201; employer='Realtors'; matched keyword='realtor'",
+          "contribution_id": "contributions.contribution_info_id=148317400",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "20251201",
+          "rule": "employer_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "9b9068cd6360b0a5",
+      "label": "Employer: realty",
+      "total_amount": 179.0,
+      "confidence": "high",
+      "first_seen": "2019-09-16",
+      "last_seen": "2024-04-15",
+      "notes": "4 evidence rows for label 'Employer: realty'; donor Rogers, Victoria; HD-41 backing: Holguin ($517.75); donor's combined real-estate-tagged $ = $4,053.75 across 3 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $25.00 on 2024-04-15; employer='CORPUS CHRISTI REALTY GROUP'; matched keyword='realty'",
+          "contribution_id": "fec_contributions_raw.id=5571",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2024-04-15",
+          "rule": "employer_match: realty"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; employer='CORPUS CHRISTI REALTY GROUP'; matched keyword='realty'",
+          "contribution_id": "fec_contributions_raw.id=5574",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "employer_match: realty"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $3.00 on 2019-09-16; employer='CORPUS CHRISTI REALTY GROUP'; matched keyword='realty'",
+          "contribution_id": "fec_contributions_raw.id=5583",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 3.0,
+          "date": "2019-09-16",
+          "rule": "employer_match: realty"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $1.00 on 2019-09-16; employer='CORPUS CHRISTI REALTY GROUP'; matched keyword='realty'",
+          "contribution_id": "fec_contributions_raw.id=5584",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1.0,
+          "date": "2019-09-16",
+          "rule": "employer_match: realty"
+        }
+      ]
+    },
+    {
+      "donor_id": "684af1ca070b23c8",
+      "label": "Occupation: appraiser",
+      "total_amount": 100.0,
+      "confidence": "high",
+      "first_seen": "20251024",
+      "last_seen": "20251024",
+      "notes": "1 evidence row for label 'Occupation: appraiser'; donor Longoria, Daniel; HD-41 backing: Haddad ($100.00); donor's combined real-estate-tagged $ = $200.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $100.00 to haddad on 20251024; occupation='appraiser'; matched keyword='appraiser'",
+          "contribution_id": "contributions.contribution_info_id=148142027",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "20251024",
+          "rule": "occupation_match: appraiser"
+        }
+      ]
+    },
+    {
+      "donor_id": "92a84af36442f53a",
+      "label": "Occupation: broker",
+      "total_amount": 18100.0,
+      "confidence": "medium",
+      "first_seen": "2007-09-30",
+      "last_seen": "2007-09-30",
+      "notes": "1 evidence row for label 'Occupation: broker'; donor Garza, Jose Rene; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $18,100.00 across 1 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00000935",
+          "evidence_text": "FEC contribution: $18,100.00 on 2007-09-30; occupation='BROKER'; matched keyword='broker'",
+          "contribution_id": "fec_contributions_raw.id=2824",
+          "committee_id": "C00000935",
+          "committee_name": null,
+          "amount": 18100.0,
+          "date": "2007-09-30",
+          "rule": "occupation_match: broker"
+        }
+      ]
+    },
+    {
+      "donor_id": "dbbc58922e941b61",
+      "label": "Occupation: developer",
+      "total_amount": 27550.0,
+      "confidence": "medium",
+      "first_seen": "2021-10-19",
+      "last_seen": "2026-03-13",
+      "notes": "8 evidence rows for label 'Occupation: developer'; donor Ruppert, Kyle; HD-41 backing: Haddad ($1,000.00); donor's combined real-estate-tagged $ = $50,900.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2026-03-13; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4135",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2026-03-13",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00901918",
+          "evidence_text": "FEC contribution: $1,500.00 on 2025-09-30; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4136",
+          "committee_id": "C00901918",
+          "committee_name": null,
+          "amount": 1500.0,
+          "date": "2025-09-30",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00901918",
+          "evidence_text": "FEC contribution: $5,000.00 on 2025-09-30; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4137",
+          "committee_id": "C00901918",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2025-09-30",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $5,800.00 on 2022-10-27; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4140",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 5800.0,
+          "date": "2022-10-27",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $2,900.00 on 2022-10-27; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4141",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 2900.0,
+          "date": "2022-10-27",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00787853",
+          "evidence_text": "FEC contribution: $2,100.00 on 2021-10-19; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4143",
+          "committee_id": "C00787853",
+          "committee_name": null,
+          "amount": 2100.0,
+          "date": "2021-10-19",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00787853",
+          "evidence_text": "FEC contribution: $5,000.00 on 2021-10-19; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4144",
+          "committee_id": "C00787853",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2021-10-19",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $5,000.00 on 2021-10-19; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=4145",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2021-10-19",
+          "rule": "occupation_match: developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "95a856746b8bd251",
+      "label": "Occupation: developer",
+      "total_amount": 6600.0,
+      "confidence": "medium",
+      "first_seen": "2004-10-26",
+      "last_seen": "2007-08-20",
+      "notes": "3 evidence rows for label 'Occupation: developer'; donor Phillips, Joseph; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $25,800.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00326066",
+          "evidence_text": "FEC contribution: $2,300.00 on 2007-08-20; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=2364",
+          "committee_id": "C00326066",
+          "committee_name": null,
+          "amount": 2300.0,
+          "date": "2007-08-20",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00326066",
+          "evidence_text": "FEC contribution: $2,300.00 on 2007-08-20; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=2365",
+          "committee_id": "C00326066",
+          "committee_name": null,
+          "amount": 2300.0,
+          "date": "2007-08-20",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00286500",
+          "evidence_text": "FEC contribution: $2,000.00 on 2004-10-26; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=2373",
+          "committee_id": "C00286500",
+          "committee_name": null,
+          "amount": 2000.0,
+          "date": "2004-10-26",
+          "rule": "occupation_match: developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "0be77b179d1d0e88",
+      "label": "Occupation: developer",
+      "total_amount": 5150.0,
+      "confidence": "medium",
+      "first_seen": "2018-10-27",
+      "last_seen": "2024-03-25",
+      "notes": "2 evidence rows for label 'Occupation: developer'; donor Fallek, Michael; HD-41 backing: Haddad ($1,000.00), Sanchez ($250.00); donor's combined real-estate-tagged $ = $5,150.00 across 1 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00831180",
+          "evidence_text": "FEC contribution: $5,000.00 on 2024-03-25; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=3845",
+          "committee_id": "C00831180",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2024-03-25",
+          "rule": "occupation_match: developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $150.00 on 2018-10-27; occupation='DEVELOPER'; matched keyword='developer'",
+          "contribution_id": "fec_contributions_raw.id=3847",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2018-10-27",
+          "rule": "occupation_match: developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "a7ea3a41e2ab720c",
+      "label": "Occupation: real estate",
+      "total_amount": 20100.0,
+      "confidence": "high",
+      "first_seen": "2019-03-22",
+      "last_seen": "2020-12-29",
+      "notes": "20 evidence rows for label 'Occupation: real estate'; donor Collins, James; HD-41 backing: Groves ($1,919.70); donor's combined real-estate-tagged $ = $332,000.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-29; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2927",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-29",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-22; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2929",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-22",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-15; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2931",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-15",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-08; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2933",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-08",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-12-01; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2935",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-12-01",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-24; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2937",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-24",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-17; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2939",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-17",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-10; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2941",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-10",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-11-03; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2943",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-11-03",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-10-27; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2945",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-10-27",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-10-22; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2947",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-10-22",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00458828",
+          "evidence_text": "FEC contribution: $500.00 on 2020-10-20; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2950",
+          "committee_id": "C00458828",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2020-10-20",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $1,000.00 on 2020-10-20; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2951",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2020-10-20",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $500.00 on 2020-10-20; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2952",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2020-10-20",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00694323",
+          "evidence_text": "FEC contribution: $500.00 on 2020-10-20; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2953",
+          "committee_id": "C00694323",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2020-10-20",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00143743",
+          "evidence_text": "FEC contribution: $3,000.00 on 2020-10-18; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2954",
+          "committee_id": "C00143743",
+          "committee_name": null,
+          "amount": 3000.0,
+          "date": "2020-10-18",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00697730",
+          "evidence_text": "FEC contribution: $3,000.00 on 2020-10-18; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2955",
+          "committee_id": "C00697730",
+          "committee_name": null,
+          "amount": 3000.0,
+          "date": "2020-10-18",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2019-03-31; occupation='REAL ESTATE DEVELOPER'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2963",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2019-03-31",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2019-03-31; occupation='REAL ESTATE DEVELOPER'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2964",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2019-03-31",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00460378",
+          "evidence_text": "FEC contribution: $400.00 on 2019-03-22; occupation='REAL ESTATE DEVELOPER'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2965",
+          "committee_id": "C00460378",
+          "committee_name": null,
+          "amount": 400.0,
+          "date": "2019-03-22",
+          "rule": "occupation_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "95a856746b8bd251",
+      "label": "Occupation: real estate",
+      "total_amount": 18200.0,
+      "confidence": "high",
+      "first_seen": "2011-11-30",
+      "last_seen": "2022-04-12",
+      "notes": "6 evidence rows for label 'Occupation: real estate'; donor Phillips, Joseph; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $25,800.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00811901",
+          "evidence_text": "FEC contribution: $2,900.00 on 2022-04-12; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2353",
+          "committee_id": "C00811901",
+          "committee_name": null,
+          "amount": 2900.0,
+          "date": "2022-04-12",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00703975",
+          "evidence_text": "FEC contribution: $2,800.00 on 2020-07-11; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2356",
+          "committee_id": "C00703975",
+          "committee_name": null,
+          "amount": 2800.0,
+          "date": "2020-07-11",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00499350",
+          "evidence_text": "FEC contribution: $2,500.00 on 2012-09-27; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2357",
+          "committee_id": "C00499350",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2012-09-27",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00499350",
+          "evidence_text": "FEC contribution: $2,500.00 on 2012-09-27; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2358",
+          "committee_id": "C00499350",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2012-09-27",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00499350",
+          "evidence_text": "FEC contribution: $2,500.00 on 2012-01-28; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2359",
+          "committee_id": "C00499350",
+          "committee_name": null,
+          "amount": 2500.0,
+          "date": "2012-01-28",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00499350",
+          "evidence_text": "FEC contribution: $5,000.00 on 2011-11-30; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2360",
+          "committee_id": "C00499350",
+          "committee_name": null,
+          "amount": 5000.0,
+          "date": "2011-11-30",
+          "rule": "occupation_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "c1aeda8e7d301936",
+      "label": "Occupation: real estate",
+      "total_amount": 2000.0,
+      "confidence": "high",
+      "first_seen": "2024-08-09",
+      "last_seen": "2024-08-09",
+      "notes": "2 evidence rows for label 'Occupation: real estate'; donor Galvan, Daniel; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $2,909.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00592659",
+          "evidence_text": "FEC contribution: $1,000.00 on 2024-08-09; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2393",
+          "committee_id": "C00592659",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2024-08-09",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $1,000.00 on 2024-08-09; occupation='REAL ESTATE'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=2394",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1000.0,
+          "date": "2024-08-09",
+          "rule": "occupation_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "33147a07f717e25b",
+      "label": "Occupation: real estate",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": "2016-01-19",
+      "last_seen": "2016-01-19",
+      "notes": "1 evidence row for label 'Occupation: real estate'; donor Wadhwani, Sunil B.; HD-41 backing: Haddad ($1,000.00); donor's combined real-estate-tagged $ = $500.00 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00600866",
+          "evidence_text": "FEC contribution: $500.00 on 2016-01-19; occupation='REAL ESTATE INVESTOR'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=4910",
+          "committee_id": "C00600866",
+          "committee_name": null,
+          "amount": 500.0,
+          "date": "2016-01-19",
+          "rule": "occupation_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "9b9068cd6360b0a5",
+      "label": "Occupation: real estate",
+      "total_amount": 175.0,
+      "confidence": "high",
+      "first_seen": "2024-03-17",
+      "last_seen": "2024-04-15",
+      "notes": "2 evidence rows for label 'Occupation: real estate'; donor Rogers, Victoria; HD-41 backing: Holguin ($517.75); donor's combined real-estate-tagged $ = $4,053.75 across 3 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $25.00 on 2024-04-15; occupation='REAL ESTATE AGENT'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=5571",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2024-04-15",
+          "rule": "occupation_match: real estate"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; occupation='REAL ESTATE AGENT'; matched keyword='real estate'",
+          "contribution_id": "fec_contributions_raw.id=5574",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "occupation_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "067f3d96911a59d2",
+      "label": "Occupation: real estate",
+      "total_amount": 50.0,
+      "confidence": "high",
+      "first_seen": "20251205",
+      "last_seen": "20251205",
+      "notes": "1 evidence row for label 'Occupation: real estate'; donor Goodwin, Vikki; HD-41 backing: Salinas ($50.00); donor's combined real-estate-tagged $ = $100.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $50.00 to salinas on 20251205; occupation='Self: Goodwin & Goodwin Real Estate'; matched keyword='real estate'",
+          "contribution_id": "contributions.contribution_info_id=148317421",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "20251205",
+          "rule": "occupation_match: real estate"
+        }
+      ]
+    },
+    {
+      "donor_id": "9b9068cd6360b0a5",
+      "label": "Occupation: real estate agent",
+      "total_amount": 175.0,
+      "confidence": "high",
+      "first_seen": "2024-03-17",
+      "last_seen": "2024-04-15",
+      "notes": "2 evidence rows for label 'Occupation: real estate agent'; donor Rogers, Victoria; HD-41 backing: Holguin ($517.75); donor's combined real-estate-tagged $ = $4,053.75 across 3 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $25.00 on 2024-04-15; occupation='REAL ESTATE AGENT'; matched keyword='real estate agent'",
+          "contribution_id": "fec_contributions_raw.id=5571",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2024-04-15",
+          "rule": "occupation_match: real estate agent"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; occupation='REAL ESTATE AGENT'; matched keyword='real estate agent'",
+          "contribution_id": "fec_contributions_raw.id=5574",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "occupation_match: real estate agent"
+        }
+      ]
+    },
+    {
+      "donor_id": "a7ea3a41e2ab720c",
+      "label": "Occupation: real estate developer",
+      "total_amount": 600.0,
+      "confidence": "high",
+      "first_seen": "2019-03-22",
+      "last_seen": "2019-03-31",
+      "notes": "3 evidence rows for label 'Occupation: real estate developer'; donor Collins, James; HD-41 backing: Groves ($1,919.70); donor's combined real-estate-tagged $ = $332,000.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2019-03-31; occupation='REAL ESTATE DEVELOPER'; matched keyword='real estate developer'",
+          "contribution_id": "fec_contributions_raw.id=2963",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2019-03-31",
+          "rule": "occupation_match: real estate developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00369033",
+          "evidence_text": "FEC contribution: $100.00 on 2019-03-31; occupation='REAL ESTATE DEVELOPER'; matched keyword='real estate developer'",
+          "contribution_id": "fec_contributions_raw.id=2964",
+          "committee_id": "C00369033",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2019-03-31",
+          "rule": "occupation_match: real estate developer"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00460378",
+          "evidence_text": "FEC contribution: $400.00 on 2019-03-22; occupation='REAL ESTATE DEVELOPER'; matched keyword='real estate developer'",
+          "contribution_id": "fec_contributions_raw.id=2965",
+          "committee_id": "C00460378",
+          "committee_name": null,
+          "amount": 400.0,
+          "date": "2019-03-22",
+          "rule": "occupation_match: real estate developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "9b9068cd6360b0a5",
+      "label": "Occupation: realtor",
+      "total_amount": 2719.75,
+      "confidence": "high",
+      "first_seen": "2017-04-10",
+      "last_seen": "20251022",
+      "notes": "21 evidence rows for label 'Occupation: realtor'; donor Rogers, Victoria; HD-41 backing: Holguin ($517.75); donor's combined real-estate-tagged $ = $4,053.75 across 3 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $517.75 to holguin on 20251022; occupation='Realtor'; matched keyword='realtor'",
+          "contribution_id": "contributions.contribution_info_id=148139457",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 517.75,
+          "date": "20251022",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00910190",
+          "evidence_text": "FEC contribution: $250.00 on 2025-10-29; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5561",
+          "committee_id": "C00910190",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2025-10-29",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2025-10-22; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5562",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2025-10-22",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00859603",
+          "evidence_text": "FEC contribution: $250.00 on 2025-09-30; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5563",
+          "committee_id": "C00859603",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2025-09-30",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2025-09-30; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5564",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2025-09-30",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2025-06-16; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5567",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2025-06-16",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00859603",
+          "evidence_text": "FEC contribution: $250.00 on 2025-06-16; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5568",
+          "committee_id": "C00859603",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2025-06-16",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $250.00 on 2024-07-22; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5570",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2024-07-22",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00099267",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5572",
+          "committee_id": "C00099267",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $150.00 on 2024-03-17; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5573",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2024-03-17",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $25.00 on 2022-10-15; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5575",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2022-10-15",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $5.00 on 2020-10-24; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5576",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2020-10-24",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $5.00 on 2020-10-17; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5577",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2020-10-17",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $50.00 on 2020-10-17; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5578",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2020-10-17",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $50.00 on 2020-05-20; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5579",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2020-05-20",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $5.00 on 2020-05-20; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5580",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2020-05-20",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $1.00 on 2020-02-25; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5581",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1.0,
+          "date": "2020-02-25",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $2.00 on 2020-02-25; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5582",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 2.0,
+          "date": "2020-02-25",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $3.00 on 2019-09-16; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5583",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 3.0,
+          "date": "2019-09-16",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $1.00 on 2019-09-16; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5584",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1.0,
+          "date": "2019-09-16",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $5.00 on 2017-04-10; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5588",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2017-04-10",
+          "rule": "occupation_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "5f9f9504d7551f26",
+      "label": "Occupation: realtor",
+      "total_amount": 1500.0,
+      "confidence": "high",
+      "first_seen": "2025-10-17",
+      "last_seen": "2025-10-17",
+      "notes": "1 evidence row for label 'Occupation: realtor'; donor Villarreal, Rigoberto; HD-41 backing: Haddad ($1,000.00); donor's combined real-estate-tagged $ = $1,500.00 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00279851",
+          "evidence_text": "FEC contribution: $1,500.00 on 2025-10-17; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=5009",
+          "committee_id": "C00279851",
+          "committee_name": null,
+          "amount": 1500.0,
+          "date": "2025-10-17",
+          "rule": "occupation_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "c1aeda8e7d301936",
+      "label": "Occupation: realtor",
+      "total_amount": 294.0,
+      "confidence": "high",
+      "first_seen": "2020-12-10",
+      "last_seen": "2020-12-10",
+      "notes": "1 evidence row for label 'Occupation: realtor'; donor Galvan, Daniel; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $2,909.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00363986",
+          "evidence_text": "FEC contribution: $294.00 on 2020-12-10; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=2401",
+          "committee_id": "C00363986",
+          "committee_name": null,
+          "amount": 294.0,
+          "date": "2020-12-10",
+          "rule": "occupation_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "bd3d5e9b4bfeb9d0",
+      "label": "Occupation: realtor",
+      "total_amount": 200.0,
+      "confidence": "high",
+      "first_seen": "20251204",
+      "last_seen": "20251204",
+      "notes": "1 evidence row for label 'Occupation: realtor'; donor Vaughn, John; HD-41 backing: Holguin ($200.00); donor's combined real-estate-tagged $ = $200.00 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $200.00 to holguin on 20251204; occupation='Realtor'; matched keyword='realtor'",
+          "contribution_id": "contributions.contribution_info_id=148139532",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 200.0,
+          "date": "20251204",
+          "rule": "occupation_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "12cba187c958f6db",
+      "label": "Occupation: realtor",
+      "total_amount": 77.88,
+      "confidence": "high",
+      "first_seen": "20260102",
+      "last_seen": "20260102",
+      "notes": "1 evidence row for label 'Occupation: realtor'; donor Klein, Scott; HD-41 backing: Holguin ($77.88); donor's combined real-estate-tagged $ = $77.88 across 1 source type(s)",
+      "sensitive": false,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": null,
+          "evidence_text": "TEC contribution: $77.88 to holguin on 20260102; occupation='Realtor'; matched keyword='realtor'",
+          "contribution_id": "contributions.contribution_info_id=148762749",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 77.88,
+          "date": "20260102",
+          "rule": "occupation_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "c1aeda8e7d301936",
+      "label": "Texas Association of Realtors PAC (TREPAC/FedPAC)",
+      "total_amount": 615.0,
+      "confidence": "high",
+      "first_seen": "2020-12-10",
+      "last_seen": "2025-12-31",
+      "notes": "4 evidence rows for label 'Texas Association of Realtors PAC (TREPAC/FedPAC)'; donor Galvan, Daniel; HD-41 backing: Haddad ($2,500.00); donor's combined real-estate-tagged $ = $2,909.00 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00363986",
+          "evidence_text": "Contributed $10.50 to TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC on 2025-12-31 (FEC sub_id 4022320261311198267)",
+          "contribution_id": "fec_contributions_raw.id=2389",
+          "committee_id": "C00363986",
+          "committee_name": "TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC",
+          "amount": 10.5,
+          "date": "2025-12-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00363986",
+          "evidence_text": "Contributed $10.50 to TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC on 2025-10-20 (FEC sub_id 4022320261311198266)",
+          "contribution_id": "fec_contributions_raw.id=2390",
+          "committee_id": "C00363986",
+          "committee_name": "TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC",
+          "amount": 10.5,
+          "date": "2025-10-20",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00363986",
+          "evidence_text": "Contributed $300.00 to TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC on 2025-06-24 (FEC sub_id 4073120251212836394)",
+          "contribution_id": "fec_contributions_raw.id=2392",
+          "committee_id": "C00363986",
+          "committee_name": "TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC",
+          "amount": 300.0,
+          "date": "2025-06-24",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00363986",
+          "evidence_text": "Contributed $294.00 to TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC on 2020-12-10 (FEC sub_id 4013020212139126364)",
+          "contribution_id": "fec_contributions_raw.id=2401",
+          "committee_id": "C00363986",
+          "committee_name": "TEXAS ASSOCIATION OF REALTORS FEDERAL POLITICAL ACTION COMMITTEE-FEDPAC",
+          "amount": 294.0,
+          "date": "2020-12-10",
+          "rule": "fec_committee_name_match"
+        }
+      ]
+    }
+  ]
+}

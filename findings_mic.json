@@ -1,0 +1,42 @@
+{
+  "category": "mic",
+  "rules": [
+    {
+      "name": "fec_committee_name_match",
+      "description": "Donor gave to an FEC committee whose name matches a defense contractor (high confidence)"
+    },
+    {
+      "name": "employer_match",
+      "description": "Donor's reported employer (TEC or FEC) contains a defense contractor name (high confidence)"
+    },
+    {
+      "name": "occupation_match",
+      "description": "Donor's reported occupation matches a defense industry role (medium confidence)"
+    }
+  ],
+  "findings": [
+    {
+      "donor_id": "b3b2d15b7661d251",
+      "label": "Boeing",
+      "total_amount": 10.0,
+      "confidence": "high",
+      "first_seen": "2020-01-13",
+      "last_seen": "2020-01-13",
+      "notes": "1 MIC evidence row (Boeing); donor Smith, Haley; HD-41 backing: Salinas ($1,515.00) [REVIEW: Dem candidate + MIC ties]",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "SMITH, HALEY listed employer 'BOEING' on FEC contribution of $10.00 on 2020-01-13 (sub_id 4032420201713017567)",
+          "contribution_id": "fec_contributions_raw.id=3022",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2020-01-13",
+          "rule": "employer_match: boeing"
+        }
+      ]
+    }
+  ]
+}

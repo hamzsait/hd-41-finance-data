@@ -1,0 +1,10 @@
+{
+  "category": "zionist_general",
+  "rules": [
+    {
+      "name": "fec_committee_name_match",
+      "description": "Donor gave to an FEC committee whose name matches a known Israel-aligned PAC pattern (NORPAC, JACPAC, Pro-Israel America, Democratic Majority for Israel / DMFI, Republican Jewish Coalition / RJC, Jewish Coalition, American Israel..., Christians United for Israel / CUFI, J Street, If Not Now), or contains both 'Israel' and ('PAC'|'Committee'|'Action Fund'). AIPAC (incl. United Democracy Project) and ADL Action are excluded."
+    }
+  ],
+  "findings": []
+}

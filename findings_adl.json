@@ -1,0 +1,18 @@
+{
+  "category": "adl",
+  "rules": [
+    {
+      "name": "fec_committee_id_match",
+      "description": "Donor contributed to a FEC committee whose name matches \\bAnti.?Defamation League\\b, \\bADL Action\\b, or \\bADL\\b (word-boundaried). Confidence: high."
+    },
+    {
+      "name": "fec_employer_match",
+      "description": "Donor's FEC employer field matches \\bANTI.?DEFAMATION LEAGUE\\b or \\bADL\\b. Confidence: medium. Sensitive: true (employed by ADL)."
+    },
+    {
+      "name": "local_employer_match",
+      "description": "Donor's HD-41 contribution employer field matches ADL patterns. Confidence: medium. Sensitive: true."
+    }
+  ],
+  "findings": []
+}

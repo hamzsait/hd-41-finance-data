@@ -1,0 +1,14 @@
+{
+  "category": "aipac",
+  "rules": [
+    {
+      "name": "fec_committee_id_match",
+      "description": "Donor gave to a known AIPAC-affiliated FEC committee"
+    },
+    {
+      "name": "fec_committee_name_match",
+      "description": "Donor gave to an FEC committee whose name matches AIPAC patterns"
+    }
+  ],
+  "findings": []
+}
