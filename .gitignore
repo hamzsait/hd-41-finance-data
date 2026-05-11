@@ -1,0 +1,28 @@
+# secrets — never commit
+.env
+.env.local
+
+# bulk source data — too large; reproducible from TEC URL
+tec_data/
+*.zip
+
+# generated DB
+hd41_finance.db
+hd41_finance.db-journal
+hd41_finance.db-wal
+hd41_finance.db-shm
+
+# Python bytecode + caches
+__pycache__/
+*.pyc
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# debug / log artifacts — reproducible
+sanity_check_output.txt
+*.log
+*.tmp

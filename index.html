@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HD-41 Campaign Finance — Texas House District 41</title>
+  <style>
+    :root {
+      --bg: #0f1117; --surface: #1a1d27; --surface2: #22263a;
+      --border: #2d3148; --text: #e2e8f0; --muted: #94a3b8;
+      --accent: #4f8ef7;
+      --dem:    #4f8ef7;
+      --rep:    #ef4444;
+      --gone:   #64748b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; min-height: 100vh; }
+
+    header {
+      padding: 48px 24px 32px;
+      max-width: 900px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+    header h1 span { color: var(--accent); }
+    header p { margin-top: 10px; color: var(--muted); font-size: 15px; max-width: 620px; line-height: 1.6; }
+    header .meta { margin-top: 12px; color: var(--muted); font-size: 13px; }
+    header .meta strong { color: var(--text); }
+
+    main { max-width: 900px; margin: 0 auto; padding: 40px 24px 80px; }
+
+    h2 { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+         color: var(--muted); margin-bottom: 16px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-bottom: 48px; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, background 0.15s;
+      display: block;
+    }
+    .card:hover { border-color: var(--accent); background: var(--surface2); }
+
+    .card-name { font-size: 16px; font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .card-meta { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+    .card-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+    .stat-val { font-size: 18px; font-weight: 700; color: var(--accent); }
+    .stat-lbl { font-size: 11px; color: var(--muted); margin-top: 1px; }
+
+    .badge {
+      display: inline-block; font-size: 10px; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 2px 7px; border-radius: 4px;
+      vertical-align: middle;
+    }
+    .badge-runoff-d  { background: rgba(79,142,247,0.18);  color: var(--dem); }
+    .badge-runoff-r  { background: rgba(239,68,68,0.18);   color: var(--rep); }
+    .badge-eliminated { background: rgba(100,116,139,0.18); color: var(--gone); }
+
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 24px;
+             border-top: 1px solid var(--border); }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HD-41 <span>Campaign Finance</span></h1>
+  <p>Who funds the 2026 race for Texas House District 41 (Hidalgo County)? Donation histories from Texas Ethics Commission filings, cross-referenced with FEC federal-donation data for partisan lean.</p>
+  <div class="meta">
+    Open seat &middot; Bobby Guerra (D) retiring &middot; Primary Mar 3 (Trump-won district +1.6 in 2024) &middot; <strong>Runoff May 26</strong> &middot; General Nov 3
+  </div>
+</header>
+
+<main>
+  <h2>Candidates</h2>
+  <div class="grid" id="cardGrid">
+    <!-- cards injected by JS -->
+  </div>
+
+  <h2>About This Project</h2>
+  <p style="color:var(--muted);font-size:14px;line-height:1.7;max-width:620px">
+    Schedule A contributions sourced from the Texas Ethics Commission bulk dump
+    (<a href="https://www.ethics.state.tx.us/" target="_blank" style="color:var(--accent);text-decoration:none">ethics.state.tx.us</a>),
+    cross-referenced with FEC federal filings via the Open FEC API. All five
+    candidates' totals reconcile to TEC's declared cover-sheet totals to the
+    penny. Holguín's 2020 HD-32 cycle data is excluded by district filter.
+    All source data is public record.
+  </p>
+</main>
+
+<footer>
+  Data &middot;
+  <a href="https://www.ethics.state.tx.us/" target="_blank">Texas Ethics Commission</a> &amp;
+  <a href="https://www.fec.gov" target="_blank">FEC</a> &middot;
+  TEC bulk dump 2026-05-09 &middot; HD-41 Race Brief
+</footer>
+
+<script>
+const fmt = n => n >= 1000 ? '$' + Math.round(n / 1000) + 'K' : '$' + Math.round(n).toLocaleString();
+
+// Candidate manifest. Status drives the badge label + class.
+const CANDIDATES = [
+  { slug: 'haddad',  name: "Victor 'Seby' Haddad",  meta: 'Democrat &middot; McAllen City Commissioner',           status: 'runoff_d',           badgeLabel: 'Runoff (D)' },
+  { slug: 'salinas', name: 'Julio Salinas',         meta: 'Democrat &middot; Legislative staffer',                  status: 'runoff_d',           badgeLabel: 'Runoff (D)' },
+  { slug: 'sanchez', name: 'Sergio Sanchez',        meta: 'Republican &middot; Former felony prosecutor',           status: 'runoff_r',           badgeLabel: 'Runoff (R)' },
+  { slug: 'groves',  name: 'Gary Groves',           meta: 'Republican &middot; GOP precinct chair',                 status: 'runoff_r',           badgeLabel: 'Runoff (R)' },
+  { slug: 'holguin', name: 'Eric Holguín',          meta: 'Democrat &middot; UnidosUS Texas policy director',       status: 'primary_eliminated', badgeLabel: 'Primary eliminated' },
+];
+
+const BADGE_CLASS = {
+  runoff_d:           'badge-runoff-d',
+  runoff_r:           'badge-runoff-r',
+  primary_eliminated: 'badge-eliminated',
+};
+
+const grid = document.getElementById('cardGrid');
+CANDIDATES.forEach(c => {
+  const card = document.createElement('a');
+  card.className = 'card';
+  card.href = `profile_${c.slug}.html`;
+  card.innerHTML = `
+    <div class="card-name">
+      ${c.name}
+      <span class="badge ${BADGE_CLASS[c.status]}">${c.badgeLabel}</span>
+    </div>
+    <div class="card-meta">${c.meta}</div>
+    <div class="card-stats" id="${c.slug}-stats">
+      <div><div class="stat-val">—</div><div class="stat-lbl">Loading</div></div>
+    </div>
+  `;
+  grid.appendChild(card);
+
+  fetch(`${c.slug}_data.json`)
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (!data) return;
+      const stats = document.getElementById(`${c.slug}-stats`);
+      if (!stats) return;
+      const lean = data.partisan_lean && data.partisan_lean.weighted_lean_signed;
+      const leanCell = lean !== null && lean !== undefined
+        ? `<div><div class="stat-val" style="color:${lean > 0 ? 'var(--dem)' : lean < 0 ? 'var(--rep)' : 'var(--muted)'}">${(lean > 0 ? '+' : '') + lean.toFixed(2)}</div><div class="stat-lbl">FEC Lean</div></div>`
+        : `<div><div class="stat-val" style="color:var(--muted)">—</div><div class="stat-lbl">FEC Lean</div></div>`;
+      stats.innerHTML = `
+        <div><div class="stat-val">${fmt(data.hero.total_raised)}</div><div class="stat-lbl">Raised</div></div>
+        <div><div class="stat-val">${data.hero.unique_donors.toLocaleString()}</div><div class="stat-lbl">Donors</div></div>
+        ${leanCell}
+      `;
+    })
+    .catch(() => {});
+});
+</script>
+
+</body>
+</html>
