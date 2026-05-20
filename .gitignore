@@ -16,9 +16,10 @@ hd41_finance.db-shm
 __pycache__/
 *.pyc
 
-# editor / OS
+# editor / OS / harness state
 .vscode/
 .idea/
+.claude/
 .DS_Store
 Thumbs.db
 

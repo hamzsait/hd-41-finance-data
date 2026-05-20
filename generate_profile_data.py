@@ -217,6 +217,10 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
         # each donor's (D+R) FEC money goes into exactly one pot based on
         # the donor's own lean. Disjoint, sum to (sum_D + sum_R).
         d_pot = r_pot = m_pot = 0.0
+        # $-weighted average lean of just the Mixed donors — drives the
+        # mixed-segment hue between red-purple (0.4) and blue-purple (0.6).
+        mixed_lean_num = 0.0     # sum(lean * (dem+rep)) over mixed donors
+        mixed_lean_den = 0.0     # sum(dem+rep) over mixed donors
 
         for d in matched:
             dem = float(d["fec_total_dem"]   or 0)
@@ -243,6 +247,8 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
             else:
                 mixed_donors += 1
                 m_pot     += dem + rep
+                mixed_lean_num += lean * (dem + rep)
+                mixed_lean_den +=        (dem + rep)
 
             sum_D += dem
             sum_R += rep
@@ -267,6 +273,62 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
             })
 
         donors_list.sort(key=lambda x: -(x["dem"] + x["rep"]))
+
+        # ── Per-donor FEC history (for the expandable Republican-aligned
+        #    donor list below the bar). One query for all matched donors;
+        #    group in Python; keep newest 25 per donor.
+        from collections import defaultdict as _dd_aff
+        fec_history_by_donor: dict[str, list] = _dd_aff(list)
+        matched_ids = [d["donor_id"] for d in matched]
+        if matched_ids:
+            ph = ",".join("?" * len(matched_ids))
+            for hrow in cur.execute(
+                f"""
+                SELECT cr.donor_id, cr.committee_id, cr.contribution_amount,
+                       cr.contribution_date,
+                       cc.committee_name, cc.classification
+                FROM fec_contributions_raw cr
+                LEFT JOIN fec_committee_cache cc ON cc.committee_id = cr.committee_id
+                WHERE cr.donor_id IN ({ph})
+                ORDER BY cr.contribution_date DESC
+                """,
+                matched_ids,
+            ).fetchall():
+                fec_history_by_donor[hrow["donor_id"]].append({
+                    "committee_id":   hrow["committee_id"],
+                    "committee_name": hrow["committee_name"] or hrow["committee_id"],
+                    "classification": hrow["classification"] or "Other",
+                    "amount":         float(hrow["contribution_amount"] or 0),
+                    "date":           hrow["contribution_date"],
+                    "source_url":     (
+                        f"https://www.fec.gov/data/committee/{hrow['committee_id']}/"
+                        if hrow["committee_id"] else None
+                    ),
+                })
+        # Cap at 25 per donor (newest first; rows arrived sorted DESC already)
+        for did in list(fec_history_by_donor.keys()):
+            fec_history_by_donor[did] = fec_history_by_donor[did][:25]
+
+        # ── Bucket matched donors by their own lean into R / M / D.
+        #    The user wants a Republican-aligned donor list rendered below
+        #    the bar; we also emit M and D buckets so a follow-up can render
+        #    them without another generator change.
+        partisan_donors: dict[str, list] = {"R": [], "M": [], "D": []}
+        for dd in donors_list:
+            lean = dd["lean"]
+            bucket = "D" if lean >= 0.6 else ("R" if lean <= 0.4 else "M")
+            partisan_donors[bucket].append({
+                "donor_id":    dd["id"],
+                "name":        dd["name"],
+                "local_total": dd["local"],
+                "fec_lean":    lean,
+                "fec_dem":     dd["dem"],
+                "fec_rep":     dd["rep"],
+                "fec_history": fec_history_by_donor.get(dd["id"], []),
+            })
+        # Each bucket sorted by local contribution to THIS candidate, DESC
+        for k in partisan_donors:
+            partisan_donors[k].sort(key=lambda x: -(x["local_total"] or 0))
 
         # Two flavors of weighted lean:
         # * weighted_lean         — [0, 1], dem-share, weighted by LOCAL gift size.
@@ -295,8 +357,19 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
             "fec_d_pot":            round(d_pot, 2),
             "fec_r_pot":            round(r_pot, 2),
             "fec_mixed_pot":        round(m_pot, 2),
+            # $-weighted mean lean of just the Mixed donors (in 0.4..0.6).
+            # Null when no mixed donors. Drives the purple hue of the
+            # mixed bar segment (more red at 0.4, more blue at 0.6).
+            "weighted_mixed_lean":  (
+                round(mixed_lean_num / mixed_lean_den, 4)
+                if mixed_lean_den > 0 else None
+            ),
             "buckets":              buckets,
             "donors":               donors_list,
+            # R / M / D donor buckets with per-donor FEC history attached.
+            # Bar shows aggregate; this lets the template render an
+            # expandable per-donor list below the bar.
+            "partisan_donors":      partisan_donors,
             "donor_committees":     {},
         }
         print(f"[generate]   matched={len(donors_list)}  D={dem_donors}  R={rep_donors}  "
