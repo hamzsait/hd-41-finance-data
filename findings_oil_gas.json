@@ -39,6 +39,174 @@
       ]
     },
     {
+      "donor_id": "a2805ba2478c9527",
+      "label": "employer: oil & gas",
+      "total_amount": 500.0,
+      "confidence": "medium",
+      "first_seen": "2021-09-22",
+      "last_seen": "2025-10-06",
+      "notes": "Donor's employer 'SANCHEZ OIL & GAS CORPORATION' matches keyword 'oil & gas'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL & GAS CORPORATION' matches oil & gas keyword 'oil & gas' ($150.00 on 2025-10-06)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4022620261359271361",
+          "committee_id": "C00484642",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2025-10-06",
+          "rule": "employer_match: oil & gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL & GAS' matches oil & gas keyword 'oil & gas' ($100.00 on 2022-11-07)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4011320231697754941",
+          "committee_id": "C00418897",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2022-11-07",
+          "rule": "employer_match: oil & gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL & GAS' matches oil & gas keyword 'oil & gas' ($100.00 on 2021-12-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4031120221460595448",
+          "committee_id": "C00418897",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2021-12-30",
+          "rule": "employer_match: oil & gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL & GAS CORPORATION' matches oil & gas keyword 'oil & gas' ($150.00 on 2021-09-22)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4021520221407790534",
+          "committee_id": "C00484642",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2021-09-22",
+          "rule": "employer_match: oil & gas"
+        }
+      ]
+    },
+    {
+      "donor_id": "a2805ba2478c9527",
+      "label": "employer: oil and gas",
+      "total_amount": 1350.0,
+      "confidence": "medium",
+      "first_seen": "2016-07-19",
+      "last_seen": "2020-10-01",
+      "notes": "Donor's employer 'SANCHEZ OIL AND GAS CORPORATION' matches keyword 'oil and gas'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORPORATION' matches oil & gas keyword 'oil and gas' ($150.00 on 2020-10-01)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4010620212062006876",
+          "committee_id": "C00484642",
+          "committee_name": null,
+          "amount": 150.0,
+          "date": "2020-10-01",
+          "rule": "employer_match: oil and gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORPORATION' matches oil & gas keyword 'oil and gas' ($100.00 on 2020-09-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4120520201965508442",
+          "committee_id": "C00696153",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2020-09-30",
+          "rule": "employer_match: oil and gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORPORATION' matches oil & gas keyword 'oil and gas' ($100.00 on 2020-08-07)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4120520201965508441",
+          "committee_id": "C00696153",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2020-08-07",
+          "rule": "employer_match: oil and gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORP' matches oil & gas keyword 'oil and gas' ($250.00 on 2016-10-18)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4083120171448169049",
+          "committee_id": "C00586537",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2016-10-18",
+          "rule": "employer_match: oil and gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORP' matches oil & gas keyword 'oil and gas' ($250.00 on 2016-10-18)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4011120171366701430",
+          "committee_id": "C00575795",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2016-10-18",
+          "rule": "employer_match: oil and gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORP' matches oil & gas keyword 'oil and gas' ($250.00 on 2016-07-19)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4113020161355258760",
+          "committee_id": "C00575795",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2016-07-19",
+          "rule": "employer_match: oil and gas"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SANCHEZ OIL AND GAS CORP' matches oil & gas keyword 'oil and gas' ($250.00 on 2016-07-19)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4090120171448292530",
+          "committee_id": "C00586537",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2016-07-19",
+          "rule": "employer_match: oil and gas"
+        }
+      ]
+    },
+    {
+      "donor_id": "dd879bf0c70fb595",
+      "label": "employer: exxon",
+      "total_amount": 10.0,
+      "confidence": "high",
+      "first_seen": "2018-06-20",
+      "last_seen": "2018-06-20",
+      "notes": "Donor's employer 'EXXONMOBIL' matches keyword 'exxon'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'EXXONMOBIL' matches oil & gas keyword 'exxon' ($10.00 on 2018-06-20)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4073120181579955523",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2018-06-20",
+          "rule": "employer_match: exxon"
+        }
+      ]
+    },
+    {
       "donor_id": "0f897e319478b665",
       "label": "occupation: oil & gas",
       "total_amount": 5000.0,

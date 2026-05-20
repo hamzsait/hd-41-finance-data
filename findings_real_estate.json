@@ -1601,6 +1601,40 @@
       ]
     },
     {
+      "donor_id": "b5050751848a9f2e",
+      "label": "Employer: realty",
+      "total_amount": 114.82,
+      "confidence": "high",
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-01-26",
+      "notes": "2 evidence rows for label 'Employer: realty'; donor Kalifa, Amira; HD-41 backing: Haddad ($100.00); donor's combined real-estate-tagged $ = $229.64 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $14.82 on 2026-01-26; employer='956 REALTY/SELF EMPLOYED'; matched keyword='realty'",
+          "contribution_id": "fec_contributions_raw.id=7080",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 14.82,
+          "date": "2026-01-26",
+          "rule": "employer_match: realty"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $100.00 on 2026-01-14; employer='956 REALTY/SELF EMPLOYED'; matched keyword='realty'",
+          "contribution_id": "fec_contributions_raw.id=7081",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2026-01-14",
+          "rule": "employer_match: realty"
+        }
+      ]
+    },
+    {
       "donor_id": "684af1ca070b23c8",
       "label": "Occupation: appraiser",
       "total_amount": 100.0,
@@ -2636,6 +2670,40 @@
           "committee_name": null,
           "amount": 200.0,
           "date": "20251204",
+          "rule": "occupation_match: realtor"
+        }
+      ]
+    },
+    {
+      "donor_id": "b5050751848a9f2e",
+      "label": "Occupation: realtor",
+      "total_amount": 114.82,
+      "confidence": "high",
+      "first_seen": "2026-01-14",
+      "last_seen": "2026-01-26",
+      "notes": "2 evidence rows for label 'Occupation: realtor'; donor Kalifa, Amira; HD-41 backing: Haddad ($100.00); donor's combined real-estate-tagged $ = $229.64 across 2 source type(s)",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $14.82 on 2026-01-26; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=7080",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 14.82,
+          "date": "2026-01-26",
+          "rule": "occupation_match: realtor"
+        },
+        {
+          "source": "occupation_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "FEC contribution: $100.00 on 2026-01-14; occupation='REALTOR'; matched keyword='realtor'",
+          "contribution_id": "fec_contributions_raw.id=7081",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2026-01-14",
           "rule": "occupation_match: realtor"
         }
       ]

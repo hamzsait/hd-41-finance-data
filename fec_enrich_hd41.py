@@ -379,9 +379,14 @@ class CommitteeCache:
 # ── Main pipeline ──────────────────────────────────────────────────────────
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--limit",   type=int, default=TOP_N)
-    ap.add_argument("--reset",   action="store_true", help="re-process already-matched donors")
+    ap.add_argument("--dry-run",   action="store_true")
+    ap.add_argument("--limit",     type=int, default=TOP_N)
+    ap.add_argument("--reset",     action="store_true", help="re-process already-matched donors")
+    ap.add_argument("--candidate", help=(
+        "restrict to donor_ids that gave to this candidate_slug "
+        "(active rows only). Useful for finishing one candidate's coverage "
+        "without re-processing the whole donor pool."
+    ))
     args = ap.parse_args()
 
     conn = sqlite3.connect(DB, timeout=120)
@@ -395,18 +400,40 @@ def main() -> int:
         print("Reset all fec_matched flags.")
 
     cur = conn.cursor()
-    cur.execute(
-        """
-        SELECT donor_id, canonical_name, canonical_zip
-        FROM donor_identities
-        WHERE fec_matched = 0 OR fec_matched IS NULL
-        ORDER BY total_donated DESC
-        LIMIT ?
-        """,
-        (args.limit,),
-    )
+    if args.candidate:
+        # Restrict to donors who gave to this candidate (active rows only).
+        cur.execute(
+            """
+            SELECT di.donor_id, di.canonical_name, di.canonical_zip
+            FROM donor_identities di
+            WHERE (di.fec_matched = 0 OR di.fec_matched IS NULL)
+              AND di.donor_id IN (
+                SELECT DISTINCT c.donor_id
+                FROM contributions c
+                WHERE c.candidate_slug = ?
+                  AND COALESCE(c.info_only_flag,'N') <> 'Y'
+                  AND c.contributor_persent_type = 'INDIVIDUAL'
+                  AND c.donor_id IS NOT NULL
+              )
+            ORDER BY di.total_donated DESC
+            LIMIT ?
+            """,
+            (args.candidate, args.limit),
+        )
+    else:
+        cur.execute(
+            """
+            SELECT donor_id, canonical_name, canonical_zip
+            FROM donor_identities
+            WHERE fec_matched = 0 OR fec_matched IS NULL
+            ORDER BY total_donated DESC
+            LIMIT ?
+            """,
+            (args.limit,),
+        )
     donors = [dict(r) for r in cur.fetchall()]
-    print(f"Processing {len(donors)} donors  (dry_run={args.dry_run})")
+    scope_note = f"candidate={args.candidate!r}" if args.candidate else "all candidates"
+    print(f"Processing {len(donors)} donors  ({scope_note}, dry_run={args.dry_run})")
 
     session = requests.Session()
     session.headers.update({"User-Agent": "HD-41 Finance Research / contact@example.com"})
