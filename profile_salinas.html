@@ -338,6 +338,188 @@
   .amount-cell { font-weight: 700; text-align: right; }
   .count-cell { text-align: right; color: var(--muted); font-size: 12px; }
 
+  /* ── Donor partisan profile (FEC-derived) ── */
+  .partisan-card { /* uses .card */ }
+  .partisan-headline {
+    font-size: 18px;
+    line-height: 1.45;
+    font-weight: 600;
+    color: var(--text);
+    margin: 4px 0 16px;
+  }
+  .partisan-headline .num-d { color: var(--c-tech);   font-weight: 700; }
+  .partisan-headline .num-r { color: var(--c-energy); font-weight: 700; }
+  .partisan-headline .num-m { color: #cbd5e1;         font-weight: 700; }
+  .partisan-headline em.descriptor { font-style: normal; }
+  .partisan-headline em.d { color: var(--c-tech);   font-weight: 700; }
+  .partisan-headline em.r { color: var(--c-energy); font-weight: 700; }
+  .partisan-headline em.m { color: #cbd5e1;         font-weight: 700; }
+
+  .partisan-bar-row {
+    display: grid;
+    grid-template-columns: 64px 1fr 64px;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+  .partisan-bar-row .side-label { display: flex; flex-direction: column; gap: 2px; }
+  .partisan-bar-row .side-label .pct {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .partisan-bar-row .side-label .tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .partisan-bar-row .side-label.d  { text-align: right; }
+  .partisan-bar-row .side-label.d .pct { color: var(--c-tech); }
+  .partisan-bar-row .side-label.r  { text-align: left;  }
+  .partisan-bar-row .side-label.r .pct { color: var(--c-energy); }
+
+  .partisan-bar {
+    position: relative;
+    height: 30px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+  }
+  .partisan-bar .seg {
+    height: 100%;
+    width: 0;
+    transition: width 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: width;
+  }
+  .partisan-bar .seg-d { background: linear-gradient(90deg, #1d4ed8 0%, var(--c-tech) 100%); }
+  .partisan-bar .seg-m {
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(148,163,184,0.55) 0 8px,
+      rgba(148,163,184,0.25) 8px 16px
+    );
+  }
+  .partisan-bar .seg-r { background: linear-gradient(90deg, var(--c-energy) 0%, #b91c1c 100%); }
+  .partisan-bar .midline {
+    position: absolute;
+    left: 50%;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: rgba(255,255,255,0.22);
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .partisan-context {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 4px 0 8px;
+    line-height: 1.55;
+  }
+  .partisan-context strong.d { color: var(--c-tech);   font-weight: 700; }
+  .partisan-context strong.r { color: var(--c-energy); font-weight: 700; }
+  .partisan-context strong.m { color: #cbd5e1;         font-weight: 700; }
+
+  .partisan-confidence {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+  .partisan-confidence::before {
+    content: "";
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #4ade80;
+  }
+  .partisan-confidence.preliminary {
+    background: rgba(251,191,36,0.10);
+    border-color: rgba(251,191,36,0.30);
+    color: #fcd34d;
+  }
+  .partisan-confidence.preliminary::before { background: #fbbf24; }
+  .partisan-confidence.insufficient {
+    background: rgba(239,68,68,0.10);
+    border-color: rgba(239,68,68,0.35);
+    color: #fca5a5;
+  }
+  .partisan-confidence.insufficient::before { background: #ef4444; }
+
+  details.partisan-buckets {
+    margin-top: 14px;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+  details.partisan-buckets summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    user-select: none;
+  }
+  details.partisan-buckets summary::-webkit-details-marker { display: none; }
+  details.partisan-buckets summary::after { content: " ▾"; color: var(--muted); }
+  details.partisan-buckets[open] summary::after { content: " ▴"; }
+  details.partisan-buckets ul {
+    list-style: none;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+  }
+  details.partisan-buckets li {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  details.partisan-buckets li .b-label {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  details.partisan-buckets li .b-count {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1;
+  }
+  details.partisan-buckets li .b-amt {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  details.partisan-buckets li.b-strongd { border-left: 3px solid #1d4ed8; }
+  details.partisan-buckets li.b-leand   { border-left: 3px solid var(--c-tech); }
+  details.partisan-buckets li.b-mixed   { border-left: 3px solid #94a3b8; }
+  details.partisan-buckets li.b-leanr   { border-left: 3px solid var(--c-energy); }
+  details.partisan-buckets li.b-strongr { border-left: 3px solid #b91c1c; }
+
+  @media (max-width: 640px) {
+    details.partisan-buckets ul { grid-template-columns: repeat(2, 1fr); }
+    .partisan-bar-row { grid-template-columns: 1fr; }
+    .partisan-bar-row .side-label.d,
+    .partisan-bar-row .side-label.r { text-align: left; }
+  }
+
   /* ── Donor affiliations ── */
   .affil-cat {
     border-top: 1px solid var(--border);
@@ -859,6 +1041,34 @@
     <div id="cycleNav">
       <span class="cycle-label">View by cycle:</span>
       <!-- tabs injected by JS -->
+    </div>
+
+    <!-- ── Donor partisan profile (FEC-derived) ── -->
+    <div class="card partisan-card" id="partisanCard" style="margin-bottom:20px;display:none">
+      <div class="card-title">Donor partisan profile <span class="hint">FEC federal giving · dollar-weighted</span></div>
+      <p class="partisan-headline" id="partisanHeadline">—</p>
+      <div class="partisan-bar-row">
+        <div class="side-label d" aria-hidden="true">
+          <span class="pct" id="partisanLabelDPct">—</span>
+          <span class="tag">DEM</span>
+        </div>
+        <div class="partisan-bar" id="partisanBar" role="img" aria-label="Partisan distribution bar">
+          <div class="seg seg-d" id="partisanSegD" style="width:0%"></div>
+          <div class="seg seg-m" id="partisanSegM" style="width:0%"></div>
+          <div class="seg seg-r" id="partisanSegR" style="width:0%"></div>
+          <div class="midline" aria-hidden="true"></div>
+        </div>
+        <div class="side-label r" aria-hidden="true">
+          <span class="pct" id="partisanLabelRPct">—</span>
+          <span class="tag">REP</span>
+        </div>
+      </div>
+      <p class="partisan-context" id="partisanContext"></p>
+      <div class="partisan-confidence" id="partisanConfidence">—</div>
+      <details class="partisan-buckets" id="partisanBuckets">
+        <summary>By donor count</summary>
+        <ul id="partisanBucketList"></ul>
+      </details>
     </div>
 
     <!-- ── Row 1: Year bars + Donut ── -->
@@ -1640,6 +1850,7 @@ function renderAll(data, allDonations) {
   _FULL_DATA     = data;
 
   renderHero(data);
+  renderPartisanProfile(data);
   renderYearBars();
   renderDonut();
   renderBars('total');
@@ -1654,6 +1865,147 @@ function renderAll(data, allDonations) {
   // Show content, hide loading
   document.getElementById('loadingOverlay').style.display = 'none';
   document.getElementById('profileContent').style.display = '';
+}
+
+// ── Donor partisan profile (FEC, dollar-weighted) ────────────────────────────
+function renderPartisanProfile(data) {
+  const card = document.getElementById('partisanCard');
+  if (!card) return;
+  const pl = data.partisan_lean;
+
+  const headlineEl   = document.getElementById('partisanHeadline');
+  const segD         = document.getElementById('partisanSegD');
+  const segM         = document.getElementById('partisanSegM');
+  const segR         = document.getElementById('partisanSegR');
+  const labelD       = document.getElementById('partisanLabelDPct');
+  const labelR       = document.getElementById('partisanLabelRPct');
+  const contextEl    = document.getElementById('partisanContext');
+  const confidenceEl = document.getElementById('partisanConfidence');
+  const bucketsBox   = document.getElementById('partisanBuckets');
+  const bucketList   = document.getElementById('partisanBucketList');
+
+  // Helper: format a dollar number as "$1.32M" / "$514K" / "$420"
+  const fmt$ = n => {
+    n = Math.round(Number(n) || 0);
+    if (n >= 1_000_000) return '$' + (n/1_000_000).toFixed(2).replace(/\.?0+$/, '') + 'M';
+    if (n >= 1_000)     return '$' + Math.round(n/1_000) + 'K';
+    return '$' + n.toLocaleString();
+  };
+
+  // ── Insufficient data fallback ───────────────────────────────────────────
+  const showInsufficient = (msg) => {
+    card.style.display = '';
+    headlineEl.innerHTML = `<span style="color:var(--muted);font-style:italic;">${msg}</span>`;
+    document.getElementById('partisanBar').style.opacity = '0.30';
+    labelD.textContent = '—'; labelR.textContent = '—';
+    contextEl.textContent = '';
+    confidenceEl.className = 'partisan-confidence insufficient';
+    confidenceEl.textContent = 'INSUFFICIENT DATA';
+    bucketsBox.style.display = 'none';
+  };
+
+  if (!pl || (pl.matched_donors || 0) < 5) {
+    const n = pl ? (pl.matched_donors || 0) : 0;
+    showInsufficient(
+      n === 0
+        ? "No FEC-classified donors yet — partisan signal not available."
+        : `Only ${n} donor${n === 1 ? '' : 's'} classified — partisan signal not reliable.`
+    );
+    return;
+  }
+
+  // ── Three pots (per-donor-classification, FEC dollars) ───────────────────
+  // Prefer the new explicit fields; fall back to legacy if missing.
+  let d_pot = Number(pl.fec_d_pot     ?? pl.fec_total_dem_sum ?? 0);
+  let r_pot = Number(pl.fec_r_pot     ?? pl.fec_total_rep_sum ?? 0);
+  let m_pot = Number(pl.fec_mixed_pot ?? 0);
+  const total = d_pot + r_pot + m_pot;
+  if (total <= 0) {
+    showInsufficient("Classified donors have no FEC partisan giving on record.");
+    return;
+  }
+
+  const pct_d = (d_pot / total) * 100;
+  const pct_r = (r_pot / total) * 100;
+  const pct_m = (m_pot / total) * 100;
+
+  card.style.display = '';
+
+  // ── Headline phrasing ────────────────────────────────────────────────────
+  let descriptor;
+  let descClass;
+  if      (pct_d >= 80) { descriptor = 'strongly Democratic-aligned'; descClass = 'd'; }
+  else if (pct_d >= 60) { descriptor = 'Democratic-leaning';          descClass = 'd'; }
+  else if (pct_r >= 80) { descriptor = 'overwhelmingly Republican';   descClass = 'r'; }
+  else if (pct_r >= 60) { descriptor = 'Republican-leaning';          descClass = 'r'; }
+  else                  { descriptor = 'cross-pressured';             descClass = 'm'; }
+
+  const crossPressureNote = (pct_m >= 25)
+    ? ` <em class="descriptor m">with significant cross-pressure</em>`
+    : '';
+
+  headlineEl.innerHTML =
+    `Donor base is <span class="num-d">${pct_d.toFixed(0)}% Democratic</span>, ` +
+    `<span class="num-r">${pct_r.toFixed(0)}% Republican</span>, ` +
+    `<span class="num-m">${pct_m.toFixed(0)}% mixed</span> ` +
+    `— <em class="descriptor ${descClass}">${descriptor}</em>${crossPressureNote}.`;
+
+  // ── Side labels ──────────────────────────────────────────────────────────
+  labelD.textContent = pct_d.toFixed(0) + '%';
+  labelR.textContent = pct_r.toFixed(0) + '%';
+  document.getElementById('partisanBar').setAttribute(
+    'aria-label',
+    `Dollar-weighted partisan distribution: ${pct_d.toFixed(0)}% Democratic, ${pct_r.toFixed(0)}% Republican, ${pct_m.toFixed(0)}% mixed.`
+  );
+
+  // ── Context line ─────────────────────────────────────────────────────────
+  contextEl.innerHTML =
+    `<strong class="d">${fmt$(d_pot)} D</strong> &middot; ` +
+    `<strong class="r">${fmt$(r_pot)} R</strong> &middot; ` +
+    `<strong class="m">${fmt$(m_pot)} mixed</strong> ` +
+    ` in FEC federal contributions across this candidate's classified donors. ` +
+    `Donor split: <strong class="d">${pl.dem_donors} D</strong> / ` +
+    `<strong class="r">${pl.rep_donors} R</strong> / ` +
+    `<strong class="m">${pl.mixed_donors} mixed</strong>.`;
+
+  // ── Confidence pill ──────────────────────────────────────────────────────
+  const classified = pl.matched_donors || 0;
+  const totalDonors = (data.hero && data.hero.unique_donors) || classified;
+  const pctClassified = totalDonors > 0 ? (classified / totalDonors) * 100 : 0;
+  if (pctClassified < 30) {
+    confidenceEl.className = 'partisan-confidence preliminary';
+    confidenceEl.textContent =
+      `PRELIMINARY · ${classified} of ${totalDonors} donors classified ` +
+      `(~${pctClassified.toFixed(0)}% coverage)`;
+  } else {
+    confidenceEl.className = 'partisan-confidence';
+    confidenceEl.textContent =
+      `${classified} of ${totalDonors} donors classified ` +
+      `(${pctClassified.toFixed(0)}% coverage)`;
+  }
+
+  // ── Buckets (relegated to a collapsible drawer) ──────────────────────────
+  const bucketClass = {
+    'Strong D': 'b-strongd', 'Lean D': 'b-leand', 'Mixed': 'b-mixed',
+    'Lean R':   'b-leanr',   'Strong R': 'b-strongr'
+  };
+  bucketsBox.style.display = '';
+  bucketList.innerHTML = (pl.buckets || []).map(b => `
+    <li class="${bucketClass[b.label] || ''}">
+      <span class="b-label">${b.label}</span>
+      <span class="b-count">${b.donors || 0}</span>
+      <span class="b-amt">${fmt$(b.total || 0)} local</span>
+    </li>
+  `).join('');
+
+  // ── Animate the bar widths in next frame so transition fires ─────────────
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      segD.style.width = pct_d.toFixed(2) + '%';
+      segM.style.width = pct_m.toFixed(2) + '%';
+      segR.style.width = pct_r.toFixed(2) + '%';
+    });
+  });
 }
 
 // ── Affiliations renderer ────────────────────────────────────────────────────

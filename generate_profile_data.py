@@ -213,6 +213,10 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
         weighted_lean_sum_local = 0.0
         weighted_amt_local = 0.0
         dem_donors = rep_donors = mixed_donors = 0
+        # Per-donor-classification dollar pots (for the new partisan bar):
+        # each donor's (D+R) FEC money goes into exactly one pot based on
+        # the donor's own lean. Disjoint, sum to (sum_D + sum_R).
+        d_pot = r_pot = m_pot = 0.0
 
         for d in matched:
             dem = float(d["fec_total_dem"]   or 0)
@@ -232,10 +236,13 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
 
             if lean >= 0.6:
                 dem_donors += 1
+                d_pot     += dem + rep
             elif lean <= 0.4:
                 rep_donors += 1
+                r_pot     += dem + rep
             else:
                 mixed_donors += 1
+                m_pot     += dem + rep
 
             sum_D += dem
             sum_R += rep
@@ -281,8 +288,13 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
             "both_sources":         0,
             "weighted_lean":        weighted_lean,           # [0,1] for SA template
             "weighted_lean_signed": weighted_lean_signed,    # [-1,+1] for the headline
-            "fec_total_dem_sum":    round(sum_D, 2),
-            "fec_total_rep_sum":    round(sum_R, 2),
+            "fec_total_dem_sum":    round(sum_D, 2),         # legacy aggregate dem $
+            "fec_total_rep_sum":    round(sum_R, 2),         # legacy aggregate rep $
+            # New per-donor-classification dollar pots; the new partisan-bar
+            # visualization normalizes these three to 100%.
+            "fec_d_pot":            round(d_pot, 2),
+            "fec_r_pot":            round(r_pot, 2),
+            "fec_mixed_pot":        round(m_pot, 2),
             "buckets":              buckets,
             "donors":               donors_list,
             "donor_committees":     {},
@@ -314,26 +326,10 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
     affiliations_summary: dict = {"categories": []}
     donor_affiliations_payload: dict[str, list] = {}
 
-    # 1. fec_partisan synth
-    if partisan_lean:
-        affiliations_summary["categories"].append({
-            "category":         "fec_partisan",
-            "category_label":   "Federal partisan giving (FEC)",
-            "donor_count":      partisan_lean["matched_donors"],
-            "total_amount":     partisan_lean["fec_total_dem_sum"] + partisan_lean["fec_total_rep_sum"],
-            "confidence_breakdown": {"high": partisan_lean["matched_donors"], "medium": 0, "low": 0},
-            "sensitive_count":  0,
-            "top_donors":       [
-                {
-                    "donor_id":     d["id"],
-                    "name":         d["name"],
-                    "label":        "D" if d["lean"] >= 0.6 else ("R" if d["lean"] <= 0.4 else "Mixed"),
-                    "total_amount": d["dem"] + d["rep"],
-                    "confidence":   "high",
-                }
-                for d in partisan_lean["donors"][:10]
-            ],
-        })
+    # NOTE: the fec_partisan synth used to live here as one of the affiliation
+    # categories. As of the partisan-bar redesign, partisan_lean has its own
+    # dedicated card above the affiliations card, so we no longer duplicate
+    # fec_partisan into affiliations_summary.categories.
 
     # 2. donor_affiliations table (only present once the integrator has run)
     has_aff_table = cur.execute(
