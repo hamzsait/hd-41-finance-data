@@ -16,6 +16,282 @@
   ],
   "findings": [
     {
+      "donor_id": "7a77b4953dd472ea",
+      "label": "FEC: CONOCOPHILLIPS SPIRIT PAC",
+      "total_amount": 1020.0,
+      "confidence": "high",
+      "first_seen": "2008-06-30",
+      "last_seen": "2010-12-31",
+      "notes": "Donor contributed to FEC-registered oil & gas committee 'CONOCOPHILLIPS SPIRIT PAC'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on None",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4122620071083132647",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": null,
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on None",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4111620071082414622",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": null,
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on None",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4102520071081911345",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": null,
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on None",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4092720071080706573",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": null,
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on None",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4030520081085750911",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": null,
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $60.00 to CONOCOPHILLIPS SPIRIT PAC on 2010-12-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4022820111136437504",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 60.0,
+          "date": "2010-12-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $60.00 to CONOCOPHILLIPS SPIRIT PAC on 2010-11-22",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4012020111133831069",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 60.0,
+          "date": "2010-11-22",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2010-09-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4120220101132077703",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2010-09-30",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2010-08-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4091620101129636072",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2010-08-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2010-07-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4082320101128963370",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2010-07-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2010-06-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4081120101128275916",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2010-06-30",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-12-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4012020101122539169",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-12-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-11-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4121720091122020091",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-11-30",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-10-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4062420111141085844",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-10-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-09-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4101520091119294678",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-09-30",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-08-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4092920091118613415",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-08-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-07-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4090820091117927957",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-07-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2009-06-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4080320091117227513",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2009-06-30",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $60.00 to CONOCOPHILLIPS SPIRIT PAC on 2008-12-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4021720091107914723",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 60.0,
+          "date": "2008-12-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2008-11-24",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4021020091107203893",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2008-11-24",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2008-09-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4103020081099744070",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2008-09-30",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $60.00 to CONOCOPHILLIPS SPIRIT PAC on 2008-08-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4091620081095813724",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 60.0,
+          "date": "2008-08-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $40.00 to CONOCOPHILLIPS SPIRIT PAC on 2008-07-31",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4082820081094477072",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 40.0,
+          "date": "2008-07-31",
+          "rule": "fec_committee_name_match"
+        },
+        {
+          "source": "FEC schedule_a",
+          "source_url": "https://www.fec.gov/data/committee/C00112896/",
+          "evidence_text": "Contributed $20.00 to CONOCOPHILLIPS SPIRIT PAC on 2008-06-30",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4081520081093551304",
+          "committee_id": "C00112896",
+          "committee_name": "CONOCOPHILLIPS SPIRIT PAC",
+          "amount": 20.0,
+          "date": "2008-06-30",
+          "rule": "fec_committee_name_match"
+        }
+      ]
+    },
+    {
       "donor_id": "95a856746b8bd251",
       "label": "employer: petroleum",
       "total_amount": 1000.0,
@@ -207,6 +483,494 @@
       ]
     },
     {
+      "donor_id": "7a77b4953dd472ea",
+      "label": "employer: conoco",
+      "total_amount": 1270.0,
+      "confidence": "high",
+      "first_seen": "2008-06-30",
+      "last_seen": "2010-12-31",
+      "notes": "Donor's employer 'CONOCOPHILLIPS COMPANY' matches keyword 'conoco'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4122620071083132647",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": null,
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4111620071082414622",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": null,
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4102520071081911345",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": null,
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4092720071080706573",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": null,
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4030520081085750911",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": null,
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($60.00 on 2010-12-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4022820111136437504",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 60.0,
+          "date": "2010-12-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($60.00 on 2010-11-22)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4012020111133831069",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 60.0,
+          "date": "2010-11-22",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2010-09-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4120220101132077703",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2010-09-30",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2010-08-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4091620101129636072",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2010-08-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2010-07-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4082320101128963370",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2010-07-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2010-06-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4081120101128275916",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2010-06-30",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-12-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4012020101122539169",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-12-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-11-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4121720091122020091",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-11-30",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-10-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4062420111141085844",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-10-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-09-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4101520091119294678",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-09-30",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-08-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4092920091118613415",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-08-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-07-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4090820091117927957",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-07-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2009-06-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4080320091117227513",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2009-06-30",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCO PHILLIPS' matches oil & gas keyword 'conoco' ($250.00 on 2009-05-14)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=2072220111141633174",
+          "committee_id": "C00457028",
+          "committee_name": null,
+          "amount": 250.0,
+          "date": "2009-05-14",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($60.00 on 2008-12-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4021720091107914723",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 60.0,
+          "date": "2008-12-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2008-11-24)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4021020091107203893",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2008-11-24",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2008-09-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4103020081099744070",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2008-09-30",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($60.00 on 2008-08-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4091620081095813724",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 60.0,
+          "date": "2008-08-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($40.00 on 2008-07-31)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4082820081094477072",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 40.0,
+          "date": "2008-07-31",
+          "rule": "employer_match: conoco"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'CONOCOPHILLIPS COMPANY' matches oil & gas keyword 'conoco' ($20.00 on 2008-06-30)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4081520081093551304",
+          "committee_id": "C00112896",
+          "committee_name": null,
+          "amount": 20.0,
+          "date": "2008-06-30",
+          "rule": "employer_match: conoco"
+        }
+      ]
+    },
+    {
+      "donor_id": "3d202bb9a5e3acea",
+      "label": "employer: oil and gas",
+      "total_amount": 10.0,
+      "confidence": "medium",
+      "first_seen": "2024-06-02",
+      "last_seen": "2024-06-02",
+      "notes": "Donor's employer 'OIL AND GAS' matches keyword 'oil and gas'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'OIL AND GAS' matches oil & gas keyword 'oil and gas' ($10.00 on 2024-06-02)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4080520242005302917",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2024-06-02",
+          "rule": "employer_match: oil and gas"
+        }
+      ]
+    },
+    {
+      "donor_id": "81962e2eb0df5c56",
+      "label": "employer: slb",
+      "total_amount": 250.0,
+      "confidence": "high",
+      "first_seen": "2022-10-26",
+      "last_seen": "2024-08-06",
+      "notes": "Donor's employer 'SLB' matches keyword 'slb'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SLB' matches oil & gas keyword 'slb' ($100.00 on 2024-08-06)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4100120242058132089",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2024-08-06",
+          "rule": "employer_match: slb"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SLB' matches oil & gas keyword 'slb' ($100.00 on 2024-07-15)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4020620251158055535",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2024-07-15",
+          "rule": "employer_match: slb"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SLB' matches oil & gas keyword 'slb' ($50.00 on 2022-10-26)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4010420231657713383",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2022-10-26",
+          "rule": "employer_match: slb"
+        }
+      ]
+    },
+    {
+      "donor_id": "81962e2eb0df5c56",
+      "label": "employer: schlumberger",
+      "total_amount": 365.0,
+      "confidence": "high",
+      "first_seen": "2019-08-02",
+      "last_seen": "2020-08-29",
+      "notes": "Donor's employer 'SCHLUMBERGER' matches keyword 'schlumberger'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2020-08-29)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4011220212079499723",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2020-08-29",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2020-07-29)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4091520201844042648",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2020-07-29",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($35.00 on 2020-03-23)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4051420201750500104",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 35.0,
+          "date": "2020-03-23",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($35.00 on 2020-03-13)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4051420201750500103",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 35.0,
+          "date": "2020-03-13",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2020-02-29)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4040220201730678465",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2020-02-29",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2020-02-28)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4040220201730678464",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2020-02-28",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($20.00 on 2020-02-23)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4040220201730678463",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 20.0,
+          "date": "2020-02-23",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($100.00 on 2020-02-21)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4040220201730678462",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2020-02-21",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2020-02-09)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4040220201730678461",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2020-02-09",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2019-10-03)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4030220201219213489",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2019-10-03",
+          "rule": "employer_match: schlumberger"
+        },
+        {
+          "source": "employer_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Employer 'SCHLUMBERGER' matches oil & gas keyword 'schlumberger' ($25.00 on 2019-08-02)",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4030220201221261917",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 25.0,
+          "date": "2019-08-02",
+          "rule": "employer_match: schlumberger"
+        }
+      ]
+    },
+    {
       "donor_id": "0f897e319478b665",
       "label": "occupation: oil & gas",
       "total_amount": 5000.0,
@@ -393,6 +1157,295 @@
           "amount": 35.0,
           "date": "2024-02-01",
           "rule": "occupation_match: petroleum"
+        }
+      ]
+    },
+    {
+      "donor_id": "16e8b8f936fd9704",
+      "label": "occupation: oil & gas",
+      "total_amount": 100.0,
+      "confidence": "medium",
+      "first_seen": "2012-05-24",
+      "last_seen": "2012-05-24",
+      "notes": "Donor's occupation 'OIL & GAS EXPLORATION' matches keyword 'oil & gas'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'OIL & GAS EXPLORATION' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4100420121165992213",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2012-05-24",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'OIL & GAS EXPLORATION' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4100420121165992020",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2012-05-24",
+          "rule": "occupation_match: oil & gas"
+        }
+      ]
+    },
+    {
+      "donor_id": "253438c963363203",
+      "label": "occupation: landman",
+      "total_amount": 55.0,
+      "confidence": "medium",
+      "first_seen": "2014-01-29",
+      "last_seen": "2014-01-29",
+      "notes": "Donor's occupation 'INDEPENDENT LANDMAN' matches keyword 'landman'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'INDEPENDENT LANDMAN' matches keyword 'landman'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4031420141209478924",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2014-01-29",
+          "rule": "occupation_match: landman"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'INDEPENDENT LANDMAN' matches keyword 'landman'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4031420141209478923",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 50.0,
+          "date": "2014-01-29",
+          "rule": "occupation_match: landman"
+        }
+      ]
+    },
+    {
+      "donor_id": "253438c963363203",
+      "label": "occupation: oil & gas",
+      "total_amount": 548.68,
+      "confidence": "medium",
+      "first_seen": "2010-10-01",
+      "last_seen": "2013-03-27",
+      "notes": "Donor's occupation 'CONSULTANT - OIL & GAS' matches keyword 'oil & gas'.",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=2110120131198439896",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2013-03-27",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=2110120131198439895",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2013-02-22",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=2110120131198442344",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 8.34,
+          "date": "2013-02-12",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=1071720130014255147",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 8.34,
+          "date": "2013-02-12",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667758",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-11-02",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667757",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2010-11-02",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667756",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 12.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667755",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667754",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667753",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667752",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667751",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667750",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667749",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667748",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667747",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667746",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4042720111138667745",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2010-10-16",
+          "rule": "occupation_match: oil & gas"
+        },
+        {
+          "source": "occupation_match (FEC)",
+          "source_url": null,
+          "evidence_text": "Occupation 'CONSULTANT - OIL & GAS, ENVIRONMENT' matches keyword 'oil & gas'",
+          "contribution_id": "fec_contributions_raw.fec_sub_id=4051920111139907156",
+          "committee_id": null,
+          "committee_name": null,
+          "amount": 100.0,
+          "date": "2010-10-01",
+          "rule": "occupation_match: oil & gas"
         }
       ]
     }

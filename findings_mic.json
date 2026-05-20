@@ -37,6 +37,415 @@
           "rule": "employer_match: boeing"
         }
       ]
+    },
+    {
+      "donor_id": "8ec83e7a30064c87",
+      "label": "Lockheed Martin",
+      "total_amount": 258.6,
+      "confidence": "high",
+      "first_seen": "2019-01-07",
+      "last_seen": "2021-12-14",
+      "notes": "34 MIC evidence rows (Lockheed Martin); donor Korgel, Skyler; HD-41 backing: Salinas ($500.00) [REVIEW: Dem candidate + MIC ties]",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $35.00 on 2021-12-14 (sub_id 4061520221515083984)",
+          "contribution_id": "fec_contributions_raw.id=8291",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 35.0,
+          "date": "2021-12-14",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $20.00 on 2021-11-24 (sub_id 4061520221514140759)",
+          "contribution_id": "fec_contributions_raw.id=8292",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 20.0,
+          "date": "2021-11-24",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $12.00 on 2021-08-05 (sub_id 4061520221504504914)",
+          "contribution_id": "fec_contributions_raw.id=8293",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 12.0,
+          "date": "2021-08-05",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $15.00 on 2021-08-05 (sub_id 4061520221504499470)",
+          "contribution_id": "fec_contributions_raw.id=8294",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 15.0,
+          "date": "2021-08-05",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2021-05-10 (sub_id 4082520211353178380)",
+          "contribution_id": "fec_contributions_raw.id=8295",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2021-05-10",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2021-01-16 (sub_id 4031520211258338448)",
+          "contribution_id": "fec_contributions_raw.id=8296",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2021-01-16",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $2.00 on 2020-10-26 (sub_id 4010420211997164596)",
+          "contribution_id": "fec_contributions_raw.id=8297",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 2.0,
+          "date": "2020-10-26",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $7.00 on 2020-10-21 (sub_id 4010420211993210284)",
+          "contribution_id": "fec_contributions_raw.id=8298",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 7.0,
+          "date": "2020-10-21",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2020-10-08 (sub_id 4020320212012292964)",
+          "contribution_id": "fec_contributions_raw.id=8299",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2020-10-08",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $15.00 on 2020-06-11 (sub_id 4081020201819251687)",
+          "contribution_id": "fec_contributions_raw.id=8300",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 15.0,
+          "date": "2020-06-11",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $7.00 on 2020-01-27 (sub_id 4032420201709422745)",
+          "contribution_id": "fec_contributions_raw.id=8301",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 7.0,
+          "date": "2020-01-27",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $5.00 on 2020-01-27 (sub_id 4032420201709422744)",
+          "contribution_id": "fec_contributions_raw.id=8302",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2020-01-27",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $5.00 on 2020-01-27 (sub_id 4032420201709422743)",
+          "contribution_id": "fec_contributions_raw.id=8303",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2020-01-27",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $7.00 on 2020-01-27 (sub_id 4032420201709422742)",
+          "contribution_id": "fec_contributions_raw.id=8304",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 7.0,
+          "date": "2020-01-27",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2020-01-09 (sub_id 4032420201709422741)",
+          "contribution_id": "fec_contributions_raw.id=8305",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2020-01-09",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $1.50 on 2019-08-04 (sub_id 4030220201218207615)",
+          "contribution_id": "fec_contributions_raw.id=8306",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1.5,
+          "date": "2019-08-04",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $2.00 on 2019-07-23 (sub_id 4030220201227259887)",
+          "contribution_id": "fec_contributions_raw.id=8307",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 2.0,
+          "date": "2019-07-23",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $2.50 on 2019-07-23 (sub_id 4030220201221082701)",
+          "contribution_id": "fec_contributions_raw.id=8308",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 2.5,
+          "date": "2019-07-23",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2019-07-22 (sub_id 4030220201233424079)",
+          "contribution_id": "fec_contributions_raw.id=8309",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2019-07-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $5.00 on 2019-07-22 (sub_id 4030220201233424065)",
+          "contribution_id": "fec_contributions_raw.id=8310",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2019-07-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $7.00 on 2019-06-30 (sub_id 4051620241937808917)",
+          "contribution_id": "fec_contributions_raw.id=8311",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 7.0,
+          "date": "2019-06-30",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $4.00 on 2019-06-30 (sub_id 4051620241937805852)",
+          "contribution_id": "fec_contributions_raw.id=8312",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 4.0,
+          "date": "2019-06-30",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $1.10 on 2019-05-30 (sub_id 4051620241934267023)",
+          "contribution_id": "fec_contributions_raw.id=8313",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1.1,
+          "date": "2019-05-30",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $2.00 on 2019-04-22 (sub_id 4051620241931193350)",
+          "contribution_id": "fec_contributions_raw.id=8314",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 2.0,
+          "date": "2019-04-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $3.00 on 2019-04-22 (sub_id 4051620241931191802)",
+          "contribution_id": "fec_contributions_raw.id=8315",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 3.0,
+          "date": "2019-04-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $1.00 on 2019-04-22 (sub_id 4051620241931191788)",
+          "contribution_id": "fec_contributions_raw.id=8316",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 1.0,
+          "date": "2019-04-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $3.50 on 2019-04-22 (sub_id 4051620241931190248)",
+          "contribution_id": "fec_contributions_raw.id=8317",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 3.5,
+          "date": "2019-04-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $2.00 on 2019-04-22 (sub_id 4051620241931170139)",
+          "contribution_id": "fec_contributions_raw.id=8318",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 2.0,
+          "date": "2019-04-22",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $5.00 on 2019-04-19 (sub_id 4051620241930926579)",
+          "contribution_id": "fec_contributions_raw.id=8319",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2019-04-19",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $5.00 on 2019-04-16 (sub_id 4051620241930806523)",
+          "contribution_id": "fec_contributions_raw.id=8320",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 5.0,
+          "date": "2019-04-16",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $6.00 on 2019-04-16 (sub_id 4051620241930805004)",
+          "contribution_id": "fec_contributions_raw.id=8321",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 6.0,
+          "date": "2019-04-16",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $8.00 on 2019-04-16 (sub_id 4051620241930798889)",
+          "contribution_id": "fec_contributions_raw.id=8322",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 8.0,
+          "date": "2019-04-16",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2019-01-16 (sub_id 4051620241924301224)",
+          "contribution_id": "fec_contributions_raw.id=8323",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2019-01-16",
+          "rule": "employer_match: lockheed"
+        },
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "KORGEL, SKYLER listed employer 'LOCKHEED MARTIN' on FEC contribution of $10.00 on 2019-01-07 (sub_id 4051620241923968184)",
+          "contribution_id": "fec_contributions_raw.id=8324",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 10.0,
+          "date": "2019-01-07",
+          "rule": "employer_match: lockheed"
+        }
+      ]
+    },
+    {
+      "donor_id": "81962e2eb0df5c56",
+      "label": "Lockheed Martin",
+      "total_amount": 15.0,
+      "confidence": "high",
+      "first_seen": "2018-10-24",
+      "last_seen": "2018-10-24",
+      "notes": "1 MIC evidence row (Lockheed Martin); donor Pena, Alejandro; HD-41 backing: Salinas ($5.00) [REVIEW: Dem candidate + MIC ties]",
+      "sensitive": true,
+      "evidence": [
+        {
+          "source": "employer_match",
+          "source_url": "https://www.fec.gov/data/receipts/?committee_id=C00401224",
+          "evidence_text": "PENA, ALEJANDRO listed employer 'LOCKHEED MARTIN' on FEC contribution of $15.00 on 2018-10-24 (sub_id 4010720191631077398)",
+          "contribution_id": "fec_contributions_raw.id=127060",
+          "committee_id": "C00401224",
+          "committee_name": null,
+          "amount": 15.0,
+          "date": "2018-10-24",
+          "rule": "employer_match: lockheed"
+        }
+      ]
     }
   ]
 }
