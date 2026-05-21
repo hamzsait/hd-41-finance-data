@@ -530,6 +530,181 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
                   f"per-donor entries across {len(cat_buckets)} categories "
                   f"({sum(b['sensitive_count'] for b in cat_buckets.values())} sensitive)")
 
+    # ── Web research (donor_web_research / donor_web_research_evidence) ──
+    # Parallel to donor_affiliations but populated by per-donor web search.
+    # Categories: medical, adl, aipac, dmfi, jstreet, real_estate, oil_gas
+    # plus a sentinel _searched_no_results which the renderer filters out.
+    # ENTITY donors live in this table with synthetic 'org:...' donor_ids,
+    # so we must look them up against the candidate's distinct ENTITY orgs
+    # in addition to the INDIVIDUAL donor_ids.
+    web_research_summary: dict = {"categories": []}
+    web_research_donors: dict[str, list] = {}
+
+    has_wr_table = cur.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name='donor_web_research'"
+    ).fetchone() is not None
+
+    if has_wr_table:
+        import hashlib as _hashlib
+        # Build the candidate's full donor-id set: INDIVIDUAL donor_ids
+        # plus synthetic 'org:<sha1[:12]>' for each ENTITY org name.
+        # Also build a per-donor-id local total for THIS candidate, since
+        # the web-research row's total_amount is whatever candidate's pool
+        # was researched (Haddad) and would mislead on cross-candidate
+        # donors (e.g. Fallek gave $1K to Haddad, $250 to Sanchez).
+        wr_candidate_donor_ids: set[str] = set(candidate_donor_ids)
+        local_total_by_did: dict[str, float] = {}
+        for cr in cur.execute(
+            "SELECT donor_id, SUM(contribution_amount) AS tot "
+            "FROM contributions "
+            "WHERE candidate_slug=? AND COALESCE(info_only_flag,'N')<>'Y' "
+            "  AND donor_id IS NOT NULL "
+            "GROUP BY donor_id",
+            (slug,),
+        ).fetchall():
+            local_total_by_did[cr["donor_id"]] = float(cr["tot"] or 0)
+        for er in cur.execute(
+            "SELECT TRIM(contributor_name_org) AS org, "
+            "       SUM(contribution_amount) AS tot "
+            "FROM contributions "
+            "WHERE candidate_slug=? AND COALESCE(info_only_flag,'N')<>'Y' "
+            "  AND contributor_persent_type='ENTITY' "
+            "  AND TRIM(COALESCE(contributor_name_org,'')) <> '' "
+            "GROUP BY LOWER(TRIM(contributor_name_org))",
+            (slug,),
+        ).fetchall():
+            org = (er["org"] or "").strip()
+            if org:
+                h = _hashlib.sha1(org.lower().encode("utf-8")).hexdigest()[:12]
+                synth = f"org:{h}"
+                wr_candidate_donor_ids.add(synth)
+                local_total_by_did[synth] = float(er["tot"] or 0)
+
+        # Donor display-name lookup (canonical_name for individuals; org name
+        # for entities). For ENTITY synth ids we recompute the sha1 -> name map.
+        donor_name_lookup: dict[str, str] = {}
+        for r in cur.execute(
+            "SELECT di.donor_id, di.canonical_name FROM donor_identities di"
+        ).fetchall():
+            donor_name_lookup[r["donor_id"]] = r["canonical_name"] or ""
+        for er in cur.execute(
+            "SELECT DISTINCT TRIM(contributor_name_org) AS org "
+            "FROM contributions WHERE contributor_persent_type='ENTITY' "
+            "  AND TRIM(COALESCE(contributor_name_org,'')) <> ''"
+        ).fetchall():
+            org = (er["org"] or "").strip()
+            if org:
+                h = _hashlib.sha1(org.lower().encode("utf-8")).hexdigest()[:12]
+                donor_name_lookup[f"org:{h}"] = f"[ORG] {org}"
+
+        if wr_candidate_donor_ids:
+            ph = ",".join("?" for _ in wr_candidate_donor_ids)
+            wr_rows = cur.execute(
+                f"""
+                SELECT research_id, donor_id, category, label, total_amount,
+                       confidence, sensitive, notes, first_seen, last_seen
+                FROM donor_web_research
+                WHERE donor_id IN ({ph})
+                  AND category <> '_searched_no_results'
+                """,
+                list(wr_candidate_donor_ids),
+            ).fetchall()
+
+            if wr_rows:
+                res_ids = [r["research_id"] for r in wr_rows]
+                evp = ",".join("?" for _ in res_ids)
+                ev_rows = cur.execute(
+                    f"""
+                    SELECT research_id, source, source_url, evidence_text,
+                           snippet, search_query, retrieved_at, rule
+                    FROM donor_web_research_evidence
+                    WHERE research_id IN ({evp})
+                    """,
+                    res_ids,
+                ).fetchall()
+                ev_by_res: dict[int, list] = {}
+                for er in ev_rows:
+                    ev_by_res.setdefault(er["research_id"], []).append({
+                        "source":        er["source"],
+                        "source_url":    er["source_url"],
+                        "evidence_text": er["evidence_text"],
+                        "snippet":       er["snippet"],
+                        "search_query": er["search_query"],
+                        "retrieved_at":  er["retrieved_at"],
+                        "rule":          er["rule"],
+                    })
+
+                WR_LABELS = {
+                    "medical":      "Medical / Healthcare",
+                    "adl":          "ADL (Anti-Defamation League)",
+                    "aipac":        "AIPAC",
+                    "dmfi":         "Democratic Majority for Israel",
+                    "jstreet":      "J Street",
+                    "real_estate":  "Real Estate",
+                    "oil_gas":      "Oil & Gas",
+                }
+                WR_ORDER = ["medical", "real_estate", "oil_gas",
+                            "aipac", "adl", "dmfi", "jstreet"]
+                cat_buckets: dict[str, dict] = {}
+                for wr in wr_rows:
+                    cat = wr["category"]
+                    # Re-key dollar amount to THIS candidate's local total.
+                    # The DB value reflects whichever candidate's pool was
+                    # researched (Haddad), so cross-candidate donors would
+                    # show the wrong amount otherwise.
+                    local_amt = local_total_by_did.get(wr["donor_id"], 0.0)
+                    entry = {
+                        "category":     cat,
+                        "category_label": WR_LABELS.get(cat, cat),
+                        "label":        wr["label"],
+                        "total_amount": local_amt,
+                        "confidence":   wr["confidence"],
+                        "first_seen":   wr["first_seen"],
+                        "last_seen":    wr["last_seen"],
+                        "notes":        wr["notes"],
+                        "sensitive":    bool(wr["sensitive"]),
+                        "evidence":     ev_by_res.get(wr["research_id"], []),
+                    }
+                    web_research_donors.setdefault(wr["donor_id"], []).append(entry)
+
+                    b = cat_buckets.setdefault(cat, {
+                        "category":      cat,
+                        "category_label": WR_LABELS.get(cat, cat),
+                        "donor_count":   0,
+                        "total_amount":  0.0,
+                        "confidence_breakdown": {"high": 0, "medium": 0, "low": 0},
+                        "sensitive_count": 0,
+                        "top_donors":    [],
+                    })
+                    b["donor_count"] += 1
+                    b["total_amount"] += local_amt
+                    conf = (wr["confidence"] or "medium").lower()
+                    if conf in b["confidence_breakdown"]:
+                        b["confidence_breakdown"][conf] += 1
+                    if wr["sensitive"]:
+                        b["sensitive_count"] += 1
+                    b["top_donors"].append({
+                        "donor_id":     wr["donor_id"],
+                        "name":         donor_name_lookup.get(wr["donor_id"], wr["donor_id"]),
+                        "label":        wr["label"],
+                        "total_amount": local_amt,
+                        "confidence":   wr["confidence"],
+                    })
+
+                for cat, b in cat_buckets.items():
+                    b["top_donors"].sort(key=lambda d: (-(d["total_amount"] or 0), d["name"] or ""))
+                    b["total_amount"] = round(b["total_amount"], 2)
+
+                web_research_summary["categories"] = sorted(
+                    cat_buckets.values(),
+                    key=lambda b: (WR_ORDER.index(b["category"]) if b["category"] in WR_ORDER else 99,)
+                )
+
+                print(f"[generate]   web_research: "
+                      f"{sum(len(v) for v in web_research_donors.values())} per-donor entries across "
+                      f"{len(cat_buckets)} categories "
+                      f"({sum(b['sensitive_count'] for b in cat_buckets.values())} sensitive)")
+
     # ── All donations table ───────────────────────────────────────────────
     all_donations: list[list] = []
     for r in rows:
@@ -579,6 +754,8 @@ def build_one(conn: sqlite3.Connection, slug: str, output_dir: Path) -> dict:
         "civic_affiliations":    None,
         "affiliations_summary":  affiliations_summary,
         "donor_affiliations":    donor_affiliations_payload,
+        "web_research":          web_research_summary,
+        "web_research_donors":   web_research_donors,
     }
 
     data_path = output_dir / f"{slug}_data.json"

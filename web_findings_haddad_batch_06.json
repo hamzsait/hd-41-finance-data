@@ -1,0 +1,314 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 6,
+  "findings": [
+    {
+      "donor_id": "7e7ac131b8ee334d",
+      "donor_label": "Oscar P. Ramirez (Law Offices of Oscar P. Ramirez, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 250.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Solo-practice McAllen attorney (civil/probate/immigration). No tie to research categories surfaced.",
+      "evidence": []
+    },
+    {
+      "donor_id": "6ba63b6d803438d4",
+      "donor_label": "Julian Alvarez Jr. (Self, Harlingen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 250.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Likely Julian Alvarez III, former Texas Workforce Commissioner (2016-2022) and Harlingen native, but identity not confirmable from the 'Self' employer field and no category fit even if matched.",
+      "evidence": []
+    },
+    {
+      "donor_id": "2f6352c2a7f66dbb",
+      "donor_label": "Manuel Vela (retired, Port Isabel TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 250.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Most prominent 'Manny' Vela in RGV is the former Valley Baptist Health CEO / TAMU McAllen retiree, but he lives in McAllen/Harlingen not Port Isabel. Common name; cannot confidently link to medical/healthcare here.",
+      "evidence": []
+    },
+    {
+      "donor_id": "24fdb6438b13a902",
+      "donor_label": "Catherine E. Smith Welch (Gonzalez & Associates Law Firm, Weslaco TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 250.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Confirmed attorney at Gonzalez & Associates Law Firm Ltd (LinkedIn). No category fit; firm is a personal-injury practice not real-estate or medical.",
+      "evidence": []
+    },
+    {
+      "donor_id": "1d5e9d7eeddde01f",
+      "donor_label": "Alfredo Montanaro (Self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 250.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Likely the Frost Bank EVP-Corporate Banking based in McAllen (UT-Pan American grad). Banking executive, not real-estate or medical principal; no direct category tie.",
+      "evidence": []
+    },
+    {
+      "donor_id": "036f4f40a56e60a9",
+      "donor_label": "Kip Owen (Self, McAllen TX)",
+      "category": "medical",
+      "label": "Orthopedic surgeon, DHR Health (sports medicine)",
+      "total_amount": 250.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Kip Owen is a dual board-certified orthopedic / sports medicine surgeon practicing at DHR Health (McAllen) since 2001. Listed employer 'Self' = his solo practice Kip Owen MD PA at 4865 N McColl Rd, McAllen 78504 — matches the donor ZIP exactly.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://dhrhealth.com/physicians/kip-owen-md-faaos/",
+          "evidence_text": "DHR Health physician profile for Kip Owen, MD, FAAOS",
+          "snippet": "Dr. Kip Owen is an Orthopaedic Surgeon in McAllen, Texas with a special focus on sports medicine. He is dual Board Certified in Orthopaedic Surgery and Orthopaedic Sports Medicine. Dr. Owen has practiced at DHR since 2001.",
+          "search_query": "\"Kip Owen\" McAllen Texas physician attorney",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+ZIP match to confirmed practice address"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.yelp.com/biz/owen-kip-md-mcallen",
+          "evidence_text": "Yelp listing for Owen Kip MD, sports medicine, 4865 N McColl Rd McAllen TX 78504",
+          "snippet": "OWEN KIP MD - 4865 N McColl Rd, McAllen, Texas 78504 - Sports Medicine",
+          "search_query": "\"Kip Owen\" McAllen Texas physician attorney",
+          "retrieved_at": "2026-05-21",
+          "rule": "ZIP 78504 matches donor record"
+        }
+      ]
+    },
+    {
+      "donor_id": "0050b3ede9b419ba",
+      "donor_label": "Ana Mendez (self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 250.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Common name. Possible match to Dr. Ana Maria Mendez (family medicine, McAllen-area Nuestra Clinica) but the donor's 'self' employer doesn't confirm it; no high-confidence link.",
+      "evidence": []
+    },
+    {
+      "donor_id": "68ad0c1c1fdc6823",
+      "donor_label": "Delisa Guadarrama (Self, Edinburg TX)",
+      "category": "medical",
+      "label": "Child & adolescent psychiatrist, DHR Health Behavioral Hospital",
+      "total_amount": 229.22,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Delisa E. Guadarrama is a board-certified child & adolescent psychiatrist at DHR Health Counseling and Psychiatry Center in Edinburg (78539, exact ZIP match). 'Self' likely refers to her practice within DHR.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dhrhealth.com/physicians/delisa-guadarrama-md/",
+          "evidence_text": "DHR Health physician profile for Delisa Guadarrama, MD",
+          "snippet": "Dr. Delisa E. Guadarrama is a native of Edinburg and is board certified as a child and adolescent psychiatrist... She currently practices at DHR Health Counseling and Psychiatry Center - Edinburg.",
+          "search_query": "\"Delisa Guadarrama\" Edinburg Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+ZIP match"
+        }
+      ]
+    },
+    {
+      "donor_id": "7afa99ec9673c044",
+      "donor_label": "Gavino Garza (Doctors Hospital at Renaissance, Mission TX)",
+      "category": "medical",
+      "label": "Director of Pharmacy, DHR Health (Doctors Hospital at Renaissance)",
+      "total_amount": 186.25,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Named Director of Pharmacy at DHR since 2007; previously Director of Pharmacy at HCA-Rio Grande Regional Hospital 1987-2007. Texas A&M Pharmacy Preceptor of the Year 2015.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://megadoctornews.com/dhr-director-of-pharmacy-receives-texas-am-preceptor-of-the-year-award/",
+          "evidence_text": "Mega Doctor News article on DHR's Director of Pharmacy",
+          "snippet": "Gavino Garza... is currently employed as the Director of Pharmacy for Doctors Hospital at Renaissance (DHR) in Edinburg. Mr. Garza joined Doctors Hospital at Renaissance in 2007 and has directed the pharmacy through changes in pharmacy clinical services...",
+          "search_query": "\"Gavino Garza\" \"Doctors Hospital at Renaissance\" pharmacy Mission Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer exact match"
+        }
+      ]
+    },
+    {
+      "donor_id": "939ca86a2441ef2d",
+      "donor_label": "Vanessa Saenz (Self, Edinburg TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 163.58,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Two plausible local matches (LPC counselor in Edinburg 78539; Xsellence Realty founder/realtor) but neither is in 78541 and neither is high-confidence. Could be real-estate or medical adjacent — too ambiguous to claim.",
+      "evidence": []
+    },
+    {
+      "donor_id": "dd879bf0c70fb595",
+      "donor_label": "Jennifer Lewis (self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Common name. No clear professional match in McAllen surfaced.",
+      "evidence": []
+    },
+    {
+      "donor_id": "b5050751848a9f2e",
+      "donor_label": "Amira Kalifa (self, McAllen TX)",
+      "category": "real_estate",
+      "label": "REALTOR / property manager, 956 Realty (Trenton View Shopping Center)",
+      "total_amount": 100.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Confirmed McAllen-based REALTOR with 956 Realty, specializing in commercial and residential properties; property manager at Trenton View Shopping Center in McAllen. Also Children's Advocacy Center board member.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.linkedin.com/in/amirakalifa/",
+          "evidence_text": "LinkedIn profile - Amira Kalifa, REALTOR at 956 Realty",
+          "snippet": "Amira Kalifa - REALTOR - 956 Realty",
+          "search_query": "\"Amira Kalifa\" McAllen Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+occupation match"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://cachsc.org/the-story-of-amira-kalifa-a-caring-compassionate-board-member-of-the-childrens-advocacy-center/",
+          "evidence_text": "Children's Advocacy Center bio of Amira Kalifa",
+          "snippet": "Amira established herself successfully in the real estate industry in the Rio Grande Valley. She is a real estate agent specialized in commercial and residential properties and is currently a property manager at Trenton View Shopping Center in McAllen, TX.",
+          "search_query": "\"Amira Kalifa\" McAllen Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "named real-estate professional"
+        }
+      ]
+    },
+    {
+      "donor_id": "a2805ba2478c9527",
+      "donor_label": "Frank Guerra (self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Common name. Multiple McAllen 'Guerra' attorneys exist but Frank Guerra Law Firm is on Pecan Blvd (78501), not the donor ZIP 78504. Cannot confirm a category fit.",
+      "evidence": []
+    },
+    {
+      "donor_id": "7daa8e8b859f428b",
+      "donor_label": "Rodolfo Ramirez (self, Pharr TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Common name. The only prominent attorney named Rodolfo Ramirez surfaced is Houston-based, not Pharr. No anchor for category match.",
+      "evidence": []
+    },
+    {
+      "donor_id": "684af1ca070b23c8",
+      "donor_label": "Daniel Longoria (Hidalgo County Appraisal District, Edinburg TX)",
+      "category": "real_estate",
+      "label": "Property appraiser, Hidalgo County Appraisal District",
+      "total_amount": 100.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Employer Hidalgo County Appraisal District + occupation 'appraiser' is a real-estate-adjacent public-sector role (residential/commercial valuation for property tax). This is a category match by occupation, not a developer/landlord interest. Individual not separately named in HCAD staff results.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://hidalgoad.org/",
+          "evidence_text": "Hidalgo County Appraisal District official site (Edinburg TX)",
+          "snippet": "Hidalgo County Appraisal District: Hidalgo CAD - Official Site",
+          "search_query": "\"Daniel Longoria\" \"Hidalgo County Appraisal District\" Edinburg appraiser",
+          "retrieved_at": "2026-05-21",
+          "rule": "employer+occupation = property appraisal"
+        }
+      ]
+    },
+    {
+      "donor_id": "57064d65b54d7148",
+      "donor_label": "David Tyler King (Self, Laredo TX)",
+      "category": "medical",
+      "label": "Family physician (Laredo Medical Center) & Laredo City Council District 6",
+      "total_amount": 100.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. David Tyler King, DO, is a board-certified family-medicine physician at Laredo Medical Center / Laredo Physician Associates; also Laredo City Council Member District 6 since Jan 2023, US Army Reserve Captain. 'Self' likely refers to his medical practice.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.laredophysicianassociates.com/doctors-providers/king-david-tyler-do-9352",
+          "evidence_text": "Laredo Physician Associates provider profile",
+          "snippet": "King, David Tyler, D.O. | Doctors and Providers | Laredo Physician Associates | Laredo, Texas",
+          "search_query": "\"David Tyler King\" Laredo Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match to medical provider"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.cityoflaredo.com/government/mayor-city-council/district-6-cm-david-tyler-king",
+          "evidence_text": "City of Laredo District 6 council page",
+          "snippet": "District 6 | Laredo, TX - CM David Tyler King",
+          "search_query": "\"David Tyler King\" Laredo Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city confirms identity"
+        }
+      ]
+    },
+    {
+      "donor_id": "4c23b2f755e90cc1",
+      "donor_label": "Jessica Greenfield (self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Multiple Jessica Greenfields with McAllen ties (education/instructional design, Salado retail family of McAllen origin); no clear professional category match.",
+      "evidence": []
+    }
+  ]
+}

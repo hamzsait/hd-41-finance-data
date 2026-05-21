@@ -1,0 +1,364 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 8,
+  "findings": [
+    {
+      "donor_id": "org:c471f016cb63",
+      "donor_label": "Walsh, McGurk, Cordova & Nixon (Edinburg)",
+      "category": "real_estate",
+      "label": "Law firm with real estate development practice",
+      "total_amount": 2500.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Edinburg law firm whose stated practice areas include 'all aspects of real estate development' and a partner (Deborah L. Cordova) specializing in Real Estate. Plausible real-estate-adjacent donor but the firm is general business counsel, not a developer.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://profiles.superlawyers.com/texas/edinburg/lawfirm/walsh-mcgurk-cordova-nixon-pllc/3d2d6db4-8e79-4f5b-8fb9-7d208bf2d6f2.html",
+          "evidence_text": "Super Lawyers profile lists firm services including real estate development; partner Cordova specializes in Real Estate.",
+          "snippet": "from business formation and financing, to all aspects of real estate development... Deborah L. Cordova (Real Estate, Business/Corporate, Business Litigation)",
+          "search_query": "\"Walsh, McGurk, Cordova & Nixon\" Edinburg Texas law firm",
+          "retrieved_at": "2026-05-21",
+          "rule": "named practice area"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:e60c5a0a824c",
+      "donor_label": "S2 Engineering PLLC (Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Confirmed as a registered Mission, TX engineering PLLC via Bizapedia but no public information links it to any of the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:51b61068ffc9",
+      "donor_label": "McAllen Firefighters for Responsible Government (McAllen PAC)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Registered Texas PAC tied to McAllen firefighter and police unions; ran 'Save McAllen' opposition to 2024 ballot initiatives. Does not map to any of the 7 target categories (medical/Israel-adv/real-estate/oil-gas).",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:1656593a5aac",
+      "donor_label": "Defend the Dream PAC (South Padre Island)",
+      "category": "real_estate",
+      "label": "Texas property-tax/property-owner advocacy PAC",
+      "total_amount": 2500.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Property-owner PAC founded by former South Padre Island mayor Barry Patel; explicit mission is freezing property tax assessments and protecting 'brick-and-mortar businesses.' Real-estate / property-owner industry advocacy.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://defendthedreampac.org/",
+          "evidence_text": "PAC's stated mission is property tax reform and property-owner advocacy.",
+          "snippet": "Defend the Dream PAC is a grassroots political action committee formed by Texas property owners... Freeze all property tax assessments of existing properties",
+          "search_query": "\"Defend the Dream PAC\" Texas South Padre Island",
+          "retrieved_at": "2026-05-21",
+          "rule": "named industry advocacy"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://x.com/710KURV/status/2016621517165953274",
+          "evidence_text": "Former South Padre Island Mayor Barry Patel founded PAC to defend property owners.",
+          "snippet": "Former South Padre Island Mayor Barry Patel joined us at KURV to talk about his new initiative: the Defend the Dream PAC. The goal is simple but bold: Freeze state property taxes",
+          "search_query": "\"Defend the Dream PAC\" Texas South Padre Island",
+          "retrieved_at": "2026-05-21",
+          "rule": "named founder + mission"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:088dcd1cd8e2",
+      "donor_label": "Auriel Investments LLC (McAllen)",
+      "category": "real_estate",
+      "label": "Major RGV land developer / shopping centers",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Self-described 'full service land development firm' and parent of Domain Development; has developed 13 shopping centers and 10 subdivisions in South Texas. Core real-estate developer.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.aurielinvestments.com/",
+          "evidence_text": "Company website / RGV Partnership profile identifies Auriel as a land development firm and parent of Domain Development.",
+          "snippet": "Auriel Investments is a full service land development firm based in McAllen, TX... developed 13 shopping centers and 10 subdivisions with over 157 tenants",
+          "search_query": "\"Auriel Investments\" Domain Development shopping centers commercial real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "named real estate developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:8bf803305dd5",
+      "donor_label": "Antonio Esparza MD (Pharr)",
+      "category": "medical",
+      "label": "Pediatrician, Pharr TX",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Antonio Esparza, MD is a pediatrician in Pharr, TX with 41 years of experience, affiliated with DHR Health, Rio Grande Regional, and Driscoll Children's. The donor entity name itself is an MD practice.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-antonio-esparza-xchrg",
+          "evidence_text": "Healthgrades profile confirms Dr. Antonio Esparza is a pediatrician in Pharr, TX.",
+          "snippet": "Dr. Antonio Esparza, MD is a Pediatrics specialist practicing in Pharr, TX with 41 years of experience.",
+          "search_query": "\"Antonio Esparza\" MD Pharr Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+occupation match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:c736cba6a7bd",
+      "donor_label": "Redline Development Ltd (Mission)",
+      "category": "real_estate",
+      "label": "Real estate development entity (name-based)",
+      "total_amount": 2000.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Entity name explicitly contains 'Development Ltd.' Could not confirm specific Mission, TX firm via public web; entity name strongly implies real-estate development. Treated as low/sensitive due to ambiguous match.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.linkedin.com/company/redline-development-group",
+          "evidence_text": "Several 'Redline Development' entities are real estate developers; entity name itself signals the category.",
+          "snippet": "Redline Development Group... multifamily real estate development including acquisitions, financing, construction, and asset management",
+          "search_query": "\"Redline Development Ltd\" Mission Texas Hidalgo real estate developer",
+          "retrieved_at": "2026-05-21",
+          "rule": "entity name match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:8f837a0f1b28",
+      "donor_label": "Law Offices of Rodolfo \"Rudy\" Ruiz (Edinburg)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Confirmed personal injury law firm in Edinburg; no mapping to any of the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:63a81515b905",
+      "donor_label": "Mr. Mortgage LLC (Edinburg)",
+      "category": "real_estate",
+      "label": "Residential mortgage broker",
+      "total_amount": 1500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Full-service residential mortgage broker (NMLS 2190447) based in Edinburg. Mortgage brokerage is a real-estate-finance category donor.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.mrmortgageus.com/",
+          "evidence_text": "Company website confirms residential mortgage brokerage operations.",
+          "snippet": "Mr. Mortgage is a full-service residential mortgage broker providing home loans across the state of Texas.",
+          "search_query": "\"Mr. Mortgage\" Edinburg Texas LLC mortgage broker",
+          "retrieved_at": "2026-05-21",
+          "rule": "named industry"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:14e1ad610f93",
+      "donor_label": "Janamo Properties LLC (Mission)",
+      "category": "real_estate",
+      "label": "Property holding LLC (name-based)",
+      "total_amount": 1500.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Entity name contains 'Properties LLC' indicating a real-estate / property-holding company; could not confirm specific business or owners via web search. Sensitive because match rests on entity name alone.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.sos.state.tx.us/corp/",
+          "evidence_text": "No public web records surfaced; entity name itself signals property-holding LLC, but no confirming snippet available.",
+          "snippet": "Texas Secretary of State business entity search",
+          "search_query": "\"Janamo Properties\" Texas Secretary of State LLC owner",
+          "retrieved_at": "2026-05-21",
+          "rule": "entity name match (low confidence)"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:6122d2fb6d19",
+      "donor_label": "Carlos J. Cardenas MD (McAllen)",
+      "category": "medical",
+      "label": "Founder/Chairman DHR Health; former TMA president",
+      "total_amount": 1500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Carlos J. Cardenas is founder, chairman and chief administrative officer of DHR Health (one of the largest physician-owned hospitals in the U.S.), a gastroenterologist, and a former president of the Texas Medical Association. Currently president of Physician-Led Healthcare for America.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://dhrhealth.com/physicians/carlos-j-cardenas-md/",
+          "evidence_text": "DHR Health bio confirms role and medical leadership.",
+          "snippet": "Dr. Cardenas is a founder and chairman of the board and chief administrative officer for DHR Health... Chairman of the Board and President for the Texas Medical Association.",
+          "search_query": "\"Carlos J. Cardenas\" MD McAllen Texas DHR doctor",
+          "retrieved_at": "2026-05-21",
+          "rule": "named executive"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:d59021d00c02",
+      "donor_label": "ValleyVentures LLC (McAllen)",
+      "category": "real_estate",
+      "label": "Real Estate and Rental & Leasing entity",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "D&B classifies Valley Ventures LLC (McAllen, 78501) under the Real Estate and Rental and Leasing industry sector; member Jose Rene Garza. Inferred real-estate category from industry classification.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dnb.com/business-directory/company-profiles.valley_ventures_llc.0e6a6a68d407bb18afee9a4dc45d2a76.html",
+          "evidence_text": "D&B business directory classifies the entity in Real Estate and Rental and Leasing.",
+          "snippet": "ValleyVentures LLC is located at 1001 S 10th St Ste G-720 McAllen, TX, 78501-5049 and operates in the Real Estate and Rental and Leasing industry",
+          "search_query": "\"ValleyVentures LLC\" McAllen 78501 owners real estate investment",
+          "retrieved_at": "2026-05-21",
+          "rule": "industry classification"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:52e6ef840c1f",
+      "donor_label": "The Mangi Family LP (McAllen)",
+      "category": "medical",
+      "label": "Mangi family (Dr. Salil Mangi, nephrologist) LP",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "McAllen-based Mangi family LP most likely tied to Dr. Salil Mangi, a McAllen nephrologist (~45 years of practice, affiliated with DHR Health and Rio Grande Regional). Family LP structure plus McAllen residence/zip make medical-family vehicle likely; sensitive because LP ownership not independently confirmed.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-salil-mangi-yg4jr",
+          "evidence_text": "Healthgrades profile confirms Dr. Salil Mangi is a McAllen nephrologist.",
+          "snippet": "Dr. Salil Mangi is a nephrologist in McAllen, Texas and is affiliated with multiple hospitals in the area, including Rio Grande Regional Hospital and Doctors Hospital at Renaissance.",
+          "search_query": "\"Salil Mangi\" MD McAllen nephrology kidney specialists",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.corporationwiki.com/Texas/McAllen/madhu-mangi/30166184.aspx",
+          "evidence_text": "Corporation Wiki entry links Madhu Mangi (McAllen) to family LLC 'Salil, L.L.C.', tying Mangi family entities to McAllen.",
+          "snippet": "Madhu Mangi - Member for Salil, L.L.C.",
+          "search_query": "\"Mangi Family\" McAllen Texas LP partnership",
+          "retrieved_at": "2026-05-21",
+          "rule": "family entity link"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:5c090055f3a4",
+      "donor_label": "The Gomez Law Firm, PLLC (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Most likely the Julian C. Gomez Law Firm, PLLC of McAllen, a personal injury / product liability / maritime practice. No mapping to any of the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:f2032c13ca1d",
+      "donor_label": "Texas State Association of Firefighters Action Committee (Austin)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "TSAFF's TAFPAC, the statewide professional firefighter PAC. Labor PAC; does not map to any of the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:be8f757580bd",
+      "donor_label": "Texas Building Branch AGC (Austin)",
+      "category": "real_estate",
+      "label": "Commercial construction industry PAC",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "AGC-Texas Building Branch is the legislative office for AGC commercial building chapters in Texas; its PAC advances 'interests of commercial builders.' Construction/commercial-real-estate industry advocacy.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://agctbb.org/",
+          "evidence_text": "AGC-TBB website explicitly identifies the organization as advocating for commercial builders.",
+          "snippet": "AGC-Texas Building Branch (AGC-TBB) is a statewide trade association representing the commercial construction industry... protect and advance the interests of commercial builders in Texas.",
+          "search_query": "\"Texas Building Branch AGC\" Associated General Contractors PAC",
+          "retrieved_at": "2026-05-21",
+          "rule": "named industry PAC"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.transparencyusa.org/tx/committee/texas-building-branch-associated-general-contractors-pac-15548-gpac",
+          "evidence_text": "Transparency USA confirms registered Texas PAC.",
+          "snippet": "Texas Building Branch Associated General Contractors PAC",
+          "search_query": "\"Texas Building Branch AGC\" Associated General Contractors PAC",
+          "retrieved_at": "2026-05-21",
+          "rule": "PAC registration"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:b74a95e689cc",
+      "donor_label": "Texas Automobile Dealers Association (Austin)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "TADA / AutoPAC is the statewide franchised-auto-dealer industry PAC. Does not map to medical/Israel-advocacy/real-estate/oil-gas categories.",
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 7,
+  "findings": [
+    {
+      "donor_id": "42ed6971f5d8a2c9",
+      "donor_label": "Emiliano Romero (Self, San Antonio)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor with no employer anchor; common name.",
+      "evidence": []
+    },
+    {
+      "donor_id": "1c298f6e3a306058",
+      "donor_label": "Mariella Gorena (self / attorney, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Attorney in McAllen but no specific category-relevant affiliation found in searches.",
+      "evidence": []
+    },
+    {
+      "donor_id": "074d4081f16d2f00",
+      "donor_label": "Hortencia Rios (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 100.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor with no employer anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "9beaeb90943e9eb1",
+      "donor_label": "Karis Martinez (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 50.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor with no employer anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "30ec0cfd6173398f",
+      "donor_label": "Alice A. Smith (Self, Saratoga Springs)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 50.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Out-of-state small-dollar self-employed donor; very common name, no anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "2a840d4e3a258d8a",
+      "donor_label": "Margarita Rodriguez (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 50.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor; very common name, no anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "dea6c02a248cf145",
+      "donor_label": "Anita Bhakta (Self, Edinburg)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 41.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Bhakta is a surname associated with hospitality/medical families in Texas, but no specific affiliation evidence found.",
+      "evidence": []
+    },
+    {
+      "donor_id": "7e5d0f6102fa430c",
+      "donor_label": "Aubrey Webb (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 41.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor with no employer anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "0d75b00687d57eeb",
+      "donor_label": "Krista Fonseca (self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 41.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor with no employer anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "ffd8bd91058181df",
+      "donor_label": "Vanessa Ibarra (self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 20.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Small-dollar self-employed donor with no employer anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:1245acd854a5",
+      "donor_label": "Nolana St LLC (McAllen entity)",
+      "category": "real_estate",
+      "label": "Real-estate-named LLC (McAllen commercial corridor)",
+      "total_amount": 5000.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "LLC named for Nolana Street, a major McAllen commercial corridor lined with office, retail, and apartment properties. Naming pattern strongly suggests a real-estate holding entity, but no direct ownership disclosure found.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.loopnet.com/Listing/801-W-Nolana-St-McAllen-TX/4168887/",
+          "evidence_text": "Nolana Street in McAllen is a commercial corridor; LLC name pattern typical of single-asset real-estate holding entities.",
+          "snippet": "801 W Nolana St, McAllen, TX 78504 - Fountain View Office Building",
+          "search_query": "\"Nolana St LLC\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "naming-pattern inference"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:4048c679e106",
+      "donor_label": "Laish Holdings LLC (McAllen entity)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 5000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No public records surfaced via search; would need Texas SOS direct lookup to identify principals/sector. Generic 'Holdings LLC' could be real estate or other, insufficient evidence to assign category.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:5a623889a9d4",
+      "donor_label": "HOSPAC-State (Texas Hospital Association PAC, Austin)",
+      "category": "medical",
+      "label": "Texas Hospital Association state PAC",
+      "total_amount": 5000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "HOSPAC is the Texas Hospital Association's PAC, representing 85%+ of Texas acute-care hospitals. Core medical/hospital industry money.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.tha.org/advocacy/hospac/",
+          "evidence_text": "Official THA page identifying HOSPAC as the THA's political action committee",
+          "snippet": "HOSPAC is THA's bipartisan political action committee that works hand-in-hand with THA members to build vital relationships with lawmakers. HOSPAC is the only political action committee that represents all Texas hospitals.",
+          "search_query": "\"HOSPAC\" Texas Hospital Association political action committee",
+          "retrieved_at": "2026-05-21",
+          "rule": "named PAC of medical trade association"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:e5f1779cdd9f",
+      "donor_label": "Border Health PAC (McAllen)",
+      "category": "medical",
+      "label": "Rio Grande Valley physicians PAC",
+      "total_amount": 5000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Border Health PAC is a McAllen-based PAC funded primarily by RGV physicians; one of the top-10 Texas PACs by spend. Pure medical-industry money, especially active in Hidalgo County races.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.opensecrets.org/political-action-committees-pacs/border-health/C00415752/summary/2024",
+          "evidence_text": "OpenSecrets PAC profile for Border Health",
+          "snippet": "Border Health PAC is headquartered along the Rio Grande in McAllen, Texas. Border Health's stated purpose is to promote the issues of the medical profession along Texas' section of the U.S.-Mexico border. Border Health's donors are mostly comprised of doctors with an average donation topped out at more than $5,400.",
+          "search_query": "\"Border Health PAC\" McAllen Texas Ethics Commission",
+          "retrieved_at": "2026-05-21",
+          "rule": "named PAC of physician group"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:e55cf221e9d8",
+      "donor_label": "Acero Investments LLC (Mission)",
+      "category": "real_estate",
+      "label": "RGV real-estate firm",
+      "total_amount": 5000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Acero Investments / Acero Real Estate Experts is a Mission/McAllen real-estate firm; the donor's Mission TX address (78572) matches Acero Real Estate Experts' Mission office at 707 S Paseo Del Rey.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.har.com/acero-real-estate-experts-llc/broker_GMARTX-801070148",
+          "evidence_text": "HAR.com broker listing for Acero Real Estate Experts LLC in Mission TX",
+          "snippet": "Acero Real Estate Experts LLC is a Texas real estate firm located at 707 S Paseo Del Rey Suite D., Mission, TX 78572. The company provides a wide range of real estate services.",
+          "search_query": "\"Acero Investments LLC\" Mission Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match to real-estate firm"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.facebook.com/aceroinvestmentgroup/",
+          "evidence_text": "Facebook page for Acero Investments in McAllen TX",
+          "snippet": "Acero Investments | McAllen TX",
+          "search_query": "\"Acero Investments LLC\" Mission Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:00f043b70384",
+      "donor_label": "360 Medical LLC (Edinburg)",
+      "category": "medical",
+      "label": "Edinburg medical supplies / wound care company",
+      "total_amount": 5000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "360 Medical is an Edinburg-based healthcare products/services company specializing in wound care consignment programs. Clear medical-industry donor.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.360medical.net/",
+          "evidence_text": "Company website for 360 Medical",
+          "snippet": "360 Medical is located at 2215 Cornerstone in Edinburg, TX 78539... they leverage advanced technology and deep industry knowledge to deliver exceptional medical products and services... unique consignment program tailored for providers managing wound care.",
+          "search_query": "\"360 Medical LLC\" Edinburg Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+industry match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:eed0c641b4b4",
+      "donor_label": "Texas Sands PAC (Austin)",
+      "category": "_searched_no_results",
+      "label": "casino_gambling_lobby_not_in_target_categories",
+      "total_amount": 4000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Texas Sands PAC is Las Vegas Sands' Texas casino-legalization PAC, sole funder Miriam Adelson. Notable for partisan-lean (Adelson is a major GOP donor) but does NOT fall into any of the 7 target categories (medical/adl/aipac/dmfi/jstreet/real_estate/oil_gas). Flagged here for awareness but no category row written.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://casinobeats.com/2025/08/13/las-vegas-sands-2026-texas-casino-pac/",
+          "evidence_text": "Article describing Texas Sands PAC origins and funding",
+          "snippet": "Las Vegas Sands formed the Texas Sands PAC in 2022 as part of its long-running effort to legalize casino gambling in Texas. Dr. Miriam Adelson is the PAC's lone individual contributor.",
+          "search_query": "\"Texas Sands PAC\" Las Vegas Sands gambling lobby",
+          "retrieved_at": "2026-05-21",
+          "rule": "not in target categories"
+        }
+      ]
+    }
+  ]
+}

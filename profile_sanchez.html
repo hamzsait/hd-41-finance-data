@@ -756,6 +756,38 @@
     margin-top: 2px;
   }
 
+  /* ── Web-research donor ties (muted variant of affiliations card) ── */
+  #webResearchCard {
+    background: rgba(148, 163, 184, 0.05);
+    border-color: rgba(148, 163, 184, 0.25);
+  }
+  #webResearchCard .card-title { color: var(--text); }
+  .wr-note {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 720px;
+    padding: 10px 12px;
+    background: rgba(148, 163, 184, 0.08);
+    border-left: 3px solid rgba(148, 163, 184, 0.5);
+    border-radius: 4px;
+  }
+  .ev-snippet {
+    color: var(--muted);
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 4px;
+    padding-left: 8px;
+    border-left: 2px solid rgba(148, 163, 184, 0.3);
+  }
+  .ev-query {
+    color: var(--muted);
+    font-size: 10px;
+    font-family: ui-monospace, Consolas, monospace;
+    margin-top: 2px;
+  }
+
   /* ── Year chart ── */
   .year-bars {
     display: flex;
@@ -1316,6 +1348,22 @@
         employer ties.
       </p>
       <div id="affiliationsList"></div>
+    </div>
+
+    <!-- ── Web research donor ties (muted, distinct from FEC affiliations above) ── -->
+    <div class="card" id="webResearchCard" style="display:none">
+      <div class="card-title">
+        Web research donor ties
+        <span class="hint">click any donor to see source URLs</span>
+      </div>
+      <p class="wr-note">
+        Findings from per-donor web search (Google &amp; direct URL retrieval) on individual
+        donors. <strong>Distinct from the FEC-based affiliation matches above</strong> &mdash;
+        these are inferred from named bios, employer pages, news mentions, and similar
+        public-web sources, then disambiguated by donor name + employer + city. Every row
+        carries the source URL and a verbatim snippet. Low-confidence rows are flagged.
+      </p>
+      <div id="webResearchList"></div>
     </div>
 
     <!-- ── Methodology note ── -->
@@ -1990,6 +2038,7 @@ function renderAll(data, allDonations) {
   renderFirms();
   renderTopDonors();
   renderAffiliations(data);
+  renderWebResearch(data);
 
   // Cycles
   renderCycleNav(CYCLES);
@@ -2294,6 +2343,83 @@ function renderAffiliations(data) {
             ${d.total_amount ? `<span class="ad-amt">${_money(d.total_amount)}</span>` : ''}
             ${sensFlag}
           </summary>
+          <ul class="ev-list">${evHtml}</ul>
+        </details>
+      `;
+    }).join('');
+    return `
+      <div class="affil-cat">
+        <div class="affil-head">
+          <span class="affil-title">${_esc(c.category_label || c.category)}</span>
+          <span class="affil-meta">${c.donor_count} donor${c.donor_count === 1 ? '' : 's'}${totalLine}</span>
+          <span class="affil-conf">${confChips}</span>
+          ${sensitiveBadge}
+        </div>
+        ${donorCards}
+      </div>
+    `;
+  }).join('');
+}
+
+// ── Web research renderer (parallel to renderAffiliations) ──────────────────
+function renderWebResearch(data) {
+  const summary = data.web_research || {categories: []};
+  const donor_rows = data.web_research_donors || {};
+  const cats = (summary.categories || []).filter(c =>
+    c.category !== '_searched_no_results'
+  );
+
+  const card = document.getElementById('webResearchCard');
+  const list = document.getElementById('webResearchList');
+  if (!card || !list) return;
+  if (!cats.length) {
+    card.style.display = 'none';
+    return;
+  }
+  card.style.display = '';
+
+  list.innerHTML = cats.map(c => {
+    const conf = c.confidence_breakdown || {};
+    const confChips = ['high','medium','low']
+      .filter(k => (conf[k] || 0) > 0)
+      .map(k => `<span class="confbar conf-${k === 'medium' ? 'med' : k}" title="${conf[k]} ${k}-confidence">${conf[k]}</span>`)
+      .join('');
+    const sensitiveBadge = (c.sensitive_count > 0)
+      ? `<span class="affil-sens">⚠ ${c.sensitive_count} sensitive — pending review</span>` : '';
+    const totalLine = (c.total_amount && c.total_amount > 0)
+      ? ` · ${_money(c.total_amount)}` : '';
+    const donorCards = (c.top_donors || []).map(d => {
+      const did = d.donor_id;
+      const rows = (donor_rows[did] || []).filter(a => a.category === c.category);
+      const evRows = rows.flatMap(a => a.evidence || []);
+      const evHtml = evRows.length ? evRows.map(e => `
+        <li class="ev">
+          <span class="ev-source">${_esc(e.source || '')}</span>${
+            e.source_url ? ` <a class="ev-link" href="${_esc(e.source_url)}" target="_blank" rel="noopener">↗ source</a>` : ''
+          }
+          <div class="ev-text">${_esc(e.evidence_text || '')}</div>${
+            e.snippet ? `<div class="ev-snippet">&ldquo;${_esc(e.snippet)}&rdquo;</div>` : ''
+          }${
+            e.search_query ? `<div class="ev-query">query: ${_esc(e.search_query)}</div>` : ''
+          }${
+            e.rule ? `<div class="ev-rule">rule: ${_esc(e.rule)}</div>` : ''
+          }
+        </li>
+      `).join('') : '<li class="ev"><em style="color:var(--muted)">(no evidence rows)</em></li>';
+      const sensFlag = rows.some(a => a.sensitive) ? '<span class="ad-sens">⚠ sensitive</span>' : '';
+      const notesBlock = rows.find(a => a.notes)
+        ? `<div class="ev-text" style="margin-top:6px;padding-left:8px">${_esc(rows.find(a => a.notes).notes)}</div>`
+        : '';
+      return `
+        <details class="affil-donor">
+          <summary>
+            <span class="ad-name">${_esc(d.name || '')}</span>
+            <span class="ad-label">${_esc(d.label || '')}</span>
+            <span class="ad-conf conf-${_esc(d.confidence || 'medium')}">${_esc(d.confidence || 'medium')}</span>
+            ${d.total_amount ? `<span class="ad-amt">${_money(d.total_amount)}</span>` : ''}
+            ${sensFlag}
+          </summary>
+          ${notesBlock}
           <ul class="ev-list">${evHtml}</ul>
         </details>
       `;

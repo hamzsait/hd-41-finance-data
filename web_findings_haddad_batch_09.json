@@ -1,0 +1,392 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 9,
+  "findings": [
+    {
+      "donor_id": "org:2e0836332263",
+      "donor_label": "Ruppert Ranch Company (Edinburg)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No public information located linking Ruppert Ranch Company in Edinburg, TX to any of the seven categories. Name suggests agricultural/ranching real estate but no anchor confirmed.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:b18ba61a15e5",
+      "donor_label": "Roberto Adrian Haddad Campaign Fund (McAllen)",
+      "category": "_searched_no_results",
+      "label": "candidate_family_committee_not_in_scope",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Roberto Adrian Haddad is a McAllen attorney (Georgetown JD 2008) working with Doctors Hospital at Renaissance; this is a related campaign fund (likely a family member's campaign committee, given the shared Haddad name and McAllen base). Not a corporate donor in any of the seven research categories.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.martindale.com/attorney/mr-roberto-adrian-haddad-300627458/",
+          "evidence_text": "Roberto Adrian Haddad attorney profile",
+          "snippet": "Roberto Adrian Haddad is an attorney serving McAllen, TX. His practice areas include Business, Government/Administrative, Health Care, Insurance, Real Estate, Finance, Non-Profits, and Legislative/Campaign",
+          "search_query": "Roberto Adrian Haddad McAllen Texas attorney brother",
+          "retrieved_at": "2026-05-21",
+          "rule": "name match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:cda3c678b4ed",
+      "donor_label": "Pointer Realty (McAllen)",
+      "category": "real_estate",
+      "label": "Commercial real estate brokerage (McAllen)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Pointer Realty is a full-service commercial real estate firm based in McAllen specializing in retail site selection and land acquisition. Direct real estate industry entity.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://pointerstx.com/",
+          "evidence_text": "Company self-description",
+          "snippet": "Pointer Realty is a full service commercial real estate firm based out of the Rio Grande Valley in McAllen, TX",
+          "search_query": "Pointer Realty McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is real estate firm"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.loopnet.com/company/pointer-realty/mcallen-tx/30b001fl/",
+          "evidence_text": "LoopNet commercial real estate broker directory",
+          "snippet": "Pointer Realty - McAllen Commercial Listings & Brokers",
+          "search_query": "Pointer Realty McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is real estate firm"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:217909224cdc",
+      "donor_label": "McAllen Gold & Silver Exchange (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Retail jewelry/watch and precious-metals exchange located at 1512 N 10th St, McAllen. Owner Patrick Curry. Not in any of the seven research categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:d321b5945142",
+      "donor_label": "LS Investments LLP (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Generic investment LLP name; no specific information about this McAllen entity could be located. Generic 'investments' name not sufficient to anchor real estate vs other categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:7f8303f654aa",
+      "donor_label": "Linebarger Goggan Blair & Sampson LLP (Austin)",
+      "category": "_searched_no_results",
+      "label": "law_firm_not_in_scope",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Linebarger Goggan Blair & Sampson is a national law firm specializing in property tax and delinquent receivables collection for government entities. Heavy state-political donor in Texas ($440K to legislators since 2023 per Texas Tribune) but not in any of the seven specific research categories (medical, ADL, AIPAC, DMFI, J Street, real estate, oil/gas).",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.texastribune.org/2025/03/13/texas-property-tax-delinquent-fees-attorneys/",
+          "evidence_text": "Texas Tribune coverage of Linebarger political giving",
+          "snippet": "Linebarger leads with $440,000 in campaign contributions to legislators and statewide elected officials since 2023",
+          "search_query": "Linebarger property tax law firm AIPAC ADL contributions",
+          "retrieved_at": "2026-05-21",
+          "rule": "context"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:b617a20ad6eb",
+      "donor_label": "Law Offices of Mario Davila, PLLC (McAllen)",
+      "category": "_searched_no_results",
+      "label": "law_firm_not_in_scope",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Personal injury / SSDI law firm based in McAllen. Practice areas (car accidents, slip-and-fall, disability claims) do not fit any of the seven research categories.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.lawinfo.com/lawfirm/texas/mcallen/law-offices-of-mario-davila/5ac45041-116e-40e7-aa38-801c32d41671.html",
+          "evidence_text": "Law firm practice description",
+          "snippet": "Law Offices of Mario Davila - McAllen, TX Car Accident Law Firm... specializes in car accidents, trailer accidents, and slip and fall cases",
+          "search_query": "Mario Davila law office McAllen Texas attorney",
+          "retrieved_at": "2026-05-21",
+          "rule": "context"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:f544bad0a540",
+      "donor_label": "Law Office of Valdez, Martinez & Monarrez (McAllen)",
+      "category": "_searched_no_results",
+      "label": "law_firm_not_in_scope",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "McAllen immigration / personal injury / criminal defense firm (operates as VAMOS Law Group / Valdez, Monarrez & San Miguel). Not in any of the seven research categories.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.vamoslawfirm.com/",
+          "evidence_text": "Firm self-description",
+          "snippet": "VAMOS Law Group - Immigration, Personal Injury & Criminal Defense",
+          "search_query": "Valdez Martinez Monarrez law office McAllen Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "context"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:996c9d382cec",
+      "donor_label": "Infinity Homes (Edinburg)",
+      "category": "real_estate",
+      "label": "Custom home builder and developer (Edinburg, Sugar Oaks)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Infinity Custom Construction LLC (DBA Infinity Homes), Eduardo Garza Jr. president. Custom home builder and developer of the Sugar Oaks gated community in Edinburg. Directly in real-estate/development category.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://rgvisionmagazine.com/infinity-homes-building-things-last/",
+          "evidence_text": "RGVision Magazine feature on Infinity Homes",
+          "snippet": "The owners have also stepped into the role of developers with their own gated community in Edinburg called Sugar Oaks. They own every lot in Sugar Oaks",
+          "search_query": "Infinity Homes Edinburg Texas builder developer",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is developer"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.bbb.org/us/tx/edinburg/profile/home-builders/infinity-custom-construction-llc-0915-58001531",
+          "evidence_text": "BBB business profile",
+          "snippet": "Infinity Custom Construction, L.L.C. ... Eduardo Garza Jr. as President. Home Builders category",
+          "search_query": "Infinity Homes Edinburg Texas builder developer",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:6c4c9c95d06b",
+      "donor_label": "Fuad Zayed MD (McAllen)",
+      "category": "medical",
+      "label": "Family medicine physician (McAllen/Alton)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Fuad Zayed, MD is a board-certified family medicine physician practicing in Alton/McAllen, affiliated with Doctor's Hospital at Renaissance, Mission Regional Medical Center, and McAllen Medical Center. Donation entity is the physician's professional practice.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-fuad-zayed-xh5xf",
+          "evidence_text": "Healthgrades physician profile",
+          "snippet": "Dr. Fuad Zayed, MD - Family Medicine Physician in Alton, TX",
+          "search_query": "Fuad Zayed MD McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is physician"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.doximity.com/pub/fuad-zayed-md",
+          "evidence_text": "Doximity physician profile",
+          "snippet": "Dr. Fuad Zayed, MD - Alton, TX - Family Medicine on Doximity",
+          "search_query": "Fuad Zayed MD McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is physician"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:c1879f872178",
+      "donor_label": "Franz Limited Partnership (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No public information located identifying this specific limited partnership. McAllen has multiple Franz-named entities (Franz Law Firm, Peralez Franz LLP) but no direct link to a 'Franz Limited Partnership.' Likely a family LP for holding real estate or investments but no anchor confirmed.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:3c149b1b0901",
+      "donor_label": "Corporate Asset Partners LLC (San Antonio)",
+      "category": "real_estate",
+      "label": "Commercial real estate developer (San Antonio / RGV)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Corporate Asset Partners LLC (Craig Garansuay, broker/owner) is a San Antonio-based commercial real estate developer with active projects in the Rio Grande Valley. Directly in real-estate/development category.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "http://corporateassetpartners.com/",
+          "evidence_text": "Company self-description",
+          "snippet": "Corporate Asset Partners (CAP) is a leading developer of commercial property in the Rio Grande Valley, San Antonio and other rising markets",
+          "search_query": "Corporate Asset Partners San Antonio Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is developer"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.har.com/corporate-asset-partners-llc/trec_7CpRHi9vUZesskuZFWpOsA==",
+          "evidence_text": "TREC real estate broker license",
+          "snippet": "Corporate Asset Partners, LLC - TREC - HAR.com",
+          "search_query": "Corporate Asset Partners San Antonio Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is licensed real estate broker"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:85dcc985d9a9",
+      "donor_label": "Century Construction LLC (Palmhurst)",
+      "category": "real_estate",
+      "label": "Custom home builder (RGV)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Century Construction LLC (Victor Campos) is a South Texas custom home builder operating in the McAllen-Edinburg area. Residential construction / home-building entity, directly in real estate category.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.centuryrgv.com/",
+          "evidence_text": "Company website",
+          "snippet": "Century Construction RGV - Custom Home Builders McAllen-Edinburg... residential construction valley wide",
+          "search_query": "Century Construction Palmhurst Texas LLC builder",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is home builder"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:2e682536eab1",
+      "donor_label": "Carlina Ten LLC (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Confirmed registered as an LLC in McAllen via Bizapedia listing, but no description of business activity available. Generic LLC name; cannot confirm category. Likely a real-estate / investment holding LLC based on McAllen patterns but no anchor.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.bizapedia.com/tx/carlina-ten-llc.html",
+          "evidence_text": "Bizapedia registry listing",
+          "snippet": "CARLINA TEN, LLC in Mcallen, TX",
+          "search_query": "Carlina Ten LLC McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "registry confirmation only"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:d38ae85547ee",
+      "donor_label": "Brownsville Driving Range LLC (Brownsville)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Likely a golf-driving-range business (a Golf Driving Range exists at 860 Media Luna Rd, Brownsville). Not in any of the seven research categories; ownership of the LLC could not be tied to a real estate/development firm.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:e30b481217a0",
+      "donor_label": "Arboreal Development LLC (McAllen)",
+      "category": "real_estate",
+      "label": "Real estate / land development LLC (name-based)",
+      "total_amount": 1000.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Entity name 'Arboreal Development LLC' strongly suggests a land/real-estate development company, but no public information page for this specific McAllen LLC was located. Confidence is low because no corroborating source confirms the development scope; flagged sensitive.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.google.com/search?q=%22Arboreal+Development%22+McAllen+Texas+LLC+real+estate",
+          "evidence_text": "Search returned only general McAllen real-estate listings, no direct profile for Arboreal Development LLC",
+          "snippet": "The web search results don't contain specific information about \"Arboreal Development\" McAllen Texas LLC",
+          "search_query": "Arboreal Development McAllen Texas LLC real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name-only inference"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:64c9be6d0298",
+      "donor_label": "Adaptive Access Construction (Palmhurst)",
+      "category": "real_estate",
+      "label": "ADA-accessibility construction / remodeling contractor",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Adaptive Access Construction LLC at 4205 Loriemark Dr, Palmhurst, TX, is a Lead Safe Certified construction contractor specializing in ADA / wheelchair-accessible home modifications and remodeling. Construction services qualify it for the broader real-estate / construction category, though it is niche home-modification work rather than greenfield development.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.leadsafelist.com/directory/contractor/texas/palmhurst/adaptive-access-construction/",
+          "evidence_text": "Lead Safe contractor directory entry",
+          "snippet": "Adaptive Access Construction is located at 4205 Loriemark Dr, Palmhurst, Texas 78573, and it is a Lead Safe Certified contractor",
+          "search_query": "Adaptive Access Construction Palmhurst Texas builder",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is construction contractor"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.adaptiveaccess.com/",
+          "evidence_text": "Affiliated brand site (Adaptive Access)",
+          "snippet": "Wheelchair Accessible Remodeling ADA Handicap Compliance - Adaptive Access",
+          "search_query": "Adaptive Access Construction Palmhurst Texas builder",
+          "retrieved_at": "2026-05-21",
+          "rule": "named entity is construction contractor"
+        }
+      ]
+    }
+  ]
+}

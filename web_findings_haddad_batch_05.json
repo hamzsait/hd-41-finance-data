@@ -1,0 +1,284 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 5,
+  "findings": [
+    {
+      "donor_id": "d5b21715a7cabda3",
+      "donor_label": "Sotelo, Oscar (Self / Sotelo Dermatology, McAllen)",
+      "category": "medical",
+      "label": "Board-certified dermatologist, Sotelo Dermatology Surgery & Aesthetics",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Oscar Sotelo is a board-certified dermatologist with 40+ years of experience operating Sotelo Dermatology Surgery & Aesthetics at 7012 N 10th St, McAllen 78504 — matches donor city/zip. Filed as self-employed.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.yelp.com/biz/sotelo-oscar-md-mcallen",
+          "evidence_text": "Dermatology practice listing for Oscar Sotelo MD in McAllen at 6900 N 10th St",
+          "snippet": "SOTELO OSCAR MD - Updated April 2026 - 6900 N 10th St, McAllen, Texas - Dermatologists",
+          "search_query": "\"Oscar Sotelo\" McAllen Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+zip match to medical practice owner"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://drsotelodermatology.com/",
+          "evidence_text": "Practice website confirming Dr. Sotelo as dermatologist/surgery center owner in McAllen",
+          "snippet": "Sotelo Dermatology - Dermatology Surgery Center",
+          "search_query": "\"Oscar Sotelo\" McAllen Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer (self/own practice) match"
+        }
+      ]
+    },
+    {
+      "donor_id": "d548da73e2520fde",
+      "donor_label": "Guerra, Leslie (Self, Mission TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Common surname in Mission TX. No specific Leslie Guerra in Mission could be tied to medical, ADL, AIPAC, DMFI, J Street, real estate, or oil/gas categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "85ef9127b086b7e7",
+      "donor_label": "Crane Aliseda, Deborah (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Debbie Crane Aliseda is a former McAllen ISD school board trustee and current bookkeeper for Jones & Crane law firm; spouse of attorney Ernie Aliseda. No ties to the seven research categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "8446d28dca043cf0",
+      "donor_label": "Hausenfluck, Amber L. (Self / TX Public Affairs LLC, Austin)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Amber Hausenfluck is an Austin-based registered Texas lobbyist (TX Public Affairs LLC; formerly McGuireWoods Consulting). Lobbying activity not in our seven categories without specific client mapping.",
+      "evidence": []
+    },
+    {
+      "donor_id": "812c125431e53626",
+      "donor_label": "Martinez, Adolfo (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Multiple Adolfo Martinez candidates in McAllen (truck dealer, attorney, medical-device LLC owner) and no disambiguating signal beyond city/zip; not safe to assign.",
+      "evidence": []
+    },
+    {
+      "donor_id": "6d5bec48668bc3f8",
+      "donor_label": "Stewart, Josh (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No identifiable Josh Stewart in McAllen 78504 with ties to medical, ADL, AIPAC, DMFI, J Street, real estate, or oil/gas.",
+      "evidence": []
+    },
+    {
+      "donor_id": "5d883dd9b06cc81b",
+      "donor_label": "Hughes, Tracy (Self, Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Tracy Hughes is a common name; the Houston-area real-estate agent of that name does not match Mission TX 78573. No confident match in our seven categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "48923cb2e5f1acee",
+      "donor_label": "Tijerina, Lauro (Self / Tijerina Family & Cosmetic Dentistry, Edinburg)",
+      "category": "medical",
+      "label": "Dentist (DDS), owner Tijerina Family & Cosmetic Dentistry",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Lauro Tijerina, DDS, owns Tijerina Family & Cosmetic Dentistry with offices in Edinburg and McAllen; graduated UT School of Dentistry Houston 2018. Edinburg 78539 matches donor city/zip and 'self-employed'.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dentalplans.com/dentists/texas/edinburg/78539/dr-lauro-tijerina-325107/",
+          "evidence_text": "Dental practice directory listing Dr. Lauro Tijerina in Edinburg 78539",
+          "snippet": "Dr. Lauro Tijerina, DDS - Dentist in Edinburg, TX",
+          "search_query": "\"Lauro Tijerina\" Edinburg Texas business owner",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+zip match to medical practice owner"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://texasborderbusiness.com/vamos-alumnus-dr-lauro-tijerina-reflects-on-scholarship-impact/",
+          "evidence_text": "Profile naming Dr. Lauro Tijerina as a dentist who runs his own practice",
+          "snippet": "VAMOS Alumnus Dr. Lauro Tijerina Reflects on Scholarship Impact",
+          "search_query": "\"Lauro Tijerina\" Edinburg Texas business owner",
+          "retrieved_at": "2026-05-21",
+          "rule": "named professional + practice owner"
+        }
+      ]
+    },
+    {
+      "donor_id": "2d864678db82d5c6",
+      "donor_label": "Solis, Martha (Self, Edinburg)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Common name; no confident Edinburg match in our seven categories. UTRGV physician Martha Solis MD exists but no zip/address confirmation.",
+      "evidence": []
+    },
+    {
+      "donor_id": "20e1d85c0d77083c",
+      "donor_label": "Rodriguez, Raul (Raul \"Rudy\" Rodriguez PC, Edinburg)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Raul 'Rudy' Rodriguez runs a personal injury / motor vehicle accident law firm in Edinburg with 30+ years of experience. Plaintiffs' attorney; not in our seven categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "18a89c4707d506f2",
+      "donor_label": "Warren, Laura Nassri (Self / Warren Group Architects, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Laura Nassri Warren is founder/principal owner of The Warren Group Architects in McAllen, current chair of McAllen Economic Development Corp, and a TX Finance Commission appointee. Architect, not a real-estate developer or broker; not assigned to real_estate without stronger anchor.",
+      "evidence": []
+    },
+    {
+      "donor_id": "129a507abbfa344c",
+      "donor_label": "Castillo, Evelyn (Self / Pathfinder Public Affairs, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Evelyn C. Castillo is a McAllen native and team member at Pathfinder Public Affairs / formerly Dewey Square Group Latinovations practice. Public-affairs/lobbying, not in our seven categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "0a5617dc1292adf7",
+      "donor_label": "Hinojosa, Ruben (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Multiple Ruben Hinojosa in the McAllen area (retired former US Rep. Ruben E. Hinojosa, Colorado Boxed Beef GM, mattress-store operator). Cannot disambiguate confidently and none of the candidates map cleanly to our seven categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "09c165c4bf8e14a3",
+      "donor_label": "Perez, Ernest (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No identifiable Ernest Perez in McAllen 78504 with ties to any of the seven research categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "028702689a1987cf",
+      "donor_label": "Penoli, David M (Lone Star National Bank, Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "David Penoli is EVP & CFO at Lone Star National Bank, a McAllen-headquartered community bank. Community banking is not in our seven categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "b099f787895c0ae9",
+      "donor_label": "Coronado, Aida (Self / DHR Health Brownsville, Brownsville)",
+      "category": "medical",
+      "label": "DHR Health Brownsville EVP & COO; Family Nurse Practitioner",
+      "total_amount": 400.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Aida Coronado is Executive VP & Chief Operations Officer of DHR Health Brownsville and a Family Nurse Practitioner (NPI 1992131486). Hospital executive role places her directly in the medical category. Filed as self-employed (NP).",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://texasborderbusiness.com/dhr-health-brownsvilles-aida-coronado-appointed-to-texas-workforce-investment-council/",
+          "evidence_text": "Texas Border Business article identifying Coronado's role at DHR Health Brownsville",
+          "snippet": "DHR Health Brownsville's Aida Coronado Appointed to Texas Workforce Investment Council",
+          "search_query": "\"Aida Coronado\" Brownsville Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "named hospital executive"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://npino.com/nurse/1992131486-mrs.-aida-garcia/",
+          "evidence_text": "NPI registry record for Aida Coronado Garcia as Nurse Practitioner in Brownsville",
+          "snippet": "Mrs. Aida Coronado Garcia, Nurse Practitioner in Brownsville - NPI 1992131486",
+          "search_query": "\"Aida Coronado\" Brownsville Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match to licensed medical professional"
+        }
+      ]
+    },
+    {
+      "donor_id": "5133040887b9dd64",
+      "donor_label": "Escareno, Narciso (Self / The Travel Agency Inc., Brownsville)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 300.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Narciso Escareno is a Brownsville travel-agency manager and former public member of the Texas State Board of Chiropractic Examiners. Travel and a regulatory-board public seat do not place him in our seven categories.",
+      "evidence": []
+    }
+  ]
+}

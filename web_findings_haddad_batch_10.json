@@ -1,0 +1,351 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 10,
+  "findings": [
+    {
+      "donor_id": "org:42b458f9394c",
+      "donor_label": "Dr. Mauricio De La Garza PLLC (McAllen)",
+      "category": "medical",
+      "label": "Plastic surgeon, DHR Health / Doctors Hospital at Renaissance",
+      "total_amount": 976.74,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Board-certified plastic & reconstructive surgeon in McAllen, affiliated with DHR Health. PLLC named for the physician himself; clearly a medical-sector entity.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dhrhealth.com/physicians/mauricio-de-la-garza-md/",
+          "evidence_text": "DHR Health physician profile confirming MD's McAllen practice",
+          "snippet": "Mauricio De La Garza, MD | DHR Health | Edinburg Hospital & ER | Serving McAllen and Rio Grande Valley",
+          "search_query": "\"Dr. Mauricio De La Garza\" McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer match (PLLC = the physician)"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-mauricio-de-la-garza-ypl5c",
+          "evidence_text": "Healthgrades listing as plastic surgeon in McAllen, TX",
+          "snippet": "Dr. Mauricio De La Garza, MD - Plastic Surgeon in McAllen, TX | Healthgrades",
+          "search_query": "\"Dr. Mauricio De La Garza\" McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:93840ded0eb8",
+      "donor_label": "Lalich-Mendez LLC (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 750.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No matching business records found in two queries; not identifiable as medical, real-estate, or oil/gas. Could be an attorney pairing but not confirmed.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:57733b35b819",
+      "donor_label": "Soard Solutions LLC (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Drone management / consulting and FFL firearms dealer in McAllen. Does not fit any of the seven research categories (medical, ADL/AIPAC/DMFI/J Street, real estate, oil/gas).",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:35d60b27c443",
+      "donor_label": "Showery Insurance Agency (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Independent insurance agency in McAllen (auto, home, life, commercial). Insurance is not one of the seven target categories; offers some commercial real estate coverage but is itself an insurance broker, not a real estate firm.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:d1eaba3ff778",
+      "donor_label": "Samira Mohamed MD (McAllen)",
+      "category": "medical",
+      "label": "OB/GYN physician, RGV (McAllen/Edinburg/Brownsville)",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Board-certified obstetrician/gynecologist practicing in McAllen/Edinburg and Brownsville. Donor name itself identifies the physician.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://doctor.webmd.com/doctor/samira-mohamed-e31cc018-8ced-40d3-b52f-844388599e93-overview",
+          "evidence_text": "WebMD physician profile confirming OB/GYN practice in Edinburg/McAllen",
+          "snippet": "Dr. Samira Mohamed, MD, Obstetrics & Gynecology | Edinburg, TX | WebMD",
+          "search_query": "\"Samira Mohamed MD\" McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "named individual (donor name == physician)"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-samira-mohamed-gfklw",
+          "evidence_text": "Healthgrades listing as gynecologist",
+          "snippet": "Dr. Samira Mohamed, MD - Gynecologist in Brownsville, TX | Healthgrades",
+          "search_query": "\"Samira Mohamed MD\" McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+specialty match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:1c305ef12161",
+      "donor_label": "Mission Firefighters Committee (Mission, TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Political committee tied to Mission Fire Fighters Association IAFF Local 3609. Public-safety union PAC; not within any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:425cb2a516a8",
+      "donor_label": "Law Office of Michael E. Flanagan (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Solo McAllen attorney practicing personal injury, product liability, and civil trial work. Legal/PI firm; not within any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:848a6f3bb29b",
+      "donor_label": "Laredo Fire PAC (Laredo)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "PAC associated with Laredo Firefighters IAFF Local 872. Public-safety union PAC; not within any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:2f074b7520c8",
+      "donor_label": "Kamper Investments LLC (McAllen)",
+      "category": "real_estate",
+      "label": "Real estate leasing & rentals LLC, McAllen",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "McAllen LLC classified under Real Estate Leasing and Rentals per business directory; established 2006, Texas-incorporated.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.buzzfile.com/business/Kamper-Investments,-LLC-956-630-2167",
+          "evidence_text": "Buzzfile profile classifying Kamper Investments under Real Estate Leasing and Rentals",
+          "snippet": "Kamper Investments is located in McAllen, Texas. This organization primarily operates in the Real Estate Leasing and Rentals business within the Real Estate sector.",
+          "search_query": "\"Kamper Investments\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "entity sector classification"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.manta.com/c/mttpmnv/kamper-investments-llc",
+          "evidence_text": "Manta listing for Kamper Investments LLC in McAllen TX 78501",
+          "snippet": "Kamper Investments Mcallen TX, 78501",
+          "search_query": "\"Kamper Investments\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+zip match"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:929e14e166ee",
+      "donor_label": "HCA Texas Good Government Fund (Dallas)",
+      "category": "medical",
+      "label": "HCA Healthcare hospital-operator state PAC",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "State-level PAC of HCA Healthcare, one of the largest US for-profit hospital operators. FEC classifies HCA's federal sibling under hospitals industry; Transparency USA tracks the Texas state PAC.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.transparencyusa.org/tx/pac/hca-texas-good-government-fund-31590-mpac",
+          "evidence_text": "Transparency USA profile of HCA Texas Good Government Fund as a Texas PAC",
+          "snippet": "HCA Texas Good Government Fund - Texas Committee - Transparency USA",
+          "search_query": "\"HCA Texas Good Government Fund\" hospital PAC",
+          "retrieved_at": "2026-05-21",
+          "rule": "named PAC sponsored by hospital operator"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.hcahealthcare.com/government-relations",
+          "evidence_text": "HCA Healthcare government-relations page describing its state PACs and Good Government Fund structure",
+          "snippet": "HCA Healthcare sponsors a federal PAC – the HCA Healthcare Good Government Fund... HCA Healthcare participates in the political giving process through contributions from the HCA Healthcare Good Government Fund and HCA Healthcare state PACs.",
+          "search_query": "\"HCA Texas Good Government Fund\" hospital PAC",
+          "retrieved_at": "2026-05-21",
+          "rule": "named PAC of hospital corporation"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:9e008cb99089",
+      "donor_label": "Gulf States Toyota Inc State PAC (Houston)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "State PAC of Gulf States Toyota / The Friedkin Group, the independent Toyota distributor for Texas and four neighboring states. Auto-distribution corporate PAC; not within any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:51a018430f22",
+      "donor_label": "Gomez 3 Construction LLC (Donna, TX)",
+      "category": "real_estate",
+      "label": "Residential/commercial design-build construction, RGV",
+      "total_amount": 500.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Commercial and residential design/build firm in Donna, TX; member of Texas Association of Builders. Construction/homebuilder is real-estate-adjacent (builds and posts new multifamily for investors per company social media); included under real_estate.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://members.texasbuilders.org/builder-directory/Details/gomez-3-construction-llc-4190936",
+          "evidence_text": "Texas Association of Builders directory entry for Gomez 3 Construction LLC",
+          "snippet": "Gomez 3 Construction LLC - Texas Association of Builders",
+          "search_query": "\"Gomez 3 Construction\" Donna Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "homebuilder/developer classification"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.facebook.com/gomez3construction/posts/exciting-news-a-brand-new-6-plex-is-coming-soon-to-donna-texas-perfect-for-inves/1056254006512481/",
+          "evidence_text": "Company FB post promoting a new 6-plex multifamily build in Donna TX 'perfect for investors'",
+          "snippet": "Exciting news a brand new 6-plex is coming soon to Donna Texas perfect for investors",
+          "search_query": "\"Gomez 3 Construction\" Donna Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "developer/builder building investor multifamily"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:c8922433f5f7",
+      "donor_label": "Erica De La Garza Lopez Campaign (McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Officeholder/campaign committee of McAllen ISD Trustee Place 4 Erica de la Garza-Lopez (elected 2023). Local-school-board campaign committee; not within any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:b0842cbf88d9",
+      "donor_label": "Delisi Communications PAC (Austin)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "PAC of Delisi Communications, an Austin lobbying/government-relations firm led by Ted Delisi. Lobby-firm PAC; not within any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:55935c94fe7c",
+      "donor_label": "Brentwood Public Affairs (Austin)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Austin public-relations / government-affairs / lobby firm (principal Michael Johnson). No documented industry-specific tie to any of the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "org:c379687e8dc9",
+      "donor_label": "956 Management LLC (McAllen)",
+      "category": "real_estate",
+      "label": "McAllen-area property management/realty LLC (likely)",
+      "total_amount": 500.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Bizapedia confirms a '956 Management, LLC' in McAllen, TX. The McAllen 956 prefix cluster is dominated by property-management / realty firms (956 Realty LLC, 956 For Rent Property Management) — likely real-estate sector but business activity not directly documented. Flagged sensitive: inference, not confirmed.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.bizapedia.com/tx/956-management-llc.html",
+          "evidence_text": "Bizapedia listing for 956 Management, LLC in McAllen TX",
+          "snippet": "956 MANAGEMENT, LLC in Mcallen, TX | Company Info",
+          "search_query": "\"956 Management LLC\" McAllen 78501 Texas business filing",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match (sector inferred)"
+        }
+      ]
+    },
+    {
+      "donor_id": "org:0fa989388475",
+      "donor_label": "Gloria Mireles MD (McAllen)",
+      "category": "medical",
+      "label": "Neurologist, South Texas Neurological Center / DHR",
+      "total_amount": 85.53,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Board-certified neurologist at South Texas Neurological Center PA in McAllen; affiliated with Doctors Hospital at Renaissance. Donor name itself identifies the physician.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-gloria-mireles-y9wx88z",
+          "evidence_text": "Healthgrades listing as neurologist in McAllen, TX",
+          "snippet": "Dr. Gloria Mireles, MD - Neurologist in McAllen, TX | Healthgrades",
+          "search_query": "\"Gloria Mireles MD\" McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "named individual (donor name == physician)"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://doctors.wellmedhealthcare.com/details/164154/gloria-mireles-neurology-mcallen",
+          "evidence_text": "WellMed Healthcare provider profile for Gloria Mireles, Neurology, McAllen",
+          "snippet": "Gloria Mireles, MD, Neurology - WellMed",
+          "search_query": "\"Gloria Mireles MD\" McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+specialty match"
+        }
+      ]
+    }
+  ]
+}

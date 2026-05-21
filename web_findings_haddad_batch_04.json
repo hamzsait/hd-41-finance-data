@@ -1,0 +1,353 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 4,
+  "findings": [
+    {
+      "donor_id": "4f89975c9bcb7603",
+      "donor_label": "Perez, Archie (Self, Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Archie Perez of Mission TX runs Archie's Electric Inc. — electrical contractor, not in any target category. No medical/AIPAC/ADL/DMFI/JStreet/real estate/oil & gas ties found.",
+      "evidence": []
+    },
+    {
+      "donor_id": "4b57a3653bb4b7d6",
+      "donor_label": "Francis, Mary (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Common name, self-employed in McAllen, no anchors. No category matches found.",
+      "evidence": []
+    },
+    {
+      "donor_id": "33147a07f717e25b",
+      "donor_label": "Wadhwani, Sunil B. (Self, Edinburg)",
+      "category": "real_estate",
+      "label": "RGV hotel developer / hospitality real estate",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "McAllen/Edinburg-area Sunil Wadhwani is a hospitality entrepreneur who has built hotels (La Quinta, Motel 6, Marriott) across Hidalgo County. Hospitality development is a real estate adjacent activity. Note: he was convicted in 2019 of bribing a Weslaco city commissioner over a Motel 6 hotel project — flagged as sensitive.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.valleycentral.com/news/local-news/businessman-who-bribed-city-commissioner-avoids-prison/",
+          "evidence_text": "KVEO/ValleyCentral reporting identifies Sunil Wadhwani, 61, of McAllen as a hotel-owning businessman in Hidalgo County who bribed a Weslaco commissioner over a Motel 6 hotel deal",
+          "snippet": "Sunil Wadhwani, 61, of McAllen — a wealthy businessman who owns hotels in Hidalgo County — paid at least $4,000 to Weslaco City Commissioner Gerardo \"Jerry\" Tafolla. In exchange, Tafolla voted to approve $300,000 in economic incentives for a hotel Wadhwani planned to build.",
+          "search_query": "\"Sunil Wadhwani\" McAllen bribed commissioner hotel developer",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+occupation match (hotel real estate developer)"
+        }
+      ]
+    },
+    {
+      "donor_id": "2e040d05562c7a8a",
+      "donor_label": "Mendez, Salvador (Self, McAllen)",
+      "category": "medical",
+      "label": "Orthopedic surgeon, McAllen Bone & Joint Clinic",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Salvador J. Mendez, MD is a long-practicing orthopedic surgeon in McAllen (McAllen Bone & Joint Clinic, 1421 N Col Rowe Blvd). 50+ years in practice, affiliated with Doctors Hospital At Renaissance. The 'self-employed' donor listing fits a solo-practice physician.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dhrhealth.com/physicians/salvador-mendez-md/",
+          "evidence_text": "DHR Health physician directory lists Dr. Salvador Mendez, MD as an orthopedic surgeon affiliated with DHR Health (the dominant RGV medical system)",
+          "snippet": "Salvador Mendez, MD | DHR Health | Edinburg Hospital & ER | Serving McAllen and Rio Grande Valley",
+          "search_query": "\"Salvador Mendez\" McAllen Texas physician doctor",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+occupation match (physician)"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthcare6.com/physician/mcallen-tx/salvador-mendez-489042.html",
+          "evidence_text": "Healthcare6 physician directory confirms Dr. Salvador Mendez practices orthopedic surgery in McAllen TX",
+          "snippet": "Dr. Salvador Mendez - McAllen TX, Orthopedic Surgery",
+          "search_query": "\"Salvador Mendez\" McAllen Texas physician doctor",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "2adfb86540a641a6",
+      "donor_label": "Gonzalez, Vivian (Self, Edinburg)",
+      "category": "real_estate",
+      "label": "REALTOR (possible match)",
+      "total_amount": 1000.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "A Vivian Gonzalez is listed on HAR.com as a REALTOR and owner of True Compass Property Group in Texas, but the search did not confirm Edinburg-specific identity. 'Vivian Gonzalez' is a common name; the Edinburg/Edionburg connection is unverified — flagged sensitive.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.har.com/vivian-gonzalez/agent_viviang",
+          "evidence_text": "Houston Association of REALTORS profile for a Vivian Gonzalez working in Texas real estate",
+          "snippet": "About Vivian Gonzalez - HAR.com",
+          "search_query": "\"Vivian Gonzalez\" Edinburg Texas physician doctor real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name match only (city unconfirmed)"
+        }
+      ]
+    },
+    {
+      "donor_id": "249879836a2298ea",
+      "donor_label": "Turley, Susan (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Self-employed McAllen donor. Search returned an attorney 'Gregory E. Turley' at the same McAllen address but no information on Susan Turley specifically. No category match.",
+      "evidence": []
+    },
+    {
+      "donor_id": "1b923a225418e633",
+      "donor_label": "Godinez, Brian (Self, McAllen)",
+      "category": "real_estate",
+      "label": "Real estate / marketing professional, ERO A/E & Ryan & Brian Real Estate Team affiliations",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "McAllen Chamber board member Brian Godinez is a marketing/communications pro associated with ERO Architects (real estate-adjacent A&E firm) and reportedly with a 'PASSION FOR REAL ESTATE.' Another Brian Godinez is a McAllen REALTOR (Ryan & Brian Real Estate Team) — search results conflate the two. Flagged sensitive because identity is ambiguous.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://mcallenchamber.com/news/12-questions-with-mcallen-chamber-board-member-2/",
+          "evidence_text": "McAllen Chamber profile lists Brian Godinez as a board member",
+          "snippet": "12 Questions with McAllen Chamber Board Member Brian Godinez - McAllen Chamber of Commerce",
+          "search_query": "\"Brian Godinez\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.ryanandbrian.com/meet-our-team/",
+          "evidence_text": "Ryan & Brian Real Estate Team McAllen lists a Brian (Godinez/Peterson partnership) as cofounder",
+          "snippet": "In 2006, Brian partnered with longtime friend Ryan Peterson to begin the conceptualization of The Ryan & Brian Real Estate Team",
+          "search_query": "\"Brian Godinez\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+occupation match (real estate agent)"
+        }
+      ]
+    },
+    {
+      "donor_id": "1615d70a5243e148",
+      "donor_label": "Otero, Alejandro (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No verifiable hits for an Alejandro Otero in McAllen TX. A Dr. Fernando Otero (OB/GYN) exists in McAllen but is a different person. No category match.",
+      "evidence": []
+    },
+    {
+      "donor_id": "14cd9f63ff39975f",
+      "donor_label": "Monarrez, Carlos (Self, Brownsville)",
+      "category": "medical",
+      "label": "Pediatric cardiologist, Brownsville",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Dr. Carlos Monarrez, MD is a long-established pediatric cardiologist in Brownsville. There's also a Carlos Monarrez attorney (Valdez, Monarrez & San Miguel) in Brownsville — the 'self-employed' tag fits either. Flagged sensitive because identity ambiguous between two professionals with the same name in the same city.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.doximity.com/pub/carlos-monarrez-md",
+          "evidence_text": "Doximity physician profile for Dr. Carlos Monarrez, pediatric cardiologist, Brownsville TX",
+          "snippet": "Dr. Carlos Monarrez, MD – Brownsville, TX | Pediatric Cardiology on Doximity",
+          "search_query": "\"Carlos Monarrez\" Brownsville Texas physician doctor real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+occupation match (physician)"
+        }
+      ]
+    },
+    {
+      "donor_id": "13204c69769391c3",
+      "donor_label": "Saldana, Amanda (Self, Pharr)",
+      "category": "real_estate",
+      "label": "Attorney with real estate practice area",
+      "total_amount": 1000.0,
+      "confidence": "medium",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Amanda Marie Saldana is a McAllen-based attorney (raised in Pharr) running her own private practice. Among her listed practice areas is Real Estate (alongside government/legislative/contracts). Self-employed listing matches a solo attorney.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://texaspathfinder.com/amanda-saldana/",
+          "evidence_text": "Texas Pathfinder bio confirms Amanda Saldana, born/raised in Pharr TX, McAllen-based attorney with Real Estate among her practice areas",
+          "snippet": "Her practice areas include Alternative Dispute Resolution, Business, Government/Administrative, Real Estate, Legislative / Campaign, Mediation, and Contracts.",
+          "search_query": "\"Amanda Saldana\" Pharr Texas physician attorney real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+practice-area match"
+        }
+      ]
+    },
+    {
+      "donor_id": "11037ace4884b8f8",
+      "donor_label": "Reyna, Mario (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Multiple Mario Reyna candidates in McAllen (financial advisor at Ameriprise; school district administrator) — none in target categories. No category match.",
+      "evidence": []
+    },
+    {
+      "donor_id": "0be77b179d1d0e88",
+      "donor_label": "Fallek, Michael (Castle Hospitality, McAllen)",
+      "category": "real_estate",
+      "label": "President of Castle Hospitality; hotel & McAllen City Center developer; Texas Regional Bank director",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Michael Fallek runs Castle Hospitality, develops hotels and the McAllen City Center mixed-use project (10th & Expressway 83) and McAllen South Industrial Park (125 acres, ~1.8M sf). He's a Texas Regional Bank director and former McAllen P&Z chair. He's also been described as having 'helped launch and grow several successful McAllen-based businesses, primarily in hospitality and real estate.' He has since announced for McAllen District 5 (Haddad's vacated seat).",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://trb.bank/about-us/directors/michael-fallek/",
+          "evidence_text": "Texas Regional Bank director bio describes Fallek's Castle Hospitality role and major McAllen real estate developments",
+          "snippet": "In 1998 he joined Castle Hospitality, LTD. – RGV Properties, Inc. – Boulevard Development Company, L.C., and became active in the ownership, operation, and development of hotels throughout Texas.",
+          "search_query": "\"Michael Fallek\" \"Castle Hospitality\" McAllen Texas president",
+          "retrieved_at": "2026-05-21",
+          "rule": "named executive at real estate development firm"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://michaelformcallenmayor.com/about-michael/",
+          "evidence_text": "Fallek's own campaign site explicitly identifies his work as hospitality and real estate",
+          "snippet": "Over the past 20 years, he has helped launch and grow several successful McAllen-based businesses, primarily in hospitality and real estate, contributing to local investment and the creation of thousands of jobs throughout the Rio Grande Valley.",
+          "search_query": "\"Michael Fallek\" McAllen Texas Temple Emanuel AIPAC Israel",
+          "retrieved_at": "2026-05-21",
+          "rule": "self-described real estate developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "016b10e849167548",
+      "donor_label": "Pena Yruegas, Nancy Alejandra (Self, Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Public records list Nancy A. Pena in Mission TX but no occupational anchor matches any target category.",
+      "evidence": []
+    },
+    {
+      "donor_id": "2086c2e4f3d2ed56",
+      "donor_label": "Villarreal, Veronica (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 797.84,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Multiple Veronica Villarreal candidates exist (EKR Attorneys McAllen; Gulf Coast Realty in Corpus). Self-employed McAllen tag does not cleanly disambiguate; no high-confidence category match.",
+      "evidence": []
+    },
+    {
+      "donor_id": "e45b76632e9e0012",
+      "donor_label": "Oliveira, David George (Roerig, Oliveira & Fisher, McAllen)",
+      "category": "oil_gas",
+      "label": "Attorney with oil & gas defense practice (Roerig, Oliveira & Fisher)",
+      "total_amount": 500.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "David G. Oliveira's firm bio lists Oil and Gas Law among his practice areas, alongside insurance defense and personal injury. He defends rather than represents the oil & gas industry directly. Not an industry executive; flagged as sensitive low-confidence overlay rather than a direct oil & gas tie.",
+      "evidence": [
+        {
+          "source": "WebFetch",
+          "source_url": "https://www.rofllp.com/attorney/david-g-oliveira/",
+          "evidence_text": "Firm bio for David G. Oliveira lists Oil and Gas Law as a practice area",
+          "snippet": "Practice areas including Insurance Defense, Personal Injury, Commercial Law, Products Liability, Drug and Medical Device Litigation, Medical Malpractice, Oil and Gas Law, and Environmental Law.",
+          "search_query": "\"David Oliveira\" \"Roerig, Oliveira & Fisher\" McAllen attorney",
+          "retrieved_at": "2026-05-21",
+          "rule": "named partner with oil & gas practice area"
+        }
+      ]
+    },
+    {
+      "donor_id": "e3c267a654872552",
+      "donor_label": "Campos, Roger S. (Campos Family Dental, Shavano Park)",
+      "category": "medical",
+      "label": "Dentist / President of Campos Family Dental, San Antonio area",
+      "total_amount": 500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Roger Campos, DDS is the president of Campos Family Dental, P.C. in San Antonio (Shavano Park is a SA suburb), a major private dental employer in San Antonio. Former president of the Greater San Antonio Hispanic Dental Association. Clear medical/dental sector match.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.camposdentalsa.com/en/dr-campos",
+          "evidence_text": "Campos Family Dental practice site Dr. Campos bio page",
+          "snippet": "Dr. Campos — Campos Family Dental P.C. | Cosmetic & General Dentist in San Antonio, TX",
+          "search_query": "\"Roger Campos\" \"Campos Family Dental\" Shavano Park dentist",
+          "retrieved_at": "2026-05-21",
+          "rule": "named president of own dental practice (medical/dental)"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/dentist/dr-roger-campos-35lfk",
+          "evidence_text": "Healthgrades dentist profile confirms Dr. Roger Campos, DDS practicing dentistry in San Antonio TX",
+          "snippet": "Dr. Roger Campos, DDS - 3 Reviews - San Antonio, TX | Healthgrades",
+          "search_query": "\"Roger Campos\" \"Campos Family Dental\" Shavano Park dentist",
+          "retrieved_at": "2026-05-21",
+          "rule": "third-party directory confirms dentist credential"
+        }
+      ]
+    },
+    {
+      "donor_id": "da395f9bda23127d",
+      "donor_label": "Arturo, Oscar (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Name appears to be transposed (Arturo is more commonly a first name). No clean match to medical, attorney, real estate or oil & gas anchors in McAllen.",
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 3,
+  "findings": [
+    {
+      "donor_id": "f00319f8ed3e0f15",
+      "donor_label": "Chris R. Brasure (Brasure Law Firm, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Personal injury attorney at Brasure Law Firm McAllen. No medical, ADL, AIPAC, DMFI, J Street, real estate, or oil/gas ties found in 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "dbbc58922e941b61",
+      "donor_label": "Kyle Ruppert (Self, Edinburg)",
+      "category": "real_estate",
+      "label": "Santa Cruz Properties staff (Edinburg real estate firm)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Kyle D. Ruppert (NMLS 269614) is staff at Santa Cruz Properties, an Edinburg-based real estate developer and owner-financing firm. Manager of Six Primos, LLC; associated with 22 companies including ties to Cristen Weyand.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://scprgv.com/our-service-team",
+          "evidence_text": "Kyle Ruppert listed on Santa Cruz Properties service team",
+          "snippet": "Kyle Ruppert is a staff member at Santa Cruz Properties who is noted as being knowledgeable and helpful during the purchasing journey. Kyle D. Ruppert has NMLS ID 269614.",
+          "search_query": "\"Kyle Ruppert\" \"Santa Cruz\" real estate Edinburg properties",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer match"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.corporationwiki.com/Texas/Edinburg/kyle-d-ruppert/37317518.aspx",
+          "evidence_text": "CorporationWiki record for Kyle D. Ruppert of Edinburg",
+          "snippet": "Kyle Ruppert - Manager for Six Primos, LLC ... Kyle has nineteen known connections and has the most companies in common with Cristen Weyand.",
+          "search_query": "\"Kyle Ruppert\" Edinburg McAllen Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "cb776884b5ffca61",
+      "donor_label": "Jamie McLain (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Could not definitively identify which Jamie McLain in McAllen this donor is. Multiple possible matches but none confirmed for the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "bed8ae9d53291978",
+      "donor_label": "Brandon Wallace (Self, Pharr)",
+      "category": "real_estate",
+      "label": "Brandon C Wallace Family Ltd (Pharr family business entity)",
+      "total_amount": 1000.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Brandon C Wallace Family Ltd is a family business entity registered at 3405 Jackson Rd, Pharr, TX 78577. Nature of business unconfirmed; family limited partnerships in TX commonly hold real estate. Real estate tie is inferred, not confirmed.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://local.yahoo.com/info-219545285-brandon-c-wallace-family-ltd-pharr/",
+          "evidence_text": "Yahoo Local listing for Brandon C Wallace Family Ltd",
+          "snippet": "There is a business entity called \"Brandon C Wallace Family Ltd\" located at 3405 Jackson Rd, #A in Pharr, TX 78577.",
+          "search_query": "\"Brandon Wallace\" Pharr Texas business owner",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match, inferred entity type"
+        }
+      ]
+    },
+    {
+      "donor_id": "ba0bd74e7dbd8485",
+      "donor_label": "Cesar Palma (Self, Edinburg)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Cesar Palma PLLC is registered in Edinburg, TX, but nature of professional services not determined. Did not find clear ties to any of the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "98c61859c4ba1ffe",
+      "donor_label": "Angel Flores (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Common name; multiple Angel Flores match in Texas (real estate agents in Dallas/El Paso, none clearly tied to McAllen address). Could not confirm specific donor identity for target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "86c20d55013b8cb7",
+      "donor_label": "Julio Cesar Cerda (Self, Mission)",
+      "category": "real_estate",
+      "label": "President, South Texas Infrastructure Group / R.O.W. Surveying (Mission)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Former Mission City Manager (recognized by Texas Senate Resolution 2013-2014). Currently President of South Texas Infrastructure Group LLC and R.O.W. Surveying Services LLC. Civil engineering / land surveying / infrastructure development in South Texas - real-estate-adjacent industry.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.linkedin.com/in/julio-cerda-8336a562/",
+          "evidence_text": "LinkedIn profile identifying role and location",
+          "snippet": "Julio Cerda - President at South Texas Infrastructure Group, LLC ... based in Mission, TX, and currently works as President at South Texas Infrastructure Group, LLC & R.O.W. Surveying Services LLC.",
+          "search_query": "\"Julio Cesar Cerda\" Mission Texas real estate developer",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer match"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://trackbill.com/bill/texas-senate-resolution-392-recognizing-mission-city-manager-julio-c-cerda-for-his-service-to-his-community/463017/",
+          "evidence_text": "Texas Senate Resolution recognizing Cerda",
+          "snippet": "SR392 | Texas 2013-2014 | Recognizing Mission City Manager Julio C. Cerda for his service to his community.",
+          "search_query": "\"Julio Cesar Cerda\" Mission Texas real estate developer",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+title corroboration"
+        }
+      ]
+    },
+    {
+      "donor_id": "819b86cdc18df488",
+      "donor_label": "Omar F. Garcia (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Common name. Possible match to Omar Garcia, O.G. Construction Co. LLC in McAllen, but cannot confirm with the F. middle initial. No clear ties to 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "7abc45f728d3089a",
+      "donor_label": "Cristen Ruppert Weyand (Self, McAllen)",
+      "category": "real_estate",
+      "label": "Ruppert-Weyand family (Santa Cruz Properties, Edinburg real estate)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Cristen Ruppert Weyand is part of the Ruppert-Weyand family that runs Santa Cruz Properties (Edinburg-based real estate developer/owner-financing firm). Krys Weyand is CEO; Krys R. Weyand previously served as CFO and is daughter of Richard 'Dick' Ruppert. Cristen Weyand shares most business connections with Kyle Ruppert per CorporationWiki.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.linkedin.com/in/krys-weyand-1a254b17/",
+          "evidence_text": "Krys Weyand LinkedIn - CEO of Santa Cruz Properties",
+          "snippet": "Krys Weyand is the Chief Executive Officer at Santa Cruz Properties, LTD, located in Edinburg. Santa Cruz Properties is headquartered at 2810 N Closner Blvd, Edinburg, Texas, 78541.",
+          "search_query": "\"Cristen Weyand\" \"Santa Cruz\" real estate McAllen Edinburg",
+          "retrieved_at": "2026-05-21",
+          "rule": "family/employer link"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.corporationwiki.com/Texas/Edinburg/kyle-d-ruppert/37317518.aspx",
+          "evidence_text": "Kyle Ruppert and Cristen Weyand share business connections",
+          "snippet": "Kyle has nineteen known connections and has the most companies in common with Cristen Weyand.",
+          "search_query": "\"Kyle Ruppert\" Edinburg McAllen Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "family/business co-ownership match"
+        }
+      ]
+    },
+    {
+      "donor_id": "6b5c80f86ad1d8a2",
+      "donor_label": "Douglas L. Silva (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No definitive match found for Douglas L. Silva in McAllen across the 7 target categories. Searches for physician, dentist, and attorney returned no direct matches.",
+      "evidence": []
+    },
+    {
+      "donor_id": "6b15b9a05ecb1c3e",
+      "donor_label": "Herlinda Cantu (Self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Common surname in McAllen. Could not identify this specific donor in any of the 7 target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "6b0ece2aabb9b6f3",
+      "donor_label": "Jesus R. Valdez (Self, Edinburg)",
+      "category": "medical",
+      "label": "Likely Dr. Jesus Valdes Garcia, General Surgeon, Edinburg",
+      "total_amount": 1000.0,
+      "confidence": "low",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Spelling difference: TEC has 'Valdez' with z, but local physician Dr. Jesus H. Valdes Garcia is a general/vascular surgeon at DHR Health Edinburg. Plausible match but z vs s discrepancy keeps confidence low.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.md.com/doctor/jesus-valdes-garcia-md",
+          "evidence_text": "MD.com profile of Edinburg general surgeon",
+          "snippet": "Dr. Jesus H. Valdes Garcia, MD - General Surgeon in Edinburg, TX ... practices at 5513 Doctor's Drive in Edinburg, TX. He graduated from medical school in 1975.",
+          "search_query": "\"Jesus Valdez\" Edinburg Texas doctor physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name (spelling variant) + city + profession match"
+        }
+      ]
+    },
+    {
+      "donor_id": "686bead5347b61f9",
+      "donor_label": "Gauri Gopal Kanhere (Self, Rio Grande City)",
+      "category": "medical",
+      "label": "Internist, Starr County Memorial Hospital / DHR Health (Rio Grande City)",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Gauri Kanhere, MD - board-certified internist in Rio Grande City; affiliated with Starr County Memorial Hospital and Doctor's Hospital at Renaissance (DHR). Practices via Gauri Kanhere PLLC.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://doctors.wellmedhealthcare.com/details/148364/gauri-kanhere-internal_medicine-rio_grande_city",
+          "evidence_text": "WellMed provider profile",
+          "snippet": "Gauri Kanhere, MD, Internal Medicine - WellMed ... Dr. Gauri Kanhere, MD is a board certified internist in Rio Grande City, Texas. She is affiliated with Starr County Memorial Hospital and Doctor's Hospital at Renaissance.",
+          "search_query": "\"Gauri Kanhere\" \"Rio Grande City\" Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "60062614d3e35603",
+      "donor_label": "Antonio De Gorordo (Self, Mission)",
+      "category": "medical",
+      "label": "Pulmonologist, South Texas Health System / Mission Regional",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Antonio De Gorordo Arzamendi, MD - pulmonology/critical care/internal medicine, practicing at 1912 E Griffin Pkwy, Mission, TX. Affiliated with South Texas Health System and Mission Regional Medical Center. 23+ years experience.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-antonio-de-gorordo-gbns5",
+          "evidence_text": "Healthgrades profile",
+          "snippet": "Dr. Antonio De Gorordo Arzamendi specializes in pulmonary disease and has over 23 years of experience in the field of medicine. He works in McAllen, TX and specializes in Pulmonology, Critical Care Medicine and Internal Medicine. Dr. Antonio De Gorordo Arzamendi has a medical practice at 1912 E Griffin Pkwy, Mission, TX.",
+          "search_query": "\"Antonio De Gorordo\" Mission Texas physician doctor",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "5f9f9504d7551f26",
+      "donor_label": "Rigoberto Villarreal (Self, Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Rigoberto 'Rigo' Villarreal is a Texas-registered lobbyist (Aeronautics, Business and Commerce, City Government) and principal of Ares Services Inc., based in McAllen/Mission. Lobbying is not one of the 7 target categories; no medical/ADL/AIPAC/DMFI/J Street/real estate/oil-gas tie identified.",
+      "evidence": []
+    },
+    {
+      "donor_id": "59990b9da1b9fac3",
+      "donor_label": "Asim Zamir (Self, Brownsville)",
+      "category": "medical",
+      "label": "Pediatrician, Brownsville Children's Clinic / Valley Regional Medical Center",
+      "total_amount": 1000.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Asim Zamir, MD - board-certified pediatrician at Brownsville Children's Clinic, 4430 E 14th St Unit A, Brownsville, TX 78521. 38 years experience, affiliated with Valley Regional Medical Center.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.healthgrades.com/physician/dr-asim-zamir-yjc32",
+          "evidence_text": "Healthgrades profile of Brownsville pediatrician",
+          "snippet": "Dr. Asim Zamir, MD is a board certified pediatrician in Brownsville, Texas. He is an Adolescent Medicine specialist practicing in Brownsville, TX with 38 years of experience ... He is affiliated with Valley Regional Medical Center.",
+          "search_query": "\"Asim Zamir\" Brownsville Texas physician doctor",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city+profession match"
+        }
+      ]
+    },
+    {
+      "donor_id": "524dc857ed51dd8d",
+      "donor_label": "Kurth Schumacher (Self, Mission)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "No direct match found for Kurth Schumacher in Mission TX across the 7 target categories. Texland Petroleum (Schumacher-Rector) is Permian Basin/Fort Worth, not RGV - founder R.J. Schumacher deceased, no Kurth listed. Texas attorneys named Schumacher exist but none match.",
+      "evidence": []
+    }
+  ]
+}

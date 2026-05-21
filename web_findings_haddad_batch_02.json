@@ -1,0 +1,333 @@
+{
+  "candidate_slug": "haddad",
+  "batch_id": 2,
+  "findings": [
+    {
+      "donor_id": "95a856746b8bd251",
+      "donor_label": "Joseph Phillips (self, Mission TX)",
+      "category": "oil_gas",
+      "label": "Phillip Properties petroleum/convenience-store executive",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Joe Phillips (Mission/McAllen TX) led his family's petroleum business Phillip Properties Inc as President/CEO 1985-1999, building a regional chain of convenience stores and truck stops; subsequently President of Tex-Best Travel Centers (Phillips 66-branded fuel stops) headquartered in McAllen.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://littlesis.org/person/243864-Joseph_F_Phillips",
+          "evidence_text": "LittleSis bio for Joseph F Phillips (Mission, TX)",
+          "snippet": "joined his families petroleum business, Phillip Properties, Inc. ... served as President/CEO from 1985-1999 ... helped build it into a regional chain of convenience stores, truck stops, and Burger King restaurants.",
+          "search_query": "\"Joseph Phillips\" Mission Texas business owner physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match; named executive of petroleum business"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dnb.com/business-directory/company-profiles.tex-best_travel_centers_inc.6d8804b1986314c7cf53783785fa265f.html",
+          "evidence_text": "Tex-Best Travel Centers company profile (McAllen, TX) lists Joseph F Phillips as President",
+          "snippet": "Joseph F Phillips is the President at Tex-Best Travel Centers ... located at 1308 S Ware Road, McAllen, TX 78501. The company operates under the Phillips 66 brand and is categorized in industries including ... gasoline stations.",
+          "search_query": "\"Joseph Phillips\" \"Phillip Properties\" McAllen petroleum convenience stores",
+          "retrieved_at": "2026-05-21",
+          "rule": "named executive of fuel-retail company"
+        }
+      ]
+    },
+    {
+      "donor_id": "92a84af36442f53a",
+      "donor_label": "Jose Rene Garza (Valley Ventures LTD, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "D&B identifies Valley Ventures LLC (McAllen) as Commercial and Industrial Machinery and Equipment Rental and Leasing operated by Jose Rene Garza; not a real estate, oil/gas, or medical entity, and no AIPAC/ADL/DMFI/J Street ties found.",
+      "evidence": []
+    },
+    {
+      "donor_id": "72fae764409bea40",
+      "donor_label": "Jaime Adan Gonzalez Jr. (Gonzalez & Associates Law Firm, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Partner at Gonzalez & Associates Law Firm, P.C. in McAllen; personal-injury/litigation practice. No medical, real-estate, oil/gas, or Israel-advocacy affiliations identified.",
+      "evidence": []
+    },
+    {
+      "donor_id": "70ac0bc8006a060c",
+      "donor_label": "Nicolas (Nick) Rhodes (self, McAllen TX)",
+      "category": "real_estate",
+      "label": "President & CEO, Rhodes Enterprises (RGV master-planned developer)",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Nick Rhodes is President and CEO of Rhodes Enterprises, headquartered in McAllen, described as the largest mixed-use developer of master-planned communities in the Rio Grande Valley.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://rhodes.com/about",
+          "evidence_text": "Rhodes Enterprises corporate 'About' page",
+          "snippet": "Rhodes Enterprises is headquartered in McAllen, Texas, and is the largest and fastest growing mixed-use developer of master planned communities in the Rio Grande Valley.",
+          "search_query": "\"Nicolas Rhodes\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "named executive of developer"
+        },
+        {
+          "source": "linkedin",
+          "source_url": "https://www.linkedin.com/in/nick-rhodes-25490185/",
+          "evidence_text": "Nick Rhodes LinkedIn profile",
+          "snippet": "Nick Rhodes - Rhodes Enterprises Inc.",
+          "search_query": "\"Nicolas Rhodes\" McAllen Texas real estate",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+employer+city match"
+        }
+      ]
+    },
+    {
+      "donor_id": "2d1927d75f4a9ffb",
+      "donor_label": "Richard Raymond (State of Texas, Laredo TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Richard Pena Raymond is the sitting Democratic Texas State Representative for HD-42 (Laredo). Donation is an in-network legislator-to-legislator transfer rather than an industry/affiliation tie.",
+      "evidence": []
+    },
+    {
+      "donor_id": "2ce3f2643f514b5b",
+      "donor_label": "Robert J. Macheska (self, Mission TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Exec VP/COO of GDJ Engineering (Edinburg-based transportation/civil engineering firm). Not within the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "206dc95a1f4cce53",
+      "donor_label": "Vincent Honrubia (self, Mission TX)",
+      "category": "medical",
+      "label": "ENT/otolaryngology surgeon, South Texas Sinus Institute",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Vincent F. Honrubia is an otolaryngology / head-and-neck surgery specialist in McAllen/Mission, founder of the South Texas Sinus Institute, affiliated with Doctors Hospital at Renaissance.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://health.usnews.com/doctors/vincent-honrubia-130615",
+          "evidence_text": "US News Doctors directory listing",
+          "snippet": "Dr. Vincent F. Honrubia, MD | McAllen, TX | ENT-Otolaryngologist",
+          "search_query": "\"Vincent Honrubia\" Mission McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "name+city match; physician"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.southtexassinusinstitute.com/",
+          "evidence_text": "Home page of South Texas Sinus Institute",
+          "snippet": "Home - South Texas Sinus Institute",
+          "search_query": "\"Vincent Honrubia\" Mission McAllen Texas physician",
+          "retrieved_at": "2026-05-21",
+          "rule": "named medical-group leadership"
+        }
+      ]
+    },
+    {
+      "donor_id": "1e0ec00cd6f2e553",
+      "donor_label": "Dominic Reyna (self, Weslaco TX)",
+      "category": "real_estate",
+      "label": "Founder, Reyna Development and Construction",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dominic Reyna launched Reyna Development and Construction in 2006; residential/commercial RGV projects including Rio Stone duplex community (Weslaco) and McAllen Oaks luxury townhomes.",
+      "evidence": [
+        {
+          "source": "news",
+          "source_url": "https://rgvisionmagazine.com/reyna-development-and-construction/",
+          "evidence_text": "RGVision Magazine profile of Reyna Development and Construction",
+          "snippet": "Dominic Reyna launched Reyna Development and Construction in 2006 ... delivered exceptional workmanship for more than 20 years on residential and commercial projects throughout the Rio Grande Valley.",
+          "search_query": "\"Dominic Reyna\" Weslaco Texas business owner",
+          "retrieved_at": "2026-05-21",
+          "rule": "named owner of real-estate developer"
+        }
+      ]
+    },
+    {
+      "donor_id": "1df06a42f2812968",
+      "donor_label": "Efraim Tomas (self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Multiple targeted searches returned no clearly disambiguated McAllen match for this donor; no public ties to the seven target categories identified.",
+      "evidence": []
+    },
+    {
+      "donor_id": "198ba65e4c841dba",
+      "donor_label": "Vivian Deanda (self, Mission TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 2500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Likely spouse of S. David Deanda Jr. (President of Lone Star National Bank, Mission); banking, not in the seven target categories. No directly attributable medical/real-estate/oil-gas/Israel-advocacy affiliation found for Vivian herself.",
+      "evidence": []
+    },
+    {
+      "donor_id": "0632bdc577aa59be",
+      "donor_label": "Irene Uribe Manrique (self, McAllen TX)",
+      "category": "real_estate",
+      "label": "Real estate agent / broker, Texas Landmark Realty (McAllen)",
+      "total_amount": 2500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Irene Uribe Manrique de Lara is a listing broker/agent and landlord broker with Texas Landmark Realty in McAllen; Primary REALTOR member of the Greater McAllen Association of REALTORS.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.har.com/irene-uribe-manrique-de-lara/agent_gmartx-801067752",
+          "evidence_text": "HAR.com agent profile",
+          "snippet": "Irene Uribe Manrique De Lara, TX Real Estate Agent",
+          "search_query": "\"Irene Uribe Manrique\" McAllen Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "named real estate broker"
+        },
+        {
+          "source": "WebSearch",
+          "source_url": "https://members.gmar.org/member-directory/Details/irene-uribe-manrique-de-lara-768621",
+          "evidence_text": "Greater McAllen Association of REALTORS member directory",
+          "snippet": "Irene Uribe Manrique de Lara - Greater McAllen Association of REALTORS",
+          "search_query": "\"Irene Uribe Manrique\" McAllen Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "named realtor association member"
+        }
+      ]
+    },
+    {
+      "donor_id": "81c7a21d5c4a517e",
+      "donor_label": "Raul Barreda Jr. (self, McAllen TX)",
+      "category": "medical",
+      "label": "General surgeon, DHR Health / Renaissance Specialty Surgery (McAllen)",
+      "total_amount": 1500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. Raul Barreda Jr., MD, FACS is a general surgery specialist in McAllen affiliated with Doctors Hospital at Renaissance (DHR Health) and the Renaissance Specialty Surgery medical group.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dhrhealth.com/physicians/raul-barreda-jr-md-facs/",
+          "evidence_text": "DHR Health physician directory page for Dr. Raul Barreda Jr.",
+          "snippet": "Raul Barreda, Jr., MD, FACS | DHR Health | Edinburg Hospital & ER | Serving McAllen and Rio Grande Valley",
+          "search_query": "\"Raul Barreda\" McAllen Texas business",
+          "retrieved_at": "2026-05-21",
+          "rule": "named physician at hospital system"
+        }
+      ]
+    },
+    {
+      "donor_id": "77e148a11d77be3a",
+      "donor_label": "John G. Orfanos (self, McAllen TX)",
+      "category": "medical",
+      "label": "General/vascular surgeon, DHR Health (McAllen)",
+      "total_amount": 1500.0,
+      "confidence": "high",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Dr. John G. Orfanos, MD, FACS is a general/vascular surgeon in McAllen affiliated with DHR Health (Doctors Hospital at Renaissance); occupation on the donor record is listed as 'physician'.",
+      "evidence": [
+        {
+          "source": "WebSearch",
+          "source_url": "https://www.dhrhealth.com/physicians/john-g-orfanos-md-facs/",
+          "evidence_text": "DHR Health physician directory page for Dr. John G. Orfanos",
+          "snippet": "John G. Orfanos, MD, FACS | DHR Health | Edinburg Hospital & ER | Serving McAllen and Rio Grande Valley",
+          "search_query": "\"John Orfanos\" physician McAllen Texas",
+          "retrieved_at": "2026-05-21",
+          "rule": "named physician at hospital system"
+        }
+      ]
+    },
+    {
+      "donor_id": "0f897e319478b665",
+      "donor_label": "Ruben Garza (self, McAllen TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1500.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Common name in McAllen; could not uniquely disambiguate self-employed Ruben Garza at zip 78504 against multiple plausible matches (pharmacist, construction contractor, deceased businessman). No clear tie to the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "5675d4e0a732069c",
+      "donor_label": "Rene A. Ramirez (self, Edinburg TX)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1300.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Most likely match is Rene A. Ramirez, founder/president of Pathfinder Public Affairs (RGV lobbying/government-relations firm) and former Hidalgo County Judge. Lobbyist, not within the seven target industry categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "fea37b0c8f48e252",
+      "donor_label": "Armando Adame (self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": false,
+      "notes": "Armando Adame is a Managing Director / International Wealth Advisor at Merrill Lynch in McAllen; finance/wealth-management, not within the seven target categories.",
+      "evidence": []
+    },
+    {
+      "donor_id": "f01adb8154dcbb2a",
+      "donor_label": "Ricardo Villarreal (self, McAllen)",
+      "category": "_searched_no_results",
+      "label": "no_affiliations_found",
+      "total_amount": 1000.0,
+      "confidence": "none",
+      "first_seen": null,
+      "last_seen": null,
+      "sensitive": true,
+      "notes": "Common name; multiple plausible McAllen-area Ricardo Villarreals (attorney, Farmers insurance agent in Edinburg, etc.). Could not uniquely disambiguate the self-employed Ricardo Villarreal at zip 78504 with confidence. No high-confidence tie to the seven target categories.",
+      "evidence": []
+    }
+  ]
+}
