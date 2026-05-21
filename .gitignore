@@ -27,3 +27,5 @@ Thumbs.db
 sanity_check_output.txt
 *.log
 *.tmp
+*.err
+_survey_*.py
